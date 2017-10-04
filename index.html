@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 
@@ -5,13 +7,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <!-- CHANGE BELOW VALUEs-->
-
-    <title>HOME</title>
-    <meta name="description" content="HOME">
-
-    <!-- CHANGE ABOVE VALUEs-->
+    <title>Home</title>
+    <meta name="description" content="Home">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:200,300,400&subset=latin' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css">
@@ -34,7 +31,7 @@
             <script>
                 reallySimpleWeather.weather({
                     wunderkey: '', // leave blank for Yahoo
-                    location: 'Seattle, WA', //your location 
+                    location: '', // ENTER YOUR LOCATION HERE, CITY, STATE ABBREVIATION
                     woeid: '', // "Where on Earth ID"
                     unit: 'f', // 'c' also works
                     success: function(weather) {
@@ -47,41 +44,33 @@
                 });
             </script>
         </div>
-
-        <div class="parent">
-            <div class="container child">
-
-                <div id="searchForm">
-                    <form action="" method="post">
-                        <input type="text" name="s" value="" placeholder="Search" autofocus />
-                        <select id="searchform option" select class="searchform option">
-                            <option value="google">Google</option>
-                            <option value="youtube">YouTube</option>
-                            <option value="wiki">Wikipedia</option>
-                            <option value="imdb">IMDB</option>
-                        </select>
-                    </form>
-                </div>
-
-                <!-- BUILD YOUR OWN TICKER FROM www.feed.mike.com and insert your custom link below after "SRC=" -->
-
-                <div id="fw-container">
-                    <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="48421/"></script>
-                </div>
-
-                <!-- INSERT YOUR OWN TICKER FEED AND INSERT LINK ABOVE AFTER "SRC=" -->
-
-            </div>
-
-        </div>
-
-        <!-- YOU ARE WELCOME TO CHANGE THE BELOW LINK, I NEED NO CREDIT -->
-
-        <div id="footer">
-            <p> This page was curated from <a href="https://github.com/seanvree/homepage"> this GitHub project.</a></p>
-        </div>
-
+		
     </div>
+
+	
+<section class="flexbox">
+        <div class="stretch">
+			<form action="" method="post">
+				<input type="text" name="s" value="" id="flexbox input" placeholder="Search" autofocus />
+				<select id="flexbox option">
+				  <option value="google">Google</option>
+				  <option value="youtube">YouTube</option>
+				  <option value="wiki">Wikipedia</option>
+				  <option value="imdb">IMDB</option>
+			  </select>
+			  </form>
+			 <div id="fw-container">
+				<script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="/">// enter custom feed data-fw-param number here.</script> 
+			</div>
+        </div>
+</section>
+
+
+			
+<div id="footer">
+	<p><a href="https://URL.for.Link1.com">Link 1</a> | <a href="https://URL.for.Link2.com">Link 2</a> | <a href="https://URL.for.Link3.com">Link 3</a></p>
+</div>	   
+
 
 </body>
 
