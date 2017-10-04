@@ -1,0 +1,401 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 10;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+
+small {
+    font-size: 80%;
+}
+
+img {
+    border: 0;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+pre {
+    overflow: auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+optgroup {
+    font-weight: 700;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    background: url("seattlewide.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    font: 400 16px 'Open Sans', Arial;
+}
+
+.hide {
+    display: none !important;
+}
+
+.parent {
+    position: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.child,
+.container.child {
+    position: absolute;
+    width: 660px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    margin-left: -330px;
+}
+
+.container {
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.half {
+    float: left;
+    width: 50%;
+}
+
+#searchForm {
+    background-color: rgba(21, 21, 21, 0.70);
+    padding: 15px;
+    margin-bottom: 25px;
+    color: #E4E2E2;
+}
+
+#searchForm input {
+    background-color: transparent;
+    border: 0;
+    width: 80%;
+    padding: 5px 10px;
+    height: 28px;
+    font-size: 22px;
+}
+
+#searchForm select {
+    width: 16.2%;
+    border: 0;
+    margin-left: 1px;
+    color: #C9C9C9;
+    background-color: transparent;
+    align-self: auto;
+    text-align: center;
+    text-anchor: middle;
+    text-align-last: center;
+    font-size: 1.10em;
+    height: 32px;
+    float: right;
+    /* -webkit-appearance: none; */
+}
+
+#searchForm option {
+    background-color: rgb(82, 82, 82);
+    text-align-last: center;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+
+/* Link colors */
+
+#linkArea h3.alt {
+    color: #b6a7d2;
+}
+
+
+/* Alternate link colors */
+
+#linkArea ul.links,
+#linkArea ul.links li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#linkArea ul.links li a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+}
+
+#timeArea {
+    position: top;
+    bottom: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgba(87, 87, 87, 0.8);
+}
+
+#timeArea .time {
+    font-size: 75px;
+    font-weight: 300;
+    margin-top: 0px;
+    padding: 0 0 0 0;
+}
+
+#timeArea .time .date {
+    display: block;
+    margin-top: -10px;
+    font-size: 30px;
+}
+
+#weather {
+    display: block;
+    font-size: 35px;
+    font-weight: 300;
+    margin-top: -10px;
+    margin-left: 20px;
+    padding: 0 0 0 0;
+    text-align: left;
+    color: rgba(87, 87, 87, 0.8);
+}
+
+i {
+    color: #fff;
+    font-family: weather;
+    font-size: 150px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.0;
+    text-transform: none;
+}
+
+#weather h2 {
+    margin: 0 0 8px;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#weather ul {
+    margin: 0;
+    padding: 0;
+}
+
+#weather li {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.90);
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#weather .currently {
+    margin: 0 20px;
+}
+
+.news-ticker {
+    position: fixed;
+    width: 550px;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding-bottom: 25px;
+    padding-right: 25px;
+}
+
+#fw-container {
+    height: 55px;
+    padding: -10px;
+    text-align: left;
+    font-family: 'Noto Sans', Helvetica, sans-serif;
+    border-radius: 0px;
+    box-sizing: border-box;
+    background-color: rgba(21, 21, 21, 0.70);
+}
+
+
+/* This is the styling for the Feed Item content in the body container*/
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 350px;
+    height: 30px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: #777777;
+    background-color: rgba(21, 21, 21, 0.42);
+    font-size: 10px;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+/*# sourceMappingURL=main.css.map */
