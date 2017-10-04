@@ -1,6 +1,62 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
-html {
+/* Reset
+**************************************************************************/
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { margin: 1rem; }
+h1 { margin: 1rem 0 0; }
+
+
+/* Flexbox
+**************************************************************************/
+.flexbox {
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexbox .stretch {
+	flex: 1 0 auto;
+	max-width: 700px;
+	background-color: rgba(21, 21, 21, 0.70);
+	height: 48px;
+}
+.flexbox div input {
+	flex: 1 0 100px;
+	width: 70%;
+	border: 0;
+	padding: .5em 1em;
+	height: 48px;
+	color: #E4E2E2;
+	font-size: 1.5em;
+	background-color: transparent;
+}
+.flexbox div select {
+	flex: 0 0 auto;
+	border: 0;
+	height: 48px;
+	padding: .5em 1em;
+	color: #C9C9C9;
+	font-size: 1em;
+	background-color: transparent;
+	text-align-last: center;
+	float: right;
+	text-align: center;
+}
+.flexbox option {
+	background-color: rgba(21, 21, 21, 0.70);
+	border: 0;
+}
+
+
+html, body {
+    height: 100%;
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -8,6 +64,16 @@ html {
 
 body {
     margin: 0;
+	background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    font: 400 16px 'Open Sans', Arial;
 }
 
 article,
@@ -82,6 +148,14 @@ textarea {
     margin: 0;
 }
 
+textarea:focus, input:focus{
+	outline: none;
+	outline-style: none;
+}
+
+*:focus {
+	outline: none;
+}
 button {
     overflow: visible;
 }
@@ -180,91 +254,36 @@ th {
     box-sizing: border-box;
 }
 
-body {
-    width: 100%;
-    min-height: 100%;
-    background: url("seattlewide.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: #fff;
-    font: 400 16px 'Open Sans', Arial;
-}
-
 .hide {
     display: none !important;
 }
 
-.parent {
-    position: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 
-.child,
-.container.child {
-    position: absolute;
-    width: 660px;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
-    margin-left: -330px;
-}
-
-.container {
-    width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .half {
     float: left;
     width: 50%;
 }
 
-#searchForm {
-    background-color: rgba(21, 21, 21, 0.70);
-    padding: 15px;
-    margin-bottom: 25px;
-    color: #E4E2E2;
+
+#linkArea {
+    background-color: rgba(21, 21, 21, 0.95);
+    border: 4px solid #151515;
+    padding: 15px 40px 40px;
 }
 
-#searchForm input {
-    background-color: transparent;
-    border: 0;
-    width: 80%;
-    padding: 5px 10px;
-    height: 28px;
-    font-size: 22px;
+#linkArea .half {
+    padding-left: 40px;
 }
 
-#searchForm select {
-    width: 16.2%;
-    border: 0;
-    margin-left: 1px;
-    color: #C9C9C9;
-    background-color: transparent;
-    align-self: auto;
-    text-align: center;
-    text-anchor: middle;
-    text-align-last: center;
-    font-size: 1.10em;
-    height: 32px;
-    float: right;
-    /* -webkit-appearance: none; */
+#linkArea .half:last-child {
+    padding-left: 60px;
 }
 
-#searchForm option {
-    background-color: rgb(82, 82, 82);
-    text-align-last: center;
-    padding-left: 5px;
-    margin-left: 5px;
+#linkArea h3 {
+    margin: 27px 0 13px;
+    font: 500 20px Raleway;
+    color: #bac8ea;
 }
 
 
@@ -295,7 +314,7 @@ body {
     left: 0;
     margin-top: 20px;
     margin-left: 20px;
-    color: rgba(87, 87, 87, 0.8);
+    color: rgba(200, 200, 200, 0.8);
 }
 
 #timeArea .time {
@@ -303,6 +322,7 @@ body {
     font-weight: 300;
     margin-top: 0px;
     padding: 0 0 0 0;
+    /* text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0); */
 }
 
 #timeArea .time .date {
@@ -318,8 +338,9 @@ body {
     margin-top: -10px;
     margin-left: 20px;
     padding: 0 0 0 0;
+    /* text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0); */
     text-align: left;
-    color: rgba(87, 87, 87, 0.8);
+    color: rgba(200, 200, 200, 0.8);
 }
 
 i {
@@ -330,6 +351,198 @@ i {
     font-style: normal;
     line-height: 1.0;
     text-transform: none;
+}
+
+.icon-0:before {
+    content: ":";
+}
+
+.icon-1:before {
+    content: "p";
+}
+
+.icon-2:before {
+    content: "S";
+}
+
+.icon-3:before {
+    content: "Q";
+}
+
+.icon-4:before {
+    content: "S";
+}
+
+.icon-5:before {
+    content: "W";
+}
+
+.icon-6:before {
+    content: "W";
+}
+
+.icon-7:before {
+    content: "W";
+}
+
+.icon-8:before {
+    content: "W";
+}
+
+.icon-9:before {
+    content: "I";
+}
+
+.icon-10:before {
+    content: "W";
+}
+
+.icon-11:before {
+    content: "I";
+}
+
+.icon-12:before {
+    content: "I";
+}
+
+.icon-13:before {
+    content: "I";
+}
+
+.icon-14:before {
+    content: "I";
+}
+
+.icon-15:before {
+    content: "W";
+}
+
+.icon-16:before {
+    content: "I";
+}
+
+.icon-17:before {
+    content: "W";
+}
+
+.icon-18:before {
+    content: "U";
+}
+
+.icon-19:before {
+    content: "Z";
+}
+
+.icon-20:before {
+    content: "Z";
+}
+
+.icon-21:before {
+    content: "Z";
+}
+
+.icon-22:before {
+    content: "Z";
+}
+
+.icon-23:before {
+    content: "Z";
+}
+
+.icon-24:before {
+    content: "E";
+}
+
+.icon-25:before {
+    content: "E";
+}
+
+.icon-26:before {
+    content: "3";
+}
+
+.icon-27:before {
+    content: "a";
+}
+
+.icon-28:before {
+    content: "A";
+}
+
+.icon-29:before {
+    content: "a";
+}
+
+.icon-30:before {
+    content: "A";
+}
+
+.icon-31:before {
+    content: "6";
+}
+
+.icon-32:before {
+    content: "1";
+}
+
+.icon-33:before {
+    content: "6";
+}
+
+.icon-34:before {
+    content: "1";
+}
+
+.icon-35:before {
+    content: "W";
+}
+
+.icon-36:before {
+    content: "1";
+}
+
+.icon-37:before {
+    content: "S";
+}
+
+.icon-38:before {
+    content: "S";
+}
+
+.icon-39:before {
+    content: "S";
+}
+
+.icon-40:before {
+    content: "M";
+}
+
+.icon-41:before {
+    content: "W";
+}
+
+.icon-42:before {
+    content: "I";
+}
+
+.icon-43:before {
+    content: "W";
+}
+
+.icon-44:before {
+    content: "a";
+}
+
+.icon-45:before {
+    content: "S";
+}
+
+.icon-46:before {
+    content: "U";
+}
+
+.icon-47:before {
+    content: "S";
 }
 
 #weather h2 {
@@ -369,10 +582,14 @@ i {
 }
 
 #fw-container {
+	display: flex;
+	max-width: 700px;
+	margin-top: 25px;
     height: 55px;
     padding: -10px;
     text-align: left;
     font-family: 'Noto Sans', Helvetica, sans-serif;
+    /* border: 1px solid #0E4FAE; */
     border-radius: 0px;
     box-sizing: border-box;
     background-color: rgba(21, 21, 21, 0.70);

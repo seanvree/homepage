@@ -23,7 +23,7 @@ function search(query, engine) {
     switch (engine) {
         case 'google':
         default:
-            var url = 'https://www.google.com/search?q=' + query;
+            var url = 'https://encrypted.google.com/search?q=' + query;
             break;
         case 'youtube':
             var url = 'https://www.youtube.com/results?search_query=' + query;
@@ -61,11 +61,11 @@ $(function() {
         }
     });
 
-    $('#searchForm input, #searchForm select').keydown(function(e) {
+    $('.flexbox input, .flexbox select').keydown(function(e) {
         if (e.keyCode == 13) {
             e.preventDefault();
-            var query = $('#searchForm input').val();
-            var engine = $('#searchForm select option:selected').val();
+            var query = $('.flexbox input').val();
+            var engine = $('.flexbox select option:selected').val();
             search(query, engine);
         }
     });
