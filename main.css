@@ -23,42 +23,41 @@ h1 {
 **************************************************************************/
 
 .flexbox {
-    height: 50%;
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-height: 500px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .flexbox .stretch {
-    flex: 1 0 auto;
-    max-width: 700px;
+    width: 700px;
+    max-width: 90vw;
     background-color: rgba(21, 21, 21, 0.70);
     height: 48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flexbox div input {
-    flex: 1 0 100px;
-    width: 84%;
+    max-width: 388px;
     border: 0;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     height: 48px;
     color: #E4E2E2;
     font-size: 1.5em;
     background-color: transparent;
+    width: calc(90% - 112px);
 }
 
 .flexbox div select {
-    flex: 0 0 auto;
-    width: 16%;
+    width: 112px;
     border: 0;
     height: 48px;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     color: #C9C9C9;
     font-size: 1em;
     background-color: transparent;
@@ -66,8 +65,32 @@ h1 {
 }
 
 .flexbox option {
-    background-color: rgba(21, 21, 21, 0.70);
-    border: 0;
+	background-color: rgba(21, 21, 21, 0.70);
+	border: 0;
+}
+
+#fw-feed-items .fw-feed-item-title {
+    margin: 0;
+    padding-left: 15px;
+    color: #aeb0b3;
+    line-height: inherit;
+    font-size: 15px;
+    display: table-cell;
+    word-wrap: break-word;
+    max-width: 90vw;
+    vertical-align: middle;
+}
+#fw-feed-items .fw-feed-item-content-module {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 55px;
+    display: table;
+    width: auto;
+}
+#fw-feed-items .fw-feed-item {
+    margin: 0;
+    clear: both;
 }
 
 html,
@@ -373,7 +396,6 @@ i {
 }
 
 #fw-container {
-    display: flex;
     max-width: 700px;
     margin-top: 25px;
     height: 55px;
@@ -385,7 +407,6 @@ i {
     box-sizing: border-box;
     background-color: rgba(21, 21, 21, 0.70);
 }
-
 
 /* This is the styling for the Feed Item content in the body container*/
 
