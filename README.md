@@ -14,3 +14,9 @@ main.css:
 ```
    - Line 186: " background: url("seattlewide.jpg"); "
 ```
+
+
+ 
+## Screenshot:
+
+![preview thumb] <img src="https://i.imgur.com/V4eEnaP.png">
