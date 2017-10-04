@@ -26,4 +26,6 @@ Credits:
 
 - [seanvree](https://github.com/seanvree) (Windows Wizard)
 
-- [haltdev](https://github.com/haltdev) (Script Bunny)
+- [haltdev](https://github.com/haltdev) (Resident Cargo Cult Developer)
+
+- [leram84](https://github.com/leram84) (CSS Gawd)
