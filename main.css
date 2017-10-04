@@ -43,14 +43,14 @@ h1 {
 }
 
 .flexbox div input {
-    max-width: 388px;
+    max-width: 588px;
     border: 0;
     padding: 0.5em 1em;
     height: 48px;
     color: #E4E2E2;
     font-size: 1.5em;
     background-color: transparent;
-    width: calc(90% - 112px);
+    width: calc(100% - 112px);
 }
 
 .flexbox div select {
@@ -60,12 +60,13 @@ h1 {
     padding: 0.5em 1em;
     color: #C9C9C9;
     font-size: 1em;
+	text-align-last: center;
     background-color: transparent;
     float: right;
 }
 
 .flexbox option {
-	background-color: rgba(21, 21, 21, 0.70);
+	background-color: rgba(21, 21, 21, 0.9);
 	border: 0;
 }
 
