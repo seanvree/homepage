@@ -7,12 +7,12 @@ Change the following values:
 
 Index.html:
 ```
-  - Line 32: "location: 'Seattle, WA', //your location "
-  - Line 64:  " <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" "></script> "
+  - Line 38: "location: 'Seattle, WA', //your location "
+  - Line 68:  " <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script> "
 ```
 main.css:
 ```
-   - Line 186: " background: url("seattlewide.jpg"); "
+   Add your desired background image to the root folder, and name it background.jpg
 ```
 
 
@@ -20,3 +20,10 @@ main.css:
 ## Screenshot:
 
 ![preview thumb] <img src="https://i.imgur.com/V4eEnaP.png">
+
+
+Credits:
+
+- [seanvree](https://github.com/seanvree) (Windows Wizard)
+
+- [haltdev](https://github.com/haltdev) (Script Bunny)
