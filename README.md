@@ -1,7 +1,16 @@
 # homepage
 Custom Start/home page (Google Search)
 
+<br>
 
+# Features:
+- Mobile ready
+- Self hosted
+- VERY minimal/lightweight
+- Live DTG
+- Live custom news ticker provided by: feed.mikle.com (free)
+
+<br>
 
 Change the following values:
 
@@ -26,4 +35,6 @@ Credits:
 
 - [seanvree](https://github.com/seanvree) (Windows Wizard)
 
-- [haltdev](https://github.com/haltdev) (Script Bunny)
+- [haltdev](https://github.com/haltdev) (Resident Cargo Cult Developer)
+
+- [leram84](https://github.com/leram84) (CSS Gawd)
