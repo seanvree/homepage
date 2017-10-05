@@ -297,7 +297,7 @@ th {
     left: 0;
     margin-top: 20px;
     margin-left: 20px;
-    color: rgba(200, 200, 200, 0.8);
+    color: rgba(58, 58, 58, 0.50);
 }
 
 #timeArea .time {
@@ -323,7 +323,7 @@ th {
     padding: 0 0 0 0;
     /* text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0); */
     text-align: left;
-    color: rgba(200, 200, 200, 0.8);
+    color: rgba(58, 58, 58, 0.50);
 }
 
 i {
@@ -360,6 +360,20 @@ i {
 
 #weather .currently {
     margin: 0 20px;
+}
+
+#fw-container {
+    max-width: 700px;
+    margin-top: 30px;
+    height: 66px;
+    padding-left: 10px;
+    text-align: left;
+    font-family: 'Noto Sans', Helvetica, sans-serif;
+    /* border: 1px solid #0E4FAE; */
+    border-radius: 0px;
+    box-sizing: border-box;
+    background-color: rgba(21, 21, 21, 0.70);
+    vertical-align: middle;
 }
 
 #footer {
