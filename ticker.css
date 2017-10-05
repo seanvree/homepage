@@ -2,22 +2,8 @@ body {
     margin: 0;
 }
 
-#fw-container {
-    max-width: 700px;
-    margin-top: 30px;
-    height: 66px;
-    padding-left: 10px;
-    text-align: left;
-    font-family: 'Noto Sans', Helvetica, sans-serif;
-    /* border: 1px solid #0E4FAE; */
-    border-radius: 0px;
-    box-sizing: border-box;
-    background-color: rgba(21, 21, 21, 0.70);
-    vertical-align: middle;
-}
 
-
-/*Elements below NOT WORKING - Can't override feed.mikle.com CSS */
+/*Elements below need to be uploaded to http://feed.mikle.com into your ticker widget settings under "custom .css" */
 
 #fw-feed-items .fw-feed-item-title {
     margin: 0;
@@ -35,7 +21,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    height: 55px;
+    height: 60px;
     display: table;
     width: auto;
 }
