@@ -54,6 +54,9 @@ h1 {
 }
 
 .flexbox div select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
     width: 112px;
     border: 0;
     height: 60px;
