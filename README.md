@@ -1,7 +1,16 @@
 # homepage
 Custom Start/home page (Google Search)
 
+<br>
 
+# Features:
+- Mobile ready
+- Self hosted
+- VERY minimal/lightweight
+- Live DTG
+- Live custom news ticker provided by: feed.mikle.com (free)
+
+<br>
 
 Change the following values:
 
