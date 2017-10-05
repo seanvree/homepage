@@ -37,7 +37,7 @@ h1 {
     width: 700px;
     max-width: 90vw;
     background-color: rgba(21, 21, 21, 0.70);
-    height: 50px;
+    height: 60px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -46,9 +46,9 @@ h1 {
     max-width: 588px;
     border: 0;
     padding: 0.5em 1em;
-    height: 50px;
     color: #E4E2E2;
     font-size: 1.5em;
+    height: 60px;
     background-color: transparent;
     width: calc(100% - 112px);
 }
@@ -56,7 +56,7 @@ h1 {
 .flexbox div select {
     width: 112px;
     border: 0;
-    height: 48px;
+    height: 60px;
     padding: 0.5em 1em;
     color: #C9C9C9;
     font-size: 1em;
@@ -68,32 +68,6 @@ h1 {
 .flexbox option {
     background-color: rgba(21, 21, 21, 0.9);
     border: 0;
-}
-
-#fw-feed-items .fw-feed-item-title {
-    margin: 0;
-    padding-left: 15px;
-    color: #aeb0b3;
-    line-height: inherit;
-    font-size: 15px;
-    display: table-cell;
-    word-wrap: break-word;
-    max-width: 90vw;
-    vertical-align: middle;
-}
-
-#fw-feed-items .fw-feed-item-content-module {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 55px;
-    display: table;
-    width: auto;
-}
-
-#fw-feed-items .fw-feed-item {
-    margin: 0;
-    clear: both;
 }
 
 html,
@@ -387,32 +361,6 @@ i {
 #weather .currently {
     margin: 0 20px;
 }
-
-.news-ticker {
-    position: fixed;
-    width: 550px;
-    top: 0;
-    right: 0;
-    margin: 0;
-    padding-bottom: 25px;
-    padding-right: 25px;
-}
-
-#fw-container {
-    max-width: 700px;
-    margin-top: 25px;
-    height: 55px;
-    padding: -10px;
-    text-align: left;
-    font-family: 'Noto Sans', Helvetica, sans-serif;
-    /* border: 1px solid #0E4FAE; */
-    border-radius: 0px;
-    box-sizing: border-box;
-    background-color: rgba(21, 21, 21, 0.70);
-}
-
-
-/* This is the styling for the Feed Item content in the body container*/
 
 #footer {
     position: fixed;
