@@ -21,7 +21,7 @@ Change the following values:
 ```
 - feed.mikle.com widget ticker settings:
 
-You will need to create your own FREE feed.mikle ticker widget.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image "feedmikle.png" located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined above.
+You will need to create your own FREE feed.mikle ticker widget.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image "feedmikle.jpg" located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined above.
 
 
 - Add your desired background image to the root folder, and name it background.jpg
