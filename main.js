@@ -12,10 +12,16 @@ function setDate($) {
         $('#timeArea .time .timeInner').html(currentTime);
         $('#timeArea .time .date').html(currentDate);
     }
-
-    setTimeout(function() {
-        setDate($);
-    }, 1000);
+    
+    var toggle = true;
+    setInterval(function() {
+      var d = new Date().toLocaleTimeString('en-US', { hour12: false, hour: 'numeric', minute: 'numeric' });
+      var parts = d.split(":");
+      $('#hours').text(parts[0]);
+      $('#minutes').text(parts[1]);
+      $("#colon").css({ visibility: toggle?"visible":"hidden"});
+      toggle=!toggle;
+    },1000);
 }
 
 function search(query, engine) {
