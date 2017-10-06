@@ -295,7 +295,6 @@ th {
 /* Alternate link colors */
 
 #timeArea {
-    position: top;
     bottom: 0;
     left: 0;
     margin-top: 20px;
@@ -316,6 +315,8 @@ th {
     margin-top: -10px;
     font-size: 30px;
 }
+
+#colon { visibility:hidden }
 
 #weather {
     display: block;
