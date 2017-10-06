@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <!-- CHANGE BELOW VALUEs-->
+    <!-- CHANGE BELOW VALUE: "content= "HOME" "-->
 
     <title>HOME</title>
     <meta name="description" content="HOME">
@@ -28,7 +28,10 @@
     <div class="container-fluid">
 
         <div id="timeArea">
-            <p class="time"><span class="timeInner"></span> <span class="date"></span></p>
+            <p class="time">
+                <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
+                <span class="date"></span>
+            </p>
         </div>
 
         <div id="weather">
@@ -38,11 +41,11 @@
                     location: 'Seattle, WA', //your location 
                     woeid: '', // "Where on Earth ID"
                     unit: 'f', // 'c' also works
-                    success: function(weather) {
+                    success: function (weather) {
                         html = weather.temp + '°' + weather.units.temp;
                         document.getElementById('weather').innerHTML = html;
                     },
-                    error: function(error) {
+                    error: function (error) {
                         document.getElementById('weather').innerHTML = '<p>' + error + '</p>';
                     }
                 });
