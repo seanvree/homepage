@@ -47,3 +47,5 @@ Credits:
 - [haltdev](https://github.com/haltdev) (Resident Cargo Cult Developer)
 
 - [leram84](https://github.com/leram84) (CSS Gawd)
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/Seanvree)
