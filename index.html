@@ -7,18 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <!-- CHANGE BELOW VALUE: "content= "HOME" "-->
+    <!-- CHANGE BELOW VALUEs-->
 
     <title>HOME</title>
     <meta name="description" content="HOME">
 
     <!-- CHANGE ABOVE VALUEs-->
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:200,300,400&subset=latin' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/reallysimpleweather/reallysimpleweather-1.1.0.min.js"></script>
     <script src="main.js"></script>
 </head>
@@ -41,11 +38,11 @@
                     location: 'Seattle, WA', //your location 
                     woeid: '', // "Where on Earth ID"
                     unit: 'f', // 'c' also works
-                    success: function (weather) {
+                    success: function(weather) {
                         html = weather.temp + '°' + weather.units.temp;
                         document.getElementById('weather').innerHTML = html;
                     },
-                    error: function (error) {
+                    error: function(error) {
                         document.getElementById('weather').innerHTML = '<p>' + error + '</p>';
                     }
                 });
@@ -58,11 +55,11 @@
             <form action="" method="post">
                 <input type="text" name="s" value="" id="flexbox input" placeholder="Search" autofocus />
                 <select id="flexbox option">
-				  <option value="google">Google</option>
-				  <option value="youtube">YouTube</option>
-				  <option value="wiki">Wikipedia</option>
-				  <option value="imdb">IMDB</option>
-			  </select>
+                    <option value="google">Google</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="wiki">Wikipedia</option>
+                    <option value="imdb">IMDB</option>
+                </select>
             </form>
 
             <!-- BUILD YOUR OWN TICKER FROM www.feed.mikle.com and insert your custom link below after "SRC=" -->
@@ -79,7 +76,9 @@
     <!-- YOU ARE WELCOME TO CHANGE THE BELOW LINK, I NEED NO CREDIT -->
 
     <div id="footer">
-        <p> This page was curated from <a href="https://github.com/seanvree/homepage"> this GitHub project.</a></p>
+        <p> This page was curated from
+            <a href="https://github.com/seanvree/homepage"> this GitHub project.</a>
+        </p>
     </div>
 
 </body>
