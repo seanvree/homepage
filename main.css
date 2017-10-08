@@ -28,7 +28,7 @@ h1 {
     max-height: 500px;
     margin: auto;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -54,9 +54,9 @@ h1 {
 }
 
 .flexbox div select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 112px;
     border: 0;
     height: 60px;
@@ -79,6 +79,7 @@ body {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -154,7 +155,7 @@ hr {
 }
 
 pre {
-    overflow: auto;
+    overflow: hidden;
 }
 
 button,
@@ -295,17 +296,16 @@ th {
 /* Alternate link colors */
 
 #timeArea {
-    position: top;
     bottom: 0;
     left: 0;
-    margin-top: 20px;
-    margin-left: 20px;
-    color: rgba(200, 200, 200, 0.8);
+    margin-top: 15px;
+    margin-left: 25px;
+    color: rgba(200, 200, 200, 0.50);
 }
 
 #timeArea .time {
     font-size: 75px;
-    font-weight: 300;
+    font-weight: 500;
     margin-top: 0px;
     padding: 0 0 0 0;
     /* text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0); */
@@ -313,20 +313,23 @@ th {
 
 #timeArea .time .date {
     display: block;
-    margin-top: -10px;
     font-size: 30px;
+    font-weight: 300;
+}
+
+#colon {
+    visibility: hidden
 }
 
 #weather {
     display: block;
     font-size: 35px;
     font-weight: 300;
-    margin-top: -10px;
-    margin-left: 20px;
+    margin-left: 25px;
     padding: 0 0 0 0;
     /* text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0); */
     text-align: left;
-    color: rgba(200, 200, 200, 0.8);
+    color: rgba(200, 200, 200, 0.50);
 }
 
 i {
