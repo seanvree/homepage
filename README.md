@@ -33,6 +33,8 @@ Custom Start/home page (multi Search) with live animated weather webapp and new 
 
 - Auto refresh default setting is set at 30 seconds. Change in **/index.html : LINE 38**
 
+- Add your desired background image file to /css/background.png
+
 - Acquire your FREE API key and replace the default key in **/js/weather.js : LINE 11**
  https://home.openweathermap.org/users/sign_up
  
@@ -44,7 +46,6 @@ Custom Start/home page (multi Search) with live animated weather webapp and new 
 You will need to create your own FREE feed.mikle ticker widget.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image "/img/feedmikle.jpg" located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined above.
 
 
-- Add your desired background image to /css/background.png
 
 <br>
 
