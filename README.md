@@ -52,18 +52,18 @@ var unit = 'metric';
 ```
 
 
-- Acquire your FREE API key and replace the default key in **/js/weather.js : LINE 11**
+- **WEATHER DATA**: Acquire your FREE API key and replace the default key in **/js/weather.js : LINE 11**
  https://home.openweathermap.org/users/sign_up
  
  
  
- - New ticker: feed.mikle.com widget ticker settings in **/index.html : Line 204**:  
+ - **TICKER DATA:** You will need to create your own FREE feed.mikle ticker widget where you can customize your news sources and style.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image "/img/feedmikle.jpg" located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined below. 
+ 
+ feed.mikle.com widget ticker link in **/index.html : Line 204**:  
  ```
  " <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script> "
  ```
  
-You will need to create your own FREE feed.mikle ticker widget.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image "/img/feedmikle.jpg" located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined above.
-
 
 
 <br>
