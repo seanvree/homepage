@@ -1,4 +1,4 @@
-# homepage
+# Homepage
 Custom Start/home page (multi Search) with live animated weather webapp and new ticker -  written in HTML/JS. Minimal, self-hosted, and dope. 
 <br>
 
@@ -6,7 +6,7 @@ Custom Start/home page (multi Search) with live animated weather webapp and new 
 - Mobile ready
 - Self hosted, VERY minimal/lightweight
 - Live DTG
-- Fully functional multi-search input form (Google, YouTube, Wiki, IMDB
+- Fully functional multi-search input form (Google, YouTube, Wiki, IMDB)
 - Live custom news ticker provided by: feed.mikle.com (free)
 - Weather data auto generated via Geolocation.
 - Weather API provided via OpenWeatherMap.
@@ -14,6 +14,20 @@ Custom Start/home page (multi Search) with live animated weather webapp and new 
 - 5-day forecast data (Click on right icon).
 
 <br>
+
+ 
+## Screenshot Desktop:
+
+ <img src="https://i.imgur.com/I4MiBPO.png">
+
+## Screenshot Mobile:
+
+<img src="https://i.imgur.com/zjLmxr2.jpg">
+
+## Animated Icons :
+
+<img src="https://i.imgur.com/Nf8H56C.png[/img]">
+
 
 ## Notes:
 
@@ -32,21 +46,7 @@ You will need to create your own FREE feed.mikle ticker widget.  To do so, go to
 
 - Add your desired background image to /css/background.png
 
-
 <br>
- 
-## Screenshot Desktop:
-
- <img src="https://i.imgur.com/I4MiBPO.png">
-
-## Screenshot Mobile:
-
-<img src="https://i.imgur.com/zjLmxr2.jpg">
-
-## Animated Icons :
-
-<img src="https://i.imgur.com/Nf8H56C.png[/img]">
-
 
 ## About Me:
 
@@ -56,7 +56,7 @@ You will need to create your own FREE feed.mikle ticker widget.  To do so, go to
 - Buy me a beer [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/seanvree)
 
 
-Credits:
+## Credits:
 
 - [seanvree](https://github.com/seanvree) (Windows Wizard)
 
