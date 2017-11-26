@@ -22,7 +22,7 @@ Custom Start/home page (multi Search) with live animated weather webapp and new 
 
 ## Screenshot Mobile:
 
-<img src="https://i.imgur.com/zjLmxr2.jpg">
+<img src="https://i.imgur.com/67bFzjd.jpg">
 
 ## Animated Icons :
 
@@ -31,14 +31,33 @@ Custom Start/home page (multi Search) with live animated weather webapp and new 
 
 ## Notes:
 
-- Auto refresh default setting is set at 30 seconds. Change in **/index.html : LINE 38**
+- Auto refresh default setting is set at **180** seconds. Change in **/index.html : LINE 38**
 
-- Add your desired background image file to /css/background.png
+
+- Add your desired background image file to /css/background.png.
+
+
+- Change the default temp unit from F to C by changing the following two items:
+
+**/index.html: LINE 56:**
+
+```
+<div id="unit" class="unit">&degC</div>
+```
+
+**/js/weather.js: LINE 9:**
+
+```
+var unit = 'metric';
+```
+
 
 - Acquire your FREE API key and replace the default key in **/js/weather.js : LINE 11**
  https://home.openweathermap.org/users/sign_up
  
- - New ticker: feed.mikle.com widget ticker settings in **/index.html : Line 200**:  
+ 
+ 
+ - New ticker: feed.mikle.com widget ticker settings in **/index.html : Line 204**:  
  ```
  " <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script> "
  ```
@@ -68,5 +87,15 @@ You will need to create your own FREE feed.mikle ticker widget.  To do so, go to
 - [leram84](https://github.com/leram84)
 
 - [causefx](https://github.com/causefx)
+
+
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
 
 
