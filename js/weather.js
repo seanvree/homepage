@@ -153,7 +153,7 @@ $(function() {
         }
     };
 
-    var searchByCity = function(event) {
+/*     var searchByCity = function(event) {
         var esc = event.which == 27;
         var enter = event.which == 13;
         var ele = event.target;
@@ -166,7 +166,7 @@ $(function() {
             getWeather(null, null, city);
             ele.blur();
         }
-    };
+    }; */
 
     var resetCity = function() {
         $city.text(lastData.name).blur();
@@ -191,7 +191,7 @@ $(function() {
         $temp.text(newTemp.toFixed(0));
     };
 
-    $("#city").keydown(searchByCity).focusout(resetCity);
+    // $("#city").keydown(searchByCity).focusout(resetCity);
     $("#unit").click(changeUnit);
     $("#temp").click(changeUnit);
     searchByLocation();

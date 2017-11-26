@@ -1,19 +1,18 @@
 <!-- Doctype HTML5 -->
-<!doctype html>
-
-<html lang="en">
 
 <!--
 Created by:
 https://github.com/seanvree
 -->
 
+<!doctype html>
+
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script type="text/javascript" src="js/pace.js"></script>
 
     <meta name="theme-color" content="#464646">
     <meta name="theme_color" content="#464646">
@@ -21,6 +20,8 @@ https://github.com/seanvree
     <title>Search</title>
 
     <meta name="description" content="Search">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
 
     <link rel="icon" type="image/png" href="favicon.png">
 
@@ -28,12 +29,11 @@ https://github.com/seanvree
 
     <link rel="stylesheet" href="css/main.css">
 
-    <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
-    
-    <script type="text/javascript" src="js/weather.js"></script>
+    <script type="text/javascript" src="js/pace.js" async></script>
 
-    <script src="js/plugins.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
+
+    <!-- <script src="js/plugins.js"></script> -->
 
     <meta http-equiv="refresh" content="180">
 
@@ -49,6 +49,8 @@ https://github.com/seanvree
     </div>
 
     <div id="weather">
+
+        <script type="text/javascript" src="js/weather.js"></script>
         
         <div id="tempwrapper" class="tempwrapper">
             <div id="unit" class="unit">&degF</div>
@@ -57,7 +59,7 @@ https://github.com/seanvree
 
         <div id="iconwrapper" class="iconwrapper">
 
-            <a id="weatherlink" href="#" target="_blank">
+            <a id="weatherlink" href="#" target="_blank" rel="noopener">
 
                 <div class="icon unknown">
                     <div class="text"></div>
@@ -182,6 +184,8 @@ https://github.com/seanvree
 
     <section class="flexbox">
 
+        <script type="text/javascript" src="js/main.js" async></script>
+
         <div class="stretch">
 
             <form action="#" method="post" autocomplete="off">
@@ -194,13 +198,13 @@ https://github.com/seanvree
                 </select>
             </form>
 
-<!-- BUILD YOUR OWN TICKER FROM www.feed.mikle.com and insert your custom link below after "SRC=" -->
+            <!-- BUILD YOUR OWN TICKER FROM www.feed.mikle.com and insert your custom link below after "SRC=" -->
 
             <div id="fw-container">
                 <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="48421/"></script>
             </div>
 
-<!-- INSERT YOUR OWN TICKER FEED AND INSERT LINK ABOVE AFTER "SRC=" -->
+            <!-- INSERT YOUR OWN TICKER FEED AND INSERT LINK ABOVE AFTER "SRC=" -->
 
         </div>
 
@@ -213,10 +217,10 @@ https://github.com/seanvree
     </div>
 
 
-<div id="footer">
-    <p> This page was curated from <a href="https://github.com/seanvree/homepage"> this GitHub project.</a>
-    </p>
-</div>
+    <div id="footer">
+        <p> This page was curated from <a href="https://github.com/seanvree/homepage"> THIS GitHub project.</a>
+        </p>
+    </div>
 
 
 </body>
