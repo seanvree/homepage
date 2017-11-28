@@ -12,6 +12,7 @@ Custom Start/home page (multi Search) with live animated weather webapp and new 
 - Weather API provided via OpenWeatherMap.
 - Click-to-convert Celsius/Fahrenheit.
 - 5-day forecast data (Click on right icon).
+- Stand-alone weather app can be found here:  https://github.com/seanvree/Weather
 
 <br>
 
@@ -77,8 +78,6 @@ var unit = 'metric';
 
 
 ## Credits:
-
-- [seanvree](https://github.com/seanvree) (Windows Wizard)
 
 - [haltdev](https://github.com/haltdev) (Resident Cargo Cult Developer)
 
