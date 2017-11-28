@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-    margin: 1rem 0 0;
+    margin: 0rem 0 0;
 }
 
 html,
@@ -151,11 +151,6 @@ abbr[title] {
 b,
 strong {
     font-weight: 700;
-}
-
-h1 {
-    font-size: 2em;
-    margin: .67em 0;
 }
 
 small {
@@ -455,17 +450,17 @@ i {
     display: none !important;
 }
 
-/* .text {
+.text {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 3.6875em;
     height: 3.6875em;
     margin: -0.5em -1.84375em;
-    background: #fff;
+    background: transparent;
     border-radius: 50%;
     font-size: 10em;
-}  */
+}
 
 .cloud {
     position: absolute;
@@ -706,7 +701,7 @@ i {
 .stars:after {
     content: '';
     position: absolute;
-    top: 25%;
+    top: 20px;
     left: 70%;
     width: 0.25em;
     height: 0.25em;
@@ -821,13 +816,16 @@ i {
 
 /* Progress Bar */
 
+/*
 .pace {
     -webkit-pointer-events: none;
-    /* pointer-events: none; */
+    pointer-events: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    /* user-select: none; */
-}
+    user-select: none; 
+} 
+
+*/
 
 .pace-inactive {
     display: none;

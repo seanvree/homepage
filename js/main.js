@@ -29,7 +29,7 @@ function search(query, engine) {
     switch (engine) {
         case 'google':
         default:
-            var url = 'https://encrypted.google.com/search?q=' + query;
+            var url = 'https://google.com/search?q=' + query;
             break;
         case 'youtube':
             var url = 'https://www.youtube.com/results?search_query=' + query;
@@ -48,6 +48,15 @@ function search(query, engine) {
         $('<a>').attr('href', url).attr('target', '_blank')[0].click();
     }
 }
+
+/* $.extend($.ui.autocomplete.prototype.options, {
+    open: function (event, ui) {
+        $(this).autocomplete(".flexbox input").css({
+            "200 px": ($(this).outerWidth() + "px")
+        });
+    }
+}); */
+
 
 $(function() {
     setDate($);

@@ -1,229 +1,225 @@
-<!-- Doctype HTML5 -->
-
-<!--
-Created by:
-https://github.com/seanvree
--->
-
 <!doctype html>
-
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    Created by:
+    https://github.com/seanvree
+    -->
 
-    <meta name="theme-color" content="#464646">
-    <meta name="theme_color" content="#464646">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Search</title>
+        <meta name="theme-color" content="#464646">
+        <meta name="theme_color" content="#464646">
 
-    <meta name="description" content="Search">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+        <title>Search</title>
+        <meta name="Search" content="Search">
 
-    <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="icon" type="image/png" href="favicon.png">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css">
 
-    <script type="text/javascript" src="js/pace.js" async></script>
-
-    <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
-
-    <!-- <script src="js/plugins.js"></script> -->
-
-    <meta http-equiv="refresh" content="180">
-
-</head>
-
-<body style="background-color: #000000">
-
-    <div id="timeArea">
-        <p class="time">
-            <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
-            <span class="date"></span>
-        </p>
-    </div>
-
-    <div id="weather">
+        <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
 
         <script type="text/javascript" src="js/weather.js"></script>
-        
-        <div id="tempwrapper" class="tempwrapper">
-            <div id="unit" class="unit">&degF</div>
-            <div id="temp" class="temp"></div>
+
+        <script type="text/javascript" src="js/pace.js" async></script>
+
+        <meta http-equiv="refresh" content="180">
+
+    </head>
+
+    <body style="background-color: #000000">
+
+        <div id="timeArea">
+            <p class="time">
+                <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
+                <span class="date"></span>
+            </p>
         </div>
 
-        <div id="iconwrapper" class="iconwrapper">
-
-            <a id="weatherlink" href="#" target="_blank" rel="noopener">
-
-                <div class="icon unknown">
-                    <div class="text"></div>
-                </div>
-
-                <div class="icon sunny">
-                    <div class="sun">
-                        <div class="rays"></div>
-                    </div>
-                </div>
-
-                <div class="icon clear-night">
-                    <div class="moon"></div>
-                    <div class="stars"></div>
-                </div>
-
-                <div class="icon sunny-cloudy">
-                    <div class="cloud"></div>
-                    <div class="sun">
-                        <div class="rays"></div>
-                    </div>
-                </div>
-
-                <div class="icon moon-cloudy">
-                    <div class="cloud"></div>
-                    <div class="moon"></div>
-                </div>
-
-                <div class="icon overcast">
-                    <div class="cloud"></div>
-                </div>
-
-                <div class="icon moon-overcast">
-                    <div class="moon">
-                        <div class="cloud"></div>
-                    </div>
-                </div>
-
-                <div class="icon drizzle">
-                    <div class="cloud"></div>
-                    <div class="sun">
-                        <div class="rays"></div>
-                    </div>
-                    <div class="rain"></div>
-                </div>
-
-                <div class="icon moon-drizzle">
-                    <div class="cloud"></div>
-                    <div class="moon"></div>
-                    <div class="rain"></div>
-                </div>
-
-                <div class="icon rainy">
-                    <div class="cloud"></div>
-                    <div class="rain"></div>
-                </div>
-
-                <div class="icon moon-rainy">
-                    <div class="moon">
-                        <div class="cloud"></div>
-                    </div>
-                    <div class="rain"></div>
-                </div>
-
-                <div class="icon thunderstorm">
-                    <div class="cloud"></div>
-                    <div class="lightning">
-                        <div class="bolt"></div>
-                        <div class="bolt"></div>
-                    </div>
-                </div>
-
-                <div class="icon moon-thunderstorm">
-                    <div class="cloud"></div>
-                    <div class="moon"></div>
-
-                    <div class="lightning">
-                        <div class="bolt"></div>
-                        <div class="bolt"></div>
-                    </div>
-                </div>
-
-                <div class="icon sun-snow">
-                    <div class="cloud"></div>
-                    <div class="snow">
-                        <div class="flake"></div>
-                        <div class="flake"></div>
-                    </div>
-                </div>
-
-                <div class="icon moon-snow">
-                    <div class="moon">
-                        <div class="cloud"></div>
-                    </div>
-                    <div class="snow">
-                        <div class="flake"></div>
-                        <div class="flake"></div>
-                    </div>
-                </div>
-
-                <div class="icon foggy">
-                    <div class="cloud"></div>
-                    <div class="fog"></div>
-                </div>
-
-                <div class="icon foggy-night">
-                    <div class="cloud"></div>
-                    <div class="moon"></div>
-                    <div class="fog"></div>
-                </div>
-
-                <div class="icon windy">
-                    <div class="cloud"></div>
-                    <div class="cloud"></div>
-                </div>
-
-            </a>
-
-        </div>
-
-    </div>
-
-    <section class="flexbox">
-
-        <script type="text/javascript" src="js/main.js" async></script>
-
-        <div class="stretch">
-
-            <form action="#" method="post" autocomplete="off">
-                <input type="search" id="flexbox-input" name="s" value="" placeholder="Search" autofocus  />
-                <select id="flexbox-option">
-                    <option value="google">Google</option>
-                    <option value="youtube">YouTube</option>
-                    <option value="wiki">Wiki</option>
-                    <option value="imdb">IMDB</option>
-                </select>
-            </form>
-
-            <!-- BUILD YOUR OWN TICKER FROM www.feed.mikle.com and insert your custom link below after "SRC=" -->
-
-            <div id="fw-container">
-                <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="48421/"></script>
+        <div id="weather">
+            
+            <div id="tempwrapper" class="tempwrapper">
+                <div id="unit" class="unit">&degF</div>
+                <div id="temp" class="temp"></div>
             </div>
 
-            <!-- INSERT YOUR OWN TICKER FEED AND INSERT LINK ABOVE AFTER "SRC=" -->
+            <div id="iconwrapper" class="iconwrapper">
+
+                <a id="weatherlink" href="#" target="_blank" rel="noopener"><h1 class="hidden">Weather</h1>
+
+                    <div class="icon unknown">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="icon sunny">
+                        <div class="sun">
+                            <div class="rays"></div>
+                        </div>
+                    </div>
+
+                    <div class="icon clear-night">
+                        <div class="moon"></div>
+                        <div class="stars"></div>
+                    </div>
+
+                    <div class="icon sunny-cloudy">
+                        <div class="cloud"></div>
+                        <div class="sun">
+                            <div class="rays"></div>
+                        </div>
+                    </div>
+
+                    <div class="icon moon-cloudy">
+                        <div class="cloud"></div>
+                        <div class="moon"></div>
+                    </div>
+
+                    <div class="icon overcast">
+                        <div class="cloud"></div>
+                    </div>
+
+                    <div class="icon moon-overcast">
+                        <div class="moon">
+                            <div class="cloud"></div>
+                        </div>
+                    </div>
+
+                    <div class="icon drizzle">
+                        <div class="cloud"></div>
+                        <div class="sun">
+                            <div class="rays"></div>
+                        </div>
+                        <div class="rain"></div>
+                    </div>
+
+                    <div class="icon moon-drizzle">
+                        <div class="cloud"></div>
+                        <div class="moon"></div>
+                        <div class="rain"></div>
+                    </div>
+
+                    <div class="icon rainy">
+                        <div class="cloud"></div>
+                        <div class="rain"></div>
+                    </div>
+
+                    <div class="icon moon-rainy">
+                        <div class="moon">
+                            <div class="cloud"></div>
+                        </div>
+                        <div class="rain"></div>
+                    </div>
+
+                    <div class="icon thunderstorm">
+                        <div class="cloud"></div>
+                        <div class="lightning">
+                            <div class="bolt"></div>
+                            <div class="bolt"></div>
+                        </div>
+                    </div>
+
+                    <div class="icon moon-thunderstorm">
+                        <div class="cloud"></div>
+                        <div class="moon"></div>
+
+                        <div class="lightning">
+                            <div class="bolt"></div>
+                            <div class="bolt"></div>
+                        </div>
+                    </div>
+
+                    <div class="icon sun-snow">
+                        <div class="cloud"></div>
+                        <div class="snow">
+                            <div class="flake"></div>
+                            <div class="flake"></div>
+                        </div>
+                    </div>
+
+                    <div class="icon moon-snow">
+                        <div class="moon">
+                            <div class="cloud"></div>
+                        </div>
+                        <div class="snow">
+                            <div class="flake"></div>
+                            <div class="flake"></div>
+                        </div>
+                    </div>
+
+                    <div class="icon foggy">
+                        <div class="cloud"></div>
+                        <div class="fog"></div>
+                    </div>
+
+                    <div class="icon foggy-night">
+                        <div class="cloud"></div>
+                        <div class="moon"></div>
+                        <div class="fog"></div>
+                    </div>
+
+                    <div class="icon windy">
+                        <div class="cloud"></div>
+                        <div class="cloud"></div>
+                    </div>
+
+                </a>
+
+            </div>
 
         </div>
 
-    </section>
+        <section class="flexbox"> <h1 class="hidden">search</h1> 
 
-    <div id="counter">
-        <p>
-            <script type="text/javascript" src="php/hits.php"></script>
-        </p>
-    </div>
+            <div class="stretch">
 
+                <form action="#" method="post" autocomplete="off">
+                    <label for="flexbox-input" class="hidden">Search</label>
+                    <input type="search" id="flexbox-input" name="s" value="" placeholder="Search" autofocus  />
+                    <label for="flexbox-option" class="hidden">Select</label>
+                    <select id="flexbox-option">
+                        <option value="google">Google</option>
+                        <option value="youtube">YouTube</option>
+                        <option value="wiki">Wiki</option>
+                        <option value="imdb">IMDB</option>
+                    </select>
+                </form>
 
-    <div id="footer">
-        <p> This page was curated from <a href="https://github.com/seanvree/homepage"> THIS GitHub project.</a>
-        </p>
-    </div>
+                <!-- BUILD YOUR OWN TICKER FROM www.feed.mikle.com and insert your custom link below after "SRC=" -->
 
+                <div id="fw-container">
+                    <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="48421/"></script>
+                </div>
 
-</body>
+                <!-- INSERT YOUR OWN TICKER FEED AND INSERT LINK ABOVE AFTER "SRC=" -->
+
+            </div>
+
+        </section>
+
+        <div id="counter">
+            <p>
+                <script type="text/javascript" src="php/hits.php"></script>
+            </p>
+        </div>
+
+        <div id="footer">
+            <p> This page was curated from <a href="https://github.com/seanvree/homepage"> THIS GitHub project.</a>
+            </p>
+        </div>
+
+            <script type="text/javascript" src="js/vendor/popper.min.js" async></script>
+            <script type="text/javascript" src="js/vendor/bootstrap.min.js" async></script>
+            <script type="text/javascript" src="js/main.js" async></script>
+
+    </body>
 
 </html>
 
