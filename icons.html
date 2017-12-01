@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="en">
+
+
+<!--
+Created by:
+https://github.com/seanvree
+-->
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Weather Icons</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+
+    <style>
+        html {
+            overflow: visible;
+            height: 100%;
+        }
+        
+        body {
+            margin: 2%;
+            height: 100%;
+        }
+        
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+        
+        .flex>.icon {
+            width: 220px;
+            padding: 60px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            height: 50px;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #000000">
+
+    <div class="flex">
+
+        <div class="icon sunny">
+            <div class="sun">
+                <div class="rays"></div>
+            </div>
+        </div>
+
+        <div class="icon clear-night">
+            <div class="moon"></div>
+            <div class="stars"></div>
+        </div>
+
+        <div class="icon sunny-cloudy">
+            <div class="cloud"></div>
+            <div class="sun">
+                <div class="rays"></div>
+            </div>
+        </div>
+
+        <div class="icon moon-cloudy">
+            <div class="cloud"></div>
+            <div class="moon"></div>
+        </div>
+
+        <div class="icon overcast">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="icon moon-overcast">
+            <div class="moon">
+                <div class="cloud"></div>
+            </div>
+        </div>
+
+        <div class="icon drizzle">
+            <div class="cloud"></div>
+            <div class="sun">
+                <div class="rays"></div>
+            </div>
+            <div class="rain"></div>
+        </div>
+
+        <div class="icon moon-drizzle">
+            <div class="cloud"></div>
+            <div class="moon"></div>
+            <div class="rain"></div>
+        </div>
+
+        <div class="icon rainy">
+            <div class="cloud"></div>
+            <div class="rain"></div>
+        </div>
+
+        <div class="icon moon-rainy">
+            <div class="moon">
+                <div class="cloud"></div>
+            </div>
+            <div class="rain"></div>
+        </div>
+
+        <div class="icon thunderstorm">
+            <div class="cloud"></div>
+            <div class="lightning">
+                <div class="bolt"></div>
+                <div class="bolt"></div>
+            </div>
+        </div>
+
+        <div class="icon moon-thunderstorm">
+            <div class="cloud"></div>
+            <div class="moon"></div>
+
+            <div class="lightning">
+                <div class="bolt"></div>
+                <div class="bolt"></div>
+            </div>
+        </div>
+
+        <div class="icon sun-snow">
+            <div class="cloud"></div>
+            <div class="snow">
+                <div class="flake"></div>
+                <div class="flake"></div>
+            </div>
+        </div>
+
+        <div class="icon moon-snow">
+            <div class="moon">
+                <div class="cloud"></div>
+            </div>
+            <div class="snow">
+                <div class="flake"></div>
+                <div class="flake"></div>
+            </div>
+        </div>
+
+        <div class="icon foggy">
+            <div class="cloud"></div>
+            <div class="fog"></div>
+        </div>
+
+        <div class="icon foggy-night">
+            <div class="cloud"></div>
+            <div class="moon"></div>
+            <div class="fog"></div>
+        </div>
+
+        <div class="icon windy">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+        </div>
+
+    </div>
+
+
+    <!-- <div id="city" contenteditable></div> -->
+
+    <div id="footer">
+        <p>
+            <a href="https://twitter.com/seanvree"> Sean Vreeland</a> created <a href="https://github.com/seanvree/Weather"> this project</a>
+        </p>
+    </div>
+
+</body>
+
+</html>

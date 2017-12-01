@@ -1,0 +1,10 @@
+{
+    "theme_color": "#464646",
+    "start_url": "/",
+    "short_name": "Search",
+    "icons": [{
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }]
+}
