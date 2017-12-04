@@ -153,20 +153,6 @@ $(function() {
         }
     };
 
-/*     var searchByCity = function(event) {
-        var esc = event.which == 27;
-        var enter = event.which == 13;
-        var ele = event.target;
-
-        if (esc) {
-            resetCity();
-        } else if (enter) {
-            event.preventDefault();
-            var city = $city.text();
-            getWeather(null, null, city);
-            ele.blur();
-        }
-    }; */
 
     var resetCity = function() {
         $city.text(lastData.name).blur();
@@ -191,9 +177,19 @@ $(function() {
         $temp.text(newTemp.toFixed(0));
     };
 
-    // $("#city").keydown(searchByCity).focusout(resetCity);
     $("#unit").click(changeUnit);
     $("#temp").click(changeUnit);
     searchByLocation();
+
+    // How frequent API call is made for weather update//
+    //Max is 60 calls per 1 minute. Default is 30 seconds (2 calls per minute), or 30000(ms) //
+
+    var t = window.setInterval(searchByLocation, 30000);
+
+    function refreshDiv() {
+        $.ajaxSetup({
+            cache: false
+        });
+    };
 
 });
