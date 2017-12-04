@@ -32,11 +32,13 @@ Custom Start/home page (multi Search) with live animated weather and news ticker
 
 ## Notes:
 
-- Auto refresh default setting is set at **180** seconds. Change in **/index.html : LINE 34**
-
-
 - Add your desired background image file to /css/background.png.
 
+- Weather auto refresh default setting is set at **30** seconds (2 calls per minute), or 30000(ms). Max is 60 API calls per 1 minute.  Change in **/JS/weather.js : LINE 187:**
+
+```
+var t = window.setInterval(searchByLocation, 30000);
+```
 
 - Change the default temp unit from F to C by changing the following two items:
 
