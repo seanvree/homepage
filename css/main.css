@@ -325,7 +325,7 @@ th {
     font-size: 75px;
     font-weight: 400;
     margin-top: 0px;
-    margin-left: 70px;
+    margin-left: 35px;
     padding: 0 0 0 0;
     cursor: default;
 }
@@ -335,6 +335,7 @@ th {
     font-size: 30px;
     font-weight: 300;
     margin-top: -10px;
+    /* margin-left: 70px; */
     cursor: default;
 }
 
@@ -361,7 +362,7 @@ i {
      display: flex;
      position: relative;
      margin-top: -16px;
-     margin-left: 42px;
+     margin-left: 5px;
      justify-content: center;
      text-align: center;
      vertical-align: middle;
