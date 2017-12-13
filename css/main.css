@@ -41,6 +41,37 @@ body {
     font: 400 16px 'Open Sans', Arial;
 }
 
+@media (min-width: 858px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 780px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 702px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 724px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 623px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+
 
 /* Flexbox
 **************************************************************************/
@@ -318,25 +349,28 @@ th {
     bottom: 0;
     left: 0;
     margin-top: 25px;
+    margin-left: 30px;
     color: rgba(80, 80, 80, 0.50);
 }
 
 #timeArea .time {
-    font-size: 75px;
+    font-size: 4.0em;
     font-weight: 400;
     margin-top: 0px;
-    margin-left: 35px;
     padding: 0 0 0 0;
     cursor: default;
 }
 
 #timeArea .date {
     display: block;
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 0.4em;
+    font-weight: 500;
     margin-top: -10px;
-    /* margin-left: 70px; */
     cursor: default;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #colon {
@@ -357,12 +391,11 @@ i {
  /* weather Styles */
 
  #weather {
-     width: 250px;
-     height: 100px;
+     width: 200px;
+     height: 50px;
      display: flex;
      position: relative;
-     margin-top: -16px;
-     margin-left: 5px;
+     margin-left: 30px;
      justify-content: center;
      text-align: center;
      vertical-align: middle;
@@ -400,29 +433,28 @@ i {
 }
 
 .iconwrapper {
+    position: relative;
     width: 50%;
-    float: left;
+    height: 100%;
     margin: auto;
+    float: left;
 }
 
 .icon {
-    position: relative;
-    font-size: .7em;
-    /* control icon size here */
-    height: 100%;
-    width: 150px;
-    right: 50px;
-    top: -5px;
+    position: absolute;
+    top: 18px;
+    left: 15px;
     float: left;
-    margin: auto;
     clear: both;
+    line-height: 0em;
+    /* control weather icon size here */
+    font-size: .5em;
 }
 
 .tempwrapper {
     position: relative;
     width: 50%;
     height: 100%;
-    vertical-align: middle;
     float: right;
 }
 
@@ -431,19 +463,19 @@ i {
     top: 20px;
     right: 40px;
     float: right;
-    vertical-align: middle;
+    line-height: 0em;
     cursor: pointer;
-    font-size: 45px;
+    font-size: 3em;
 }
 
 .unit {
     position: absolute;
-    top: 25px;
     right: 20px;
     float: right;
     clear: both;
     cursor: pointer;
     font-size: 20px;
+    line-height: 1em;
 }
 
 .hidden {
