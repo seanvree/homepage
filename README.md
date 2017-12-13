@@ -19,7 +19,7 @@ Custom Start/home page (multi Search) with live animated weather and news ticker
  
 ## Screenshot Desktop:
 
- <img src="https://i.imgur.com/I4MiBPO.png">
+ <img src="https://i.imgur.com/tdlOQRF.png">
 
 ## Screenshot Mobile:
 
