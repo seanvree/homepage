@@ -2,7 +2,7 @@ var shiftDown = false;
 
 function setDate($) {
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        months = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'August', 'Sep', 'Oct', 'Nov', 'Dec'],
         d = new Date(),
         currentDate = days[d.getDay()] + ', ' + d.getDate() + ' ' + months[d.getMonth()],
         mins = (d.getMinutes() > 9) ? d.getMinutes() : '0' + d.getMinutes(),
