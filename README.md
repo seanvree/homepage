@@ -27,8 +27,7 @@ Custom Start/home page (multi Search) with live animated weather and news ticker
 
 ## Animated Icons :
 
-<img src="https://i.imgur.com/Nf8H56C.png[/img]">
-
+<img src="https://i.imgur.com/0iamcsT.gif[/img]">
 
 ## Notes:
 
