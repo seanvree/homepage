@@ -10,36 +10,32 @@
     padding: 0;
 }
 
+html,
 body {
-    margin: 1rem;
+    background: #000000;
+    height: 100%;
+    margin: 0;
+    transition: opacity .8s ease;
+    background: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+    color: #fff;
+    font-family: sans-serif;
+    font: 400 16px 'Open Sans', Arial;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow: hidden;
 }
 
 h1 {
     margin: 0rem 0 0;
 }
 
-html,
-body {
-    height: 100%;
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    overflow: hidden;
-}
-
-body {
-    margin: 0;
-    background: url(background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: #fff;
-    font: 400 16px 'Open Sans', Arial;
-}
 
 @media (min-width: 858px) {
     html {
