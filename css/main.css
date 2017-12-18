@@ -105,7 +105,6 @@ h1 {
 }
 
 .flexbox div select {
-    width: 110px;
     height: 60px;
     padding-left: 8px;
     padding-right: .2em;
