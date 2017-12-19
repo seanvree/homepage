@@ -15,7 +15,8 @@ body {
     background: #000000;
     height: 100%;
     margin: 0;
-    transition: opacity .8s ease;
+    opacity: 1;
+    transition: 1.5s opacity;
     background: url("background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,6 +31,15 @@ body {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     overflow: hidden;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+html {
+    background-color: black;
 }
 
 h1 {
@@ -827,7 +837,7 @@ i {
 #footer {
     position: fixed;
     bottom: 0;
-    width: 350px;
+    width: 300px;
     height: 30px;
     padding-top: 10px;
     margin-bottom: 10px;
