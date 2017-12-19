@@ -37,6 +37,13 @@
 
     <body style="background-color: #000000">
 
+        <script>
+            document.body.className += ' fade-out';
+            $(function () {
+                $('body').removeClass('fade-out');
+            });
+        </script>
+
         <div id="timeArea">
             <p class="time">
                 <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
@@ -217,7 +224,7 @@
 
         <script src="js/vendor/popper.min.js" async></script>
         <script src="js/vendor/bootstrap.min.js" async></script>
-        <script src="js/main.js" async></script>
+        <script src="js/main.js" async></script> 
 
     </body>
 
