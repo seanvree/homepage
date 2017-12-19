@@ -44,7 +44,7 @@ var t = window.setInterval(searchByLocation, 30000);
 
 - Change the default temp unit from F to C by changing the following two items:
 
-**/index.html: LINE 50:**
+**/index.html: LINE 57:**
 
 ```
 <div id="unit" class="unit">&degC</div>
@@ -64,7 +64,7 @@ var unit = 'metric';
  
  - **TICKER DATA:** You will need to create your own FREE feed.mikle ticker widget where you can customize your news sources and style.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image "/img/feedmikle.jpg" located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined below. 
  
- feed.mikle.com widget ticker link in **/index.html : Line 198**:  
+ feed.mikle.com widget ticker link in **/index.html : Line 205**:  
  ```
  " <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script> "
  ```
