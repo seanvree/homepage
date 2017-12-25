@@ -396,7 +396,7 @@ i {
  /* weather Styles */
 
  #weather {
-     width: 200px;
+     width: 12em;
      height: 50px;
      display: flex;
      position: relative;
@@ -448,7 +448,7 @@ i {
 .icon {
     position: absolute;
     top: 18px;
-    left: 15px;
+    left: 10px;
     float: left;
     clear: both;
     line-height: 0em;
@@ -465,22 +465,22 @@ i {
 
 .temp {
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top: 18px;
+    right: 1.3em;
     float: right;
     line-height: 0em;
     cursor: pointer;
-    font-size: 3em;
+    font-size: 2.4em;
 }
 
 .unit {
     position: absolute;
-    right: 20px;
+    right: 1.4em;
     float: right;
     clear: both;
     cursor: pointer;
     font-size: 20px;
-    line-height: 1em;
+    line-height: 1.4em;
 }
 
 .hidden {
