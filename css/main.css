@@ -7,7 +7,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 html,
@@ -77,72 +76,196 @@ h1 {
     }
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #252525;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #252525;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #8E8B8B;
+}
+
+
+  /* ToolTips */
+
+
+[data-tooltip] {
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    /* pointer-events: none; */
+    transition: all 0.15s cubic-bezier(0.5, 1, 0.25, 1);
+    z-index: 3;
+}
+
+[data-tooltip]:before {
+    padding: 5px;
+    width: 80px;
+    border-radius: 3px;
+    background: rgba(21, 21, 21, 0.70);
+    color: rgb(87, 171, 250);
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+[data-tooltip]:after {
+    border: 8px solid transparent;
+    width: 0;
+    content: "";
+    font-size: 0;
+    line-height: 0;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+[data-tooltip].t-top:before {
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 5px;
+    transform: translateX(-50%);
+}
+
+[data-tooltip].t-top:after {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 8px solid #000;
+    border-bottom: none;
+}
+
+[data-tooltip].t-top:hover:before,
+[data-tooltip].t-top:hover:after {
+    transform: translateX(-50%) translateY(-5px);
+}
+
+
+
+[data-tooltip].t-bottom:before {
+    top: 100%;
+    left: 50%;
+    margin-top: 5px;
+    transform: translateX(-50%);
+}
+
+[data-tooltip].t-bottom:after {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 8px solid #000;
+    border-top: none;
+}
+
+[data-tooltip].t-bottom:hover:before,
+[data-tooltip].t-bottom:hover:after {
+    transform: translateX(-50%) translateY(5px);
+}
+
+
+ [data-tooltip].t-sm:before {
+     width: 70px;
+ }
+
 
 
 /* Flexbox
 **************************************************************************/
 
 .flexbox {
-    padding-right: 15px;
-    padding-left: 15px;
-    max-height: 500px;
-    margin: auto;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 700px;
+    max-width: 90vw;
+    max-height: 500px;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
     z-index: 50;
 }
 
-.flexbox .stretch {
-    width: 700px;
-    max-width: 90vw;
-    background-color: rgba(21, 21, 21, 0.70);
-    height: 60px;
-    margin-left: auto;
-    margin-right: auto;
+
+#formstretch {
+    border: 0;
 }
 
-.flexbox div input {
-    max-width: 588px;
-    width: calc(100% - 140px);
+
+#inputlabel {
+    border: 0;
+    width: calc(100% - 115px);
+    z-index: 200;
+}
+
+
+#flexbox-input {
+    width: calc(100% - 4px);
     border: 0;
     height: 60px;
-    padding-left: 1em;
+    padding-left: .5em;
     color: #E4E2E2;
     font-size: 1.5em;
-    background-color: transparent;
+    background-color: rgba(21, 21, 21, 0.70);
+    font-weight: 300;
 }
 
-.flexbox div select {
-    height: 60px;
+#optionlabel {
+    border: 0;
+    float: right;
+    width: 106px;
+}
+
+
+#flexbox-option {
+    height: 62px;
+    width: 100%;
+    background-color: rgba(21, 21, 21, 0.70);
+    padding-left: 8px;
+    border: 0;
+    color: rgb(87, 171, 250);
+    font-size: 1.1em;
+    font-weight: 300;
+    text-align-last: center;
+    cursor: pointer;
+}
+
+ .flexbox div select {
+    height: 56px;
     padding-left: 8px;
     padding-right: .2em;
     border: 0;
+    background-color: rgba(21, 21, 21, 0.70);
     color: rgb(87, 171, 250);
-    font-size: 1.2em;
-    font-weight: 500;
-    text-align-last: center;
-    background-color: transparent;
-    float: right;
-    cursor: pointer;
-    
-}
-
-.flexbox option {
-    background-color: rgba(21, 21, 21, 0.80);
-    color: #E4E2E2;
-    font-size: .8em;
+    font-size: 1.1em;
     font-weight: 300;
-    border: 0;
-    cursor: pointer;
     text-align-last: center;
-    text-align: center;
-    align-items: center;
-    clear: both;
-}
+    cursor: pointer;
 
-
+} 
 
 article,
 aside,
@@ -285,6 +408,7 @@ input[type=search] {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+    z-index: 1005;
 }
 
 input[type=search]::-webkit-search-cancel-button {
@@ -353,7 +477,7 @@ th {
 #timeArea {
     bottom: 0;
     left: 0;
-    margin-top: 25px;
+    margin-top: 1em;
     margin-left: 30px;
     color: rgba(80, 80, 80, 0.50);
 }
@@ -393,11 +517,11 @@ i {
 }
 
 
- /* weather Styles */
+       /* weather Styles */
 
  #weather {
-     width: 12em;
-     height: 50px;
+     width: 9em;
+     height: 2.5em;
      display: flex;
      position: relative;
      margin-left: 30px;
@@ -407,12 +531,15 @@ i {
  }
 
 #iconwrapper {
+    position: relative;
+    display: block;
+    margin: auto;
     height: 100%;
     width: 50%;
-    z-index: 3;
-    display: block;
     float: left;
+    z-index: 3;
 }
+
 
 #tempwrapper {
     height: 100%;
@@ -437,23 +564,19 @@ i {
     width: 100%;
 }
 
-.iconwrapper {
-    position: relative;
-    width: 50%;
-    height: 100%;
-    margin: auto;
-    float: left;
-}
-
 .icon {
     position: absolute;
     top: 18px;
-    left: 10px;
+    left: 50%;
     float: left;
     clear: both;
     line-height: 0em;
-    /* control weather icon size here */
+    
+        /* control weather icon size below */
+
     font-size: .5em;
+            
+        /* control weather icon size above */
 }
 
 .tempwrapper {
@@ -463,19 +586,27 @@ i {
     float: right;
 }
 
-.temp {
+#temp {
     position: absolute;
-    top: 18px;
-    right: 1.3em;
+    right: .6em;
     float: right;
-    line-height: 0em;
+    line-height: 1em;
     cursor: pointer;
     font-size: 2.4em;
+    z-index: 5;
 }
+
+#tooltiphidden {
+    width: 50%;
+    color: pink;
+    font-size: 1.5em;
+    z-index: 0;
+}
+
 
 .unit {
     position: absolute;
-    right: 1.4em;
+    right: .2em;
     float: right;
     clear: both;
     cursor: pointer;
@@ -804,9 +935,8 @@ i {
 
 #fw-container {
     max-width: 700px;
-    margin-top: 30px;
+    margin-top: 5%;
     height: 60px;
-    padding-left: 10px;
     text-align: left;
     font-family: 'Noto Sans', Helvetica, sans-serif;
     border-radius: 0px;
@@ -837,7 +967,7 @@ i {
 #footer {
     position: fixed;
     bottom: 0;
-    width: 300px;
+    width: 25em;
     height: 30px;
     padding-top: 10px;
     margin-bottom: 10px;
