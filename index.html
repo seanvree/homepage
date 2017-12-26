@@ -1,12 +1,16 @@
+
 <!doctype html>
 <html lang="en">
 
     <!--
-    Created by:
-    https://github.com/seanvree
+
+                  Created by:
+          https://github.com/seanvree
+
     -->
 
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +31,7 @@
 
         <script src="js/vendor/jquery-3.2.1.min.js"></script>
 
-        <script src="js/weather.js"></script>
+        <script src="js/weather.js" async></script>
 
         <script src="js/pace.js" async></script>
 
@@ -53,12 +57,12 @@
 
         <div id="weather">
             
-            <div id="tempwrapper" class="tempwrapper">
+            <div id="tempwrapper" class="tempwrapper" >
                 <div id="unit" class="unit">&degF</div>
-                <div id="temp" class="temp"></div>
+                <div id="temp" class="t-bottom t-sm" data-tooltip="Convert"></div>
             </div>
 
-            <div id="iconwrapper" class="iconwrapper">
+            <div id="iconwrapper" class="t-bottom t-sm" data-tooltip="Forecast">
 
                 <a id="weatherlink" href="#" target="_blank" rel="noopener"><h1 class="hidden">Weather</h1>
 
@@ -183,33 +187,39 @@
 
         </div>
 
-        <section class="flexbox"> <h1 class="hidden">search</h1> 
 
-            <div class="stretch">
+        <div class="flexbox">
 
-                <form action="#" method="post" autocomplete="off">
-                    <label for="flexbox-input" class="hidden">Search</label>
-                    <input type="search" id="flexbox-input" name="s" value="" placeholder="Search" autofocus  />
-                    <label for="flexbox-option" class="hidden">Select</label>
+            <form id="formstretch" action="#" method="post" autocomplete="off">
+
+                <label id="inputlabel" for="flexbox-input" class="t-top t-sm" data-tooltip="Search">
+                    
+                    <input type="search" id="flexbox-input" name="s" value="" placeholder="Search" autofocus />
+                
+                </label>
+
+                <label id="optionlabel" for="flexbox-option" class="t-top t-sm" data-tooltip="Select">
+
                     <select id="flexbox-option">
                         <option value="google">Google</option>
                         <option value="youtube">YouTube</option>
                         <option value="wiki">Wiki</option>
                         <option value="imdb">IMDB</option>
                     </select>
-                </form>
 
-                <!-- BUILD YOUR OWN TICKER FROM www.feed.mikle.com and insert your custom link below after "SRC=" -->
+                </label>
 
-                <div id="fw-container">
-                    <script src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="48421/"></script>
-                </div>
+            </form>
 
-                <!-- INSERT YOUR OWN TICKER FEED AND INSERT LINK ABOVE AFTER "SRC=" -->
+            <!-- BUILD YOUR OWN TICKER FROM www.feed.mikle.com and insert your custom link below after "SRC=" -->
 
+            <div id="fw-container">
+                <script src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="48421/"></script>
             </div>
 
-        </section>
+            <!-- INSERT YOUR OWN TICKER FEED AND INSERT LINK ABOVE AFTER "SRC=" -->
+
+        </div>
 
         <div id="counter">
             <p>
@@ -229,4 +239,3 @@
     </body>
 
 </html>
-
