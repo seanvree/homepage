@@ -70,7 +70,7 @@ $(function() {
     $('.flexbox-input, .flexbox select').keydown(function(e) {
         if (e.keyCode == 13) {
             e.preventDefault();
-            var query = $('.flexbox-input').val();
+            var query = $('.flexbox input').val();
             var engine = $('.flexbox select option:selected').val();
             search(query, engine);
         }
