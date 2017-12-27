@@ -67,7 +67,7 @@ $(function() {
         }
     });
 
-    $('.flexbox-input, .flexbox select').keydown(function(e) {
+    $('.flexbox input, .flexbox select').keydown(function(e) {
         if (e.keyCode == 13) {
             e.preventDefault();
             var query = $('.flexbox input').val();
