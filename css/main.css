@@ -163,8 +163,6 @@ body::-webkit-scrollbar-thumb {
     transform: translateX(-50%) translateY(-5px);
 }
 
-
-
 [data-tooltip].t-bottom:before {
     top: 100%;
     left: 50%;
@@ -184,7 +182,6 @@ body::-webkit-scrollbar-thumb {
 [data-tooltip].t-bottom:hover:after {
     transform: translateX(-50%) translateY(5px);
 }
-
 
  [data-tooltip].t-sm:before {
      width: 70px;
@@ -339,6 +336,7 @@ p {
     margin-bottom: 0px;
 }
 
+
 button,
 input,
 optgroup,
@@ -414,6 +412,20 @@ input[type=search] {
 input[type=search]::-webkit-search-cancel-button {
     -webkit-appearance: searchfield-cancel-button;
 }
+
+ input:-webkit-autofill,
+ input:-webkit-autofill:hover,
+ input:-webkit-autofill:focus input:-webkit-autofill,
+ textarea:-webkit-autofill,
+ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+ select:-webkit-autofill,
+ select:-webkit-autofill:hover,
+ select:-webkit-autofill:focus {
+     border: none;
+     -webkit-text-fill-color: #E4E2E2;
+     transition: background-color 5000s ease-in-out .5s;
+ }
+
 
 fieldset {
     border: 1px solid silver;
