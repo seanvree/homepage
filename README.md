@@ -7,7 +7,7 @@ Custom Start/home page (multi Search) with live animated weather and news ticker
 
 # Features:
 - Mobile ready
-- Self hosted, VERY minimal/lightweight
+- Self hosted, VERY minimal(ish)/lightweight
 - Live DTG
 - Fully functional multi-search input form (Google, YouTube, Wiki, IMDB)
 - Live custom news ticker provided by: feed.mikle.com (free)
@@ -36,7 +36,9 @@ Custom Start/home page (multi Search) with live animated weather and news ticker
 
 - Add your desired background image file to /css/background.png.
 
-- Weather auto refresh default setting is set at **30** seconds (2 calls per minute), or 30000(ms). Max is 60 API calls per 1 minute.  Change in **/JS/weather.js : LINE 187:**
+- Weather auto refresh default setting is set at **30** seconds (2 calls per minute), or 30000(ms). Max is 60 API calls per 1 minute. Change at the following location:
+
+**/js/weather.js : LINE 187:**
 
 ```
 var t = window.setInterval(searchByLocation, 30000);
@@ -56,6 +58,14 @@ var t = window.setInterval(searchByLocation, 30000);
 var unit = 'metric';
 ```
 
+- Turn OFF search auto-complete by changing the value < "autocomplete="OFF" > at the following location:
+
+**/index.html: LINE 197:**
+
+```
+<input type="search" id="flexbox-input" name="s" value="" placeholder="Search..." autocomplete="OFF" autofocus />
+```
+
 
 - **WEATHER DATA**: Acquire your FREE API key and replace the default key in **/js/weather.js : LINE 11**
  https://home.openweathermap.org/users/sign_up
@@ -68,8 +78,6 @@ var unit = 'metric';
  ```
  " <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script> "
  ```
- 
-
 
 <br>
 
