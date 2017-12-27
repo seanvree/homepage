@@ -49,15 +49,6 @@ function search(query, engine) {
     }
 }
 
-/* $.extend($.ui.autocomplete.prototype.options, {
-    open: function (event, ui) {
-        $(this).autocomplete(".flexbox input").css({
-            "200 px": ($(this).outerWidth() + "px")
-        });
-    }
-}); */
-
-
 $(function() {
     setDate($);
 
@@ -76,10 +67,10 @@ $(function() {
         }
     });
 
-    $('.flexbox input, .flexbox select').keydown(function(e) {
+    $('.flexbox-input, .flexbox select').keydown(function(e) {
         if (e.keyCode == 13) {
             e.preventDefault();
-            var query = $('.flexbox input').val();
+            var query = $('.flexbox-input').val();
             var engine = $('.flexbox select option:selected').val();
             search(query, engine);
         }
