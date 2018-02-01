@@ -1,6 +1,5 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
-
 /* Reset
 **************************************************************************/
 
@@ -11,19 +10,19 @@
 
 html,
 body {
-    background: #000000;
+    /* background: #000000; */
     height: 100%;
     margin: 0;
     opacity: 1;
-    transition: 1.5s opacity;
-    background: url("background.jpg");
+    transition: 1s opacity;
+    /* background: url("background.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover; 
+    -o-background-size: cover;
     color: #fff;
     font-family: sans-serif;
     font: 400 16px 'Open Sans', Arial;
@@ -44,7 +43,6 @@ html {
 h1 {
     margin: 0rem 0 0;
 }
-
 
 @media (min-width: 858px) {
     html {
@@ -95,9 +93,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #8E8B8B;
 }
 
-
-  /* ToolTips */
-
+/* ToolTips */
 
 [data-tooltip] {
     cursor: pointer;
@@ -142,7 +138,6 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
 }
 
-
 [data-tooltip].t-top:before {
     bottom: 100%;
     left: 50%;
@@ -183,11 +178,9 @@ body::-webkit-scrollbar-thumb {
     transform: translateX(-50%) translateY(5px);
 }
 
- [data-tooltip].t-sm:before {
-     width: 70px;
- }
-
-
+[data-tooltip].t-sm:before {
+    width: 70px;
+}
 
 /* Flexbox
 **************************************************************************/
@@ -206,18 +199,15 @@ body::-webkit-scrollbar-thumb {
     z-index: 50;
 }
 
-
 #formstretch {
     border: 0;
 }
-
 
 #inputlabel {
     border: 0;
     width: calc(100% - 115px);
     z-index: 200;
 }
-
 
 #flexbox-input {
     width: calc(100% - 4px);
@@ -236,7 +226,6 @@ body::-webkit-scrollbar-thumb {
     width: 106px;
 }
 
-
 #flexbox-option {
     height: 62px;
     width: 100%;
@@ -250,7 +239,7 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
- .flexbox div select {
+.flexbox div select {
     height: 56px;
     padding-left: 8px;
     padding-right: .2em;
@@ -261,8 +250,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 300;
     text-align-last: center;
     cursor: pointer;
-
-} 
+}
 
 article,
 aside,
@@ -289,16 +277,18 @@ a {
     background-color: transparent;
 }
 
- a:active,
+a:active,
 a:hover {
     outline: 10px;
 }
+
 a:link {
     color: rgb(150, 150, 150);
 }
+
 a:visited {
-    color:rgb(150, 150, 150);
-} 
+    color: rgb(150, 150, 150);
+}
 
 abbr[title] {
     border-bottom: 1px dotted;
@@ -317,7 +307,6 @@ img {
     border: 0;
 }
 
-
 hr {
     display: block;
     height: 1px;
@@ -327,7 +316,6 @@ hr {
     padding: 0;
 }
 
-
 pre {
     overflow: hidden;
 }
@@ -335,7 +323,6 @@ pre {
 p {
     margin-bottom: 0px;
 }
-
 
 button,
 input,
@@ -413,19 +400,18 @@ input[type=search]::-webkit-search-cancel-button {
     -webkit-appearance: searchfield-cancel-button;
 }
 
- input:-webkit-autofill,
- input:-webkit-autofill:hover,
- input:-webkit-autofill:focus input:-webkit-autofill,
- textarea:-webkit-autofill,
- textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
- select:-webkit-autofill,
- select:-webkit-autofill:hover,
- select:-webkit-autofill:focus {
-     border: none;
-     -webkit-text-fill-color: #E4E2E2;
-     transition: background-color 5000s ease-in-out .5s;
- }
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: none;
+    -webkit-text-fill-color: #E4E2E2;
+    transition: background-color 5000s ease-in-out .5s;
+}
 
 fieldset {
     border: 1px solid silver;
@@ -486,15 +472,24 @@ th {
     width: 50%;
 }
 
-#timeArea {
+.timeArea {
     bottom: 0;
     left: 0;
     margin-top: 1em;
     margin-left: 30px;
-    color: rgba(80, 80, 80, 0.50);
+    /* color: rgba(80, 80, 80, 0.90); */
 }
 
-#timeArea .time {
+.day {
+
+    color: rgba(100, 100, 100, 0.75);
+}
+
+.night {
+    color: rgba(37, 37, 37, 0.75);
+}
+
+.timeArea .time {
     font-size: 4.0em;
     font-weight: 400;
     margin-top: 0px;
@@ -502,7 +497,7 @@ th {
     cursor: default;
 }
 
-#timeArea .date {
+.timeArea .date {
     display: block;
     font-size: 0.4em;
     font-weight: 500;
@@ -528,19 +523,18 @@ i {
     text-transform: none;
 }
 
+/* weather Styles */
 
-       /* weather Styles */
-
- #weather {
-     width: 9em;
-     height: 2.5em;
-     display: flex;
-     position: relative;
-     margin-left: 30px;
-     justify-content: center;
-     text-align: center;
-     vertical-align: middle;
- }
+#weather {
+    width: 9em;
+    height: 2.5em;
+    display: flex;
+    position: relative;
+    margin-left: 30px;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
 
 #iconwrapper {
     position: relative;
@@ -552,14 +546,13 @@ i {
     z-index: 3;
 }
 
-
 #tempwrapper {
     height: 100%;
     width: 50%;
     z-index: 4;
     display: block;
     float: right;
-    color: rgba(80, 80, 80, 0.50);
+    /* color: rgba(80, 80, 80, 0.90); */
 }
 
 #tempwrapper #unit:hover {
@@ -583,12 +576,9 @@ i {
     float: left;
     clear: both;
     line-height: 0em;
-    
-        /* control weather icon size below */
-
+    /* control weather icon size below */
     font-size: .5em;
-            
-        /* control weather icon size above */
+    /* control weather icon size above */
 }
 
 .tempwrapper {
@@ -614,7 +604,6 @@ i {
     font-size: 1.5em;
     z-index: 0;
 }
-
 
 .unit {
     position: absolute;
@@ -943,7 +932,7 @@ i {
     animation-delay: -6s;
 }
 
- /* News ticker */
+/* News ticker */
 
 #fw-container {
     max-width: 700px;
@@ -974,7 +963,6 @@ i {
     text-shadow: 1px 1px 1px black;
     z-index: 20;
 }
-
 
 #footer {
     position: fixed;
@@ -1053,50 +1041,7 @@ i {
     -o-animation: pace-spinner 400ms linear infinite;
     animation: pace-spinner 400ms linear infinite;
 }
-/* 
-@-webkit-keyframes pace-spinner {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
 
-@-moz-keyframes pace-spinner {
-    0% {
-        -moz-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -moz-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@-o-keyframes pace-spinner {
-    0% {
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@-ms-keyframes pace-spinner {
-    0% {
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-} */
 
 @keyframes pace-spinner {
     0% {
@@ -1108,8 +1053,6 @@ i {
         transform: rotate(360deg);
     }
 }
-
-
 
 /* Weather Animations */
 
@@ -1188,6 +1131,5 @@ i {
         transform: translateX(0.5em);
     }
 }
-
 
 /*# sourceMappingURL=main.css.map */
