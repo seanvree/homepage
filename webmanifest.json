@@ -1,0 +1,16 @@
+{
+    "short_name": "Search",
+    "name": "Search",
+    "start_url": "index.html",
+    "icons": [
+        {
+            "src": "favicon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "background_color": "#000000",
+    "theme_color": "#464646",
+    "display": "standalone",
+    "orientation": "portrait"
+}

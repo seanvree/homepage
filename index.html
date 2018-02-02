@@ -6,6 +6,7 @@
 
                   Created by:
           https://github.com/seanvree
+          last updated: 01 FEB 2018
 
     -->
 
@@ -15,13 +16,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="theme-color" content="#464646">
-        <meta name="theme_color" content="#464646">
+        <meta name="theme-color" content="#464646" />
+        <meta name="theme_color" content="#464646" />
 
         <title>Search</title>
         <meta name="Search" content="Search">
 
-        <link rel="manifest" href="site.webmanifest">
+        <link rel="manifest" href="webmanifest.json">
         <link rel="apple-touch-icon" href="favicon.png">
         <link rel="icon" type="image/png" href="favicon.png">
 
@@ -42,13 +43,30 @@
     <body style="background-color: #000000">
 
         <script>
+            var currentTime = new Date().getHours();
+            if (8 <= currentTime && currentTime < 20) {
+                if (document.body) {
+                    document.body.background = "css/background_day.jpg";
+                    document.body.className = " day";
+                }
+
+            } else {
+                if (document.body) {
+                    document.body.background = "css/background_night.jpg";
+                    document.body.className = " night";
+                }
+            }
+        </script>
+
+        <script>
             document.body.className += ' fade-out';
             $(function () {
                 $('body').removeClass('fade-out');
             });
         </script>
 
-        <div id="timeArea">
+
+        <div class="timeArea">
             <p class="time">
                 <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
                 <span class="date"></span>

@@ -4,6 +4,11 @@ Custom Start/home page (multi Search) with live animated weather and news ticker
 
 **DEMO**:  https://seanvree.github.io/homepage/
 
+**Last Updated**: 01 FEB 2018:  
+- Added background auto change (day/night)
+- Script re-reordering
+- Display format change
+
 
 # Features:
 - Mobile ready
@@ -14,7 +19,7 @@ Custom Start/home page (multi Search) with live animated weather and news ticker
 - Weather data auto generated via Geolocation.
 - Weather API provided via OpenWeatherMap.
 - Click-to-convert Celsius/Fahrenheit.
-- 5-day forecast data (Click on right icon).
+- 5-day forecast data (Click on left icon).
 - Stand-alone weather app can be found here:  https://github.com/seanvree/Weather
 
 <br>
@@ -34,7 +39,10 @@ Custom Start/home page (multi Search) with live animated weather and news ticker
 
 ## Notes:
 
-- Add your desired background image file to /css/background.png.
+- Add your desired background image files
+**/inex.html: LINE 49 & 55**
+
+_NOTE_: Background DAY displays from 0800-2000 local browser time
 
 - Weather auto refresh default setting is set at **30** seconds (2 calls per minute), or 30000(ms). Max is 60 API calls per 1 minute. Change at the following location:
 
@@ -46,7 +54,7 @@ var t = window.setInterval(searchByLocation, 30000);
 
 - Change the default temp unit from F to C by changing the following two items:
 
-**/index.html: LINE 61:**
+**/index.html: LINE 79:**
 
 ```
 <div id="unit" class="unit">&degC</div>
@@ -60,7 +68,7 @@ var unit = 'metric';
 
 - Turn OFF search auto-complete by changing the value < "autocomplete="OFF" > at the following location:
 
-**/index.html: LINE 197:**
+**/index.html: LINE 215:**
 
 ```
 <input type="search" id="flexbox-input" name="s" value="" placeholder="Search..." autocomplete="OFF" autofocus />
@@ -69,12 +77,13 @@ var unit = 'metric';
 
 - **WEATHER DATA**: Acquire your FREE API key and replace the default key in **/js/weather.js : LINE 11**
  https://home.openweathermap.org/users/sign_up
+```
+   var weatherApi = 'https://api.openweathermap.org/data/2.5/weather?callback=?';
+```
+
+- **TICKER DATA:** You will need to create your own FREE feed.mikle ticker widget where you can customize your news sources and style.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image "/img/feedmikle.jpg" located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined below. 
  
- 
- 
- - **TICKER DATA:** You will need to create your own FREE feed.mikle ticker widget where you can customize your news sources and style.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image "/img/feedmikle.jpg" located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined below. 
- 
- feed.mikle.com widget ticker link in **/index.html : Line 217**:  
+ feed.mikle.com widget ticker link in **/index.html : Line 235**:  
  ```
  " <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script> "
  ```

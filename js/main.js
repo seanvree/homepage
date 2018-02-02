@@ -4,13 +4,13 @@ function setDate($) {
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
         months = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'August', 'Sep', 'Oct', 'Nov', 'Dec'],
         d = new Date(),
-        currentDate = days[d.getDay()] + ', ' + d.getDate() + ' ' + months[d.getMonth()],
+        currentDate = days[d.getDay()] + ' | ' + d.getDate() + ' | ' + months[d.getMonth()],
         mins = (d.getMinutes() > 9) ? d.getMinutes() : '0' + d.getMinutes(),
         currentTime = d.getHours() + ':' + mins,
-        previousTime = $('#timeArea .time .timeInner').html();
+        previousTime = $('.timeArea .time .timeInner').html();
     if (currentTime != previousTime) {
-        $('#timeArea .time .timeInner').html(currentTime);
-        $('#timeArea .time .date').html(currentDate);
+        $('.timeArea .time .timeInner').html(currentTime);
+        $('.timeArea .time .date').html(currentDate);
     }
     
     var toggle = true;
