@@ -6,21 +6,24 @@ Custom Start/home page (multi Search) with live animated weather and news ticker
 
 **Last Updated**: 01 FEB 2018:  
 - Added background auto change (day/night)
-- Script re-reordering
-- Display format change
+- Script reordering
+- Date display format change
 
 
 # Features:
-- Mobile ready
 - Self hosted, VERY minimal(ish)/lightweight
-- Live DTG
+- Mobile ready
 - Fully functional multi-search input form (Google, YouTube, Wiki, IMDB)
 - Live custom news ticker provided by: feed.mikle.com (free)
+- Background auto change (day/night)
+- Live DTG
 - Weather data auto generated via Geolocation.
 - Weather API provided via OpenWeatherMap.
 - Click-to-convert Celsius/Fahrenheit.
-- 5-day forecast data (Click on left icon).
+- 5-day forecast data (Click on right weather icon).
+- Page hit counter (bottom right)
 - Stand-alone weather app can be found here:  https://github.com/seanvree/Weather
+- Check out my other self-hosted apps here:  https://github.com/Monitorr
 
 <br>
 
