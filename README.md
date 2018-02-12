@@ -4,7 +4,9 @@ Custom Start/home page (multi Search) with live animated weather and news ticker
 
 **DEMO**:  https://seanvree.github.io/homepage/
 
-**Last Updated**: 01 FEB 2018:  
+**Last Updated**: 12 FEB 2018: 
+- Updated bootstrap version
+- updated to jquery-3.3.1.min
 - Added background auto change (day/night)
 - Script reordering
 - Date display format change
