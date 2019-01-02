@@ -946,6 +946,10 @@ i {
     vertical-align: middle;
 }
 
+.fw-iframe {
+    height: 50px !important;
+}
+
 #counter {
     position: fixed;
     bottom: 0;
