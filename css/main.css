@@ -36,6 +36,67 @@ body.fade-out {
     transition: none;
 }
 
+.day {
+    color: rgba(100, 100, 100, 0.75);
+}
+
+.night {
+    color: rgba(37, 37, 37, 0.75);
+}
+
+ /* // CHANGE ME: load BG from index JS script / NOT WORKING:  */
+
+.bgday {
+    background: url("background_day.jpg");
+    height: 100%;
+    margin: 0;
+    opacity: 1;
+    transition: 1s opacity;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.bgnight {
+    background: url("background_night.jpg");
+    height: 100%;
+    margin: 0;
+    opacity: 1;
+    transition: 1s opacity;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+ /* // CHANGE ME: Background darken on hover: */
+
+/* .bgday:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+} */
+
+/* .bgnight:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+} */
+
 html {
     background-color: black;
 }
@@ -279,11 +340,16 @@ a {
 
 a:active,
 a:hover {
+    color: rgb(150, 150, 150);
     outline: 10px;
 }
 
 a:link {
     color: rgb(150, 150, 150);
+}
+
+a:link:hover {
+    color: rgb(248, 248, 248);
 }
 
 a:visited {
@@ -478,15 +544,6 @@ th {
     margin-top: 1em;
     margin-left: 30px;
     /* color: rgba(80, 80, 80, 0.90); */
-}
-
-.day {
-
-    color: rgba(100, 100, 100, 0.75);
-}
-
-.night {
-    color: rgba(37, 37, 37, 0.75);
 }
 
 .timeArea .time {
@@ -944,6 +1001,10 @@ i {
     box-sizing: border-box;
     background-color: rgba(21, 21, 21, 0.70);
     vertical-align: middle;
+}
+
+.fw-iframe {
+    height: 50px !important;
 }
 
 #counter {
