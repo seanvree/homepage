@@ -36,6 +36,17 @@
 
         <script src="js/weather.js" async></script>
 
+<!--         <script>
+            $(document).ready(function() {     
+                $('#weather, #formstretch').hover(function(){
+                    $(document.body).addClass('darken');
+                    $('#flexbox').removeClass('darken');
+                },     
+                function(){
+                    $(document.body).removeClass('darken'); 
+                });
+            }); 
+        </script> -->
         <!-- <meta http-equiv="refresh" content="180"> -->
 
     </head>
@@ -56,10 +67,12 @@
 
             } else {
                 if (document.body) {
-                    document.body.background = "css/background_night.jpg";
+                    // document.body.background = "css/background_night.jpg";
                     document.body.className = " night";
 
                     // CHNANG ME: / NOT WORKING:
+
+                    $(document.body).addClass("bgnight");
 
                     // $('body').addClass('bgnight');
                 }
@@ -213,7 +226,7 @@
 
         </div>
 
-        <div class="flexbox">
+        <div class="flexbox" id="flexbox">
 
             <form id="formstretch" action="#" method="post">
                 
@@ -225,12 +238,17 @@
 
                 <label id="optionlabel" for="flexbox-option" class="t-top t-sm" data-tooltip="Select">
 
-                    <select id="flexbox-option">
-                        <option value="google">Google</option>
-                        <option value="youtube">YouTube</option>
-                        <option value="wiki">Wiki</option>
-                        <option value="imdb">IMDB</option>
-                    </select>
+                        <!-- // CHANGE ME / not working on IE safari mobile  -->
+                    <div class='v-center-flex'>
+                        <div>
+                            <select id="flexbox-option">
+                                <option value="google">Google</option>
+                                <option value="youtube">YouTube</option>
+                                <option value="wiki">Wiki</option>
+                                <option value="imdb">IMDB</option>
+                            </select>
+                        </div>
+                    </div> 
 
                 </label>
 
