@@ -290,12 +290,17 @@ body::-webkit-scrollbar-thumb {
 #flexbox-option {
     height: 62px;
     width: 100%;
-    background-color: rgba(21, 21, 21, 0.70);
     -webkit-appearance: none;
-    padding-left: 8px;
+    -moz-appearance: none;
+    background: url('down-arrow.png');
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: 55% 80%;
+    background-color: rgba(21, 21, 21, 0.70);
+    padding-left: .5em;
     border: 0;
     color: rgb(87, 171, 250);
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 300;
     text-align-last: center;
     cursor: pointer;
