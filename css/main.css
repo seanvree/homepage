@@ -292,7 +292,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background: url('down-arrow.png');
+    background: url("down-arrow.png");
     background-size: 1em;
     background-repeat: no-repeat;
     background-position: 55% 80%;
