@@ -298,19 +298,22 @@ body::-webkit-scrollbar-thumb {
 
 #formstretch {
     border: 0;
+    height: 4em;
 }
 
 #inputlabel {
     border: 0;
     width: calc(100% - 115px);
+    height: 4em;
     z-index: 200;
 }
 
 #flexbox-input {
     width: calc(100% - 4px);
     border: 0;
-    height: 60px;
+    height: 99%;
     padding-left: .5em;
+    padding-bottom: 0;
     color: #E4E2E2;
     font-size: 1.5em;
     background-color: rgba(21, 21, 21, 0.70);
@@ -321,6 +324,7 @@ body::-webkit-scrollbar-thumb {
     border: 0;
     float: right;
     width: 106px;
+    height: 4em;
 }
 
 .v-center-flex {
@@ -337,15 +341,16 @@ body::-webkit-scrollbar-thumb {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 100%;
+    height: 4em;
 }
 
 .v-center-flex div {
-    width: 100%
+    width: 100%;
+    height: 4em;
 } 
 
 #flexbox-option {
-    height: 62px;
+    height: 4em;
     width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
