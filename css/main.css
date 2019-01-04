@@ -291,6 +291,7 @@ body::-webkit-scrollbar-thumb {
     height: 62px;
     width: 100%;
     background-color: rgba(21, 21, 21, 0.70);
+    -webkit-appearance: none;
     padding-left: 8px;
     border: 0;
     color: rgb(87, 171, 250);
