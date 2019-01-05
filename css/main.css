@@ -125,7 +125,7 @@ h1 {
     margin: 0rem 0 0;
 }
 
-@media (min-width: 858px) {
+/* @media (min-width: 858px) {
     html {
         font-size: 12px;
     }
@@ -153,7 +153,7 @@ h1 {
     html {
         font-size: 8px;
     }
-}
+} */
 
 body::-webkit-scrollbar {
     width: 10px;
@@ -323,7 +323,7 @@ body::-webkit-scrollbar-thumb {
     /* width: calc(100% - 4px); */
     width: calc(100% - .250em);
     /* height: 99%; */
-    height: 2.63em;
+    height: 2.62em;
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -351,6 +351,7 @@ body::-webkit-scrollbar-thumb {
 
 .v-center-flex {
     height: 4em;
+    width: 6.75em;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;
@@ -370,8 +371,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .v-center-flex div {
-    width: 100%;
     height: 4em;
+    width: 6.75em;
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -379,7 +380,7 @@ body::-webkit-scrollbar-thumb {
 
 #flexbox-option {
     height: 4em;
-    width: 100%;
+    width: 6.75em;
     -webkit-appearance: none;
     -moz-appearance: none;
     background: url("down-arrow.png");
@@ -388,8 +389,7 @@ body::-webkit-scrollbar-thumb {
     background-position: 55% 80%;
     background-color: rgba(21, 21, 21, 0.70);
     padding-bottom: .6em;
-    /* padding-left: .5em; */
-    padding-left: 15%;
+    padding-left: .5em;
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
