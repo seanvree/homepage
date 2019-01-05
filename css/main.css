@@ -293,7 +293,7 @@ body::-webkit-scrollbar-thumb {
 
  /* //change me: */
 
-#flexbox:hover {
+/* #flexbox:hover {
     filter: brightness(100%) !important;
     -webkit-filter: brightness(100%) !important;
     -webkit-transition: all 1s ease;
@@ -301,7 +301,7 @@ body::-webkit-scrollbar-thumb {
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
-}
+} */
 
 #formstretch {
     height: 4em;
@@ -404,6 +404,8 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
+
+
 /* .flexbox div select {
     height: 3.500em;
     padding-left: .5em;
@@ -504,6 +506,10 @@ textarea {
     color: inherit;
     font: inherit;
     margin: 0;
+}
+
+select::-ms-expand {
+    display: none;
 }
 
 textarea:focus,
