@@ -306,6 +306,7 @@ body::-webkit-scrollbar-thumb {
     width: calc(100% - 115px);
     height: 4em;
     border-radius: 0;
+    -webkit-border-radius: 0px;
     z-index: 200;
 }
 
@@ -326,6 +327,7 @@ body::-webkit-scrollbar-thumb {
     float: right;
     width: 106px;
     border-radius: 0;
+    -webkit-border-radius: 0px;
     height: 4em;
 }
 
