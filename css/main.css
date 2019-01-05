@@ -304,9 +304,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 #inputlabel {
-    border: 0;
     width: calc(100% - 115px);
     height: 4em;
+    border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
     margin-bottom: 0;
@@ -339,11 +339,10 @@ body::-webkit-scrollbar-thumb {
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
-    
-    
 }
 
 .v-center-flex {
+    height: 4em;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;
@@ -357,12 +356,17 @@ body::-webkit-scrollbar-thumb {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 4em;
+    border: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
 }
 
 .v-center-flex div {
     width: 100%;
     height: 4em;
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
 } 
 
 #flexbox-option {
@@ -379,6 +383,8 @@ body::-webkit-scrollbar-thumb {
     /* padding-left: .5em; */
     padding-left: 15%;
     border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
     color: rgb(87, 171, 250);
     font-size: 1em;
     font-weight: 300;
@@ -391,6 +397,8 @@ body::-webkit-scrollbar-thumb {
     padding-left: 8px;
     padding-right: .2em;
     border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
     background-color: rgba(21, 21, 21, 0.70);
     color: rgb(87, 171, 250);
     font-size: 1.1em;
