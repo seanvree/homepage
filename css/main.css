@@ -125,6 +125,9 @@ h1 {
     margin: 0rem 0 0;
 }
 
+
+    /* // Change me // leave bootstrap off? */
+
 /* @media (min-width: 858px) {
     html {
         font-size: 12px;
@@ -309,7 +312,7 @@ body::-webkit-scrollbar-thumb {
 
 #inputlabel {
     /* width: calc(100% - 115px); */
-    width: calc(100% - 7.188em);
+    width: calc(100% - 6em);
     height: 4em;
     border: 0;
     border-radius: 0;
@@ -321,7 +324,7 @@ body::-webkit-scrollbar-thumb {
 #flexbox-input {
         /* // CHANGE ME / height: */
     /* width: calc(100% - 4px); */
-    width: calc(100% - .250em);
+    width: calc(100% - .54em);
     /* height: 99%; */
     height: 2.62em;
     border: 0;
@@ -340,7 +343,7 @@ body::-webkit-scrollbar-thumb {
     height: 4em;
     /* // CHANGE ME convert to EM: */
     /* width: 106px; */
-    width: 6.75em;
+    width: 6em;
     float: right;
     margin-bottom: 0;
     border: 0;
@@ -351,7 +354,7 @@ body::-webkit-scrollbar-thumb {
 
 .v-center-flex {
     height: 4em;
-    width: 6.75em;
+    width: 6em;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;
@@ -372,7 +375,7 @@ body::-webkit-scrollbar-thumb {
 
 .v-center-flex div {
     height: 4em;
-    width: 6.75em;
+    width: 6em;
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -380,7 +383,7 @@ body::-webkit-scrollbar-thumb {
 
 #flexbox-option {
     height: 4em;
-    width: 6.75em;
+    width: 6em;
     -webkit-appearance: none;
     -moz-appearance: none;
     background: url("down-arrow.png");
@@ -1112,6 +1115,8 @@ i {
 
 .fw-iframe {
     height: 50px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 #counter {
@@ -1209,7 +1214,6 @@ i {
     -o-animation: pace-spinner 400ms linear infinite;
     animation: pace-spinner 400ms linear infinite;
 }
-
 
 @keyframes pace-spinner {
     0% {
