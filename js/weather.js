@@ -124,10 +124,12 @@ $(function() {
     };
 
     var geoSuccess = function(position) {
+        console.log('Retrieving updated location:');
         startPos = position;
         lat = startPos.coords.latitude;
         lon = startPos.coords.longitude;
         getWeather(lat, lon);
+        
         console.log(`using location: (${lat},${lon})`);
         console.log('Retrieving weather:');
     };
@@ -149,7 +151,6 @@ $(function() {
 
     var searchByLocation = function () {
         console.log(`starting with location: (${lat},${lon})`);
-        console.log('Retrieving location:');
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
         } else {
