@@ -297,8 +297,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 #formstretch {
-    border: 0;
     height: 4em;
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
 }
 
 #inputlabel {
@@ -306,29 +308,39 @@ body::-webkit-scrollbar-thumb {
     width: calc(100% - 115px);
     height: 4em;
     border-radius: 0;
-    -webkit-border-radius: 0px;
+    -webkit-border-radius: 0;
+    margin-bottom: 0;
     z-index: 200;
 }
 
 #flexbox-input {
+        /* // CHANGE ME / height: */
     width: calc(100% - 4px);
+    /* height: 99%; */
+    height: 2.63em;
     border: 0;
-    height: 99%;
+    border-radius: 0;
+    -webkit-border-radius: 0;
     padding-left: .5em;
     padding-bottom: 0;
     color: #E4E2E2;
     font-size: 1.5em;
-    background-color: rgba(21, 21, 21, 0.70);
     font-weight: 300;
+    background-color: rgba(21, 21, 21, 0.70);
+    
 }
 
 #optionlabel {
-    border: 0;
-    float: right;
-    width: 106px;
-    border-radius: 0;
-    -webkit-border-radius: 0px;
     height: 4em;
+    /* // CHANGE ME convert to EM: */
+    width: 106px;
+    float: right;
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    
+    
 }
 
 .v-center-flex {
@@ -498,6 +510,9 @@ html input[type=button],
 input[type=reset],
 input[type=submit] {
     -webkit-appearance: button;
+    border: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
     cursor: pointer;
 }
 
@@ -533,6 +548,8 @@ input[type=search] {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+    -webkit-border-radius: 0;
+    border-radius: 0;
     z-index: 1005;
 }
 
