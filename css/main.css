@@ -526,11 +526,13 @@ input:focus {
 
 button {
     overflow: visible;
+    outline: none;
 }
 
 button,
 select {
     text-transform: none;
+    outline: none;
 }
 
 button,
@@ -541,6 +543,7 @@ input[type=submit] {
     border: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
+    outline: none;
     cursor: pointer;
 }
 
@@ -553,6 +556,7 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
+    outline: none;
 }
 
 input {
@@ -579,6 +583,7 @@ input[type=search] {
     -webkit-border-radius: 0;
     border-radius: 0;
     z-index: 1005;
+    outline: none;
 }
 
 input[type=search]::-webkit-search-cancel-button {
