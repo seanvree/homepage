@@ -271,12 +271,16 @@ body::-webkit-scrollbar-thumb {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 700px;
-    max-width: 90vw;
-    max-height: 500px;
     margin: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    /* width: 700px; */
+    width: 43.750em;
+    max-width: 90vw;
+    /* max-height: 500px; */
+    max-height: 31.250em;
+    padding-right: .95em;
+    padding-left: .95em;
+    /* padding-right: 15px;
+    padding-left: 15px; */
     z-index: 50;
 }
 
@@ -304,7 +308,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #inputlabel {
-    width: calc(100% - 115px);
+    /* width: calc(100% - 115px); */
+    width: calc(100% - 7.188em);
     height: 4em;
     border: 0;
     border-radius: 0;
@@ -315,7 +320,8 @@ body::-webkit-scrollbar-thumb {
 
 #flexbox-input {
         /* // CHANGE ME / height: */
-    width: calc(100% - 4px);
+    /* width: calc(100% - 4px); */
+    width: calc(100% - .250em);
     /* height: 99%; */
     height: 2.63em;
     border: 0;
@@ -327,18 +333,20 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5em;
     font-weight: 300;
     background-color: rgba(21, 21, 21, 0.70);
-    
+    border: 1px red solid;
 }
 
 #optionlabel {
     height: 4em;
     /* // CHANGE ME convert to EM: */
-    width: 106px;
+    /* width: 106px; */
+    width: 6.75em;
     float: right;
     margin-bottom: 0;
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
+    border: 1px blue solid;
 }
 
 .v-center-flex {
@@ -393,8 +401,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .flexbox div select {
-    height: 56px;
-    padding-left: 8px;
+    /* height: 56px; */
+    height: 3.500em;
+    /* padding-left: 8px; */
+    padding-left: .5em;
     padding-right: .2em;
     border: 0;
     border-radius: 0;
