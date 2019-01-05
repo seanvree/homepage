@@ -130,7 +130,7 @@ $(function() {
         lon = startPos.coords.longitude;
         getWeather(lat, lon);
         
-        console.log(`using location: (${lat},${lon})`);
+        console.log("using location: " + lat,lon + "");
         console.log('Retrieving weather:');
     };
 
@@ -144,13 +144,13 @@ $(function() {
 
         // ignore it and use the default lat and lon
 
-        console.log(`using default location: (${lat},${lon})`);
+        console.log("using default location: " + lat,lon + "");
         console.log('Retrieving weather:');
         getWeather(lat, lon);
     };
 
     var searchByLocation = function () {
-        console.log(`starting with location: (${lat},${lon})`);
+        console.log("starting with location: " + lat,lon + "");
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
         } else {
