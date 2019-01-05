@@ -379,6 +379,7 @@ body::-webkit-scrollbar-thumb {
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
+    background-color: rgba(21, 21, 21, 0.70);
 } 
 
 #flexbox-option {
@@ -390,7 +391,7 @@ body::-webkit-scrollbar-thumb {
     background-size: 1em;
     background-repeat: no-repeat;
     background-position: 55% 80%;
-    background-color: rgba(21, 21, 21, 0.70);
+    /* background-color: rgba(21, 21, 21, 0.70); */
     padding-bottom: .6em;
     padding-left: 15%;
     border: 0;
