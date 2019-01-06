@@ -6,7 +6,7 @@
 
                   Created by:
           https://github.com/seanvree
-          last updated: 03 JAN 2019
+          last updated: 06 JAN 2019
 
     -->
 
@@ -36,35 +36,47 @@
 
         <script src="js/weather.js" async></script>
 
-        <!-- <meta http-equiv="refresh" content="180"> -->
+        <script>
+            $(document).ready(function() {  
+                var currentTime = new Date().getHours();
+                if (8 <= currentTime && currentTime < 20) {
+                    if (document.body) {
+                        $('#background').addClass('bgday');
+                        document.body.className = " day";
+                    }
+
+                } else {
+                    if (document.body) {
+                        $('#background').addClass('bgnight');
+                        document.body.className = " night";
+                    }
+                }
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $('#formstretch').hover(function () {
+                    $('#formstretch').addClass('lightfilter');
+                    $('#background').addClass('darkfilter');
+                    $('#info').addClass('darkfilter');
+                    $('#fw-container').addClass('darkfilter');
+                    $('#footer').addClass('darkfilter');
+                },
+                function () {
+                    $('#background').removeClass('darkfilter');
+                    $('#info').removeClass('darkfilter');
+                    $('#fw-container').removeClass('darkfilter');
+                    $('#footer').removeClass('darkfilter');
+                    $('#formstretch').removeClass('lightfilter');
+                }
+                );
+            });
+        </script>
 
     </head>
 
     <body style="background-color: #000000">
-
-        <script>
-            var currentTime = new Date().getHours();
-            if (8 <= currentTime && currentTime < 20) {
-                if (document.body) {
-                    document.body.background = "css/background_day.jpg";
-                    document.body.className = " day";
-
-                    // CHNANG ME: / NOT WORKING:
-
-                    // $('body').addClass('bgday');
-                }
-
-            } else {
-                if (document.body) {
-                    document.body.background = "css/background_night.jpg";
-                    document.body.className = " night";
-
-                    // CHNANG ME: / NOT WORKING:
-
-                    // $('body').addClass('bgnight');
-                }
-            }
-        </script>
 
         <script>
             document.body.className += ' fade-out';
@@ -73,164 +85,173 @@
             });
         </script>
 
-
-        <div class="timeArea">
-            <p class="time">
-                <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
-                <span class="date"></span>
-            </p>
+        <div id="background">
+                <!-- // Add background images in main.css -->
         </div>
 
-        <div id="weather">
-            
-            <div id="tempwrapper" class="tempwrapper" >
-                <div id="unit" class="unit">&degF</div>
-                <div id="temp" class="t-bottom t-sm" data-tooltip="Convert"></div>
+        <div id="info">
+            <div class="timeArea">
+                <p class="time">
+                    <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
+                    <span class="date"></span>
+                </p>
             </div>
 
-            <div id="iconwrapper" class="t-bottom t-sm" data-tooltip="Forecast">
+            <div id="weather">
+                
+                <div id="tempwrapper" class="tempwrapper" >
+                    <div id="unit" class="unit">&degF</div>
+                    <div id="temp" class="t-bottom t-sm" data-tooltip="Convert"></div>
+                </div>
 
-                <a id="weatherlink" href="#" rel="noopener noreferrer" target="_blank"> <h1 class="hidden">Weather</h1>
+                <div id="iconwrapper" class="t-bottom t-sm" data-tooltip="Forecast">
 
-                    <div class="icon unknown">
-                        <div class="text"></div>
-                    </div>
+                    <a id="weatherlink" href="#" rel="noopener noreferrer" target="_blank"> <h1 class="hidden">Weather</h1>
 
-                    <div class="icon sunny">
-                        <div class="sun">
-                            <div class="rays"></div>
+                        <div class="icon unknown">
+                            <div class="text"></div>
                         </div>
-                    </div>
 
-                    <div class="icon clear-night">
-                        <div class="moon"></div>
-                        <div class="stars"></div>
-                    </div>
-
-                    <div class="icon sunny-cloudy">
-                        <div class="cloud"></div>
-                        <div class="sun">
-                            <div class="rays"></div>
+                        <div class="icon sunny">
+                            <div class="sun">
+                                <div class="rays"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="icon moon-cloudy">
-                        <div class="cloud"></div>
-                        <div class="moon"></div>
-                    </div>
+                        <div class="icon clear-night">
+                            <div class="moon"></div>
+                            <div class="stars"></div>
+                        </div>
 
-                    <div class="icon overcast">
-                        <div class="cloud"></div>
-                    </div>
+                        <div class="icon sunny-cloudy">
+                            <div class="cloud"></div>
+                            <div class="sun">
+                                <div class="rays"></div>
+                            </div>
+                        </div>
 
-                    <div class="icon moon-overcast">
-                        <div class="moon">
+                        <div class="icon moon-cloudy">
+                            <div class="cloud"></div>
+                            <div class="moon"></div>
+                        </div>
+
+                        <div class="icon overcast">
                             <div class="cloud"></div>
                         </div>
-                    </div>
 
-                    <div class="icon drizzle">
-                        <div class="cloud"></div>
-                        <div class="sun">
-                            <div class="rays"></div>
+                        <div class="icon moon-overcast">
+                            <div class="moon">
+                                <div class="cloud"></div>
+                            </div>
                         </div>
-                        <div class="rain"></div>
-                    </div>
 
-                    <div class="icon moon-drizzle">
-                        <div class="cloud"></div>
-                        <div class="moon"></div>
-                        <div class="rain"></div>
-                    </div>
+                        <div class="icon drizzle">
+                            <div class="cloud"></div>
+                            <div class="sun">
+                                <div class="rays"></div>
+                            </div>
+                            <div class="rain"></div>
+                        </div>
 
-                    <div class="icon rainy">
-                        <div class="cloud"></div>
-                        <div class="rain"></div>
-                    </div>
+                        <div class="icon moon-drizzle">
+                            <div class="cloud"></div>
+                            <div class="moon"></div>
+                            <div class="rain"></div>
+                        </div>
 
-                    <div class="icon moon-rainy">
-                        <div class="moon">
+                        <div class="icon rainy">
+                            <div class="cloud"></div>
+                            <div class="rain"></div>
+                        </div>
+
+                        <div class="icon moon-rainy">
+                            <div class="moon">
+                                <div class="cloud"></div>
+                            </div>
+                            <div class="rain"></div>
+                        </div>
+
+                        <div class="icon thunderstorm">
+                            <div class="cloud"></div>
+                            <div class="lightning">
+                                <div class="bolt"></div>
+                                <div class="bolt"></div>
+                            </div>
+                        </div>
+
+                        <div class="icon moon-thunderstorm">
+                            <div class="cloud"></div>
+                            <div class="moon"></div>
+
+                            <div class="lightning">
+                                <div class="bolt"></div>
+                                <div class="bolt"></div>
+                            </div>
+                        </div>
+
+                        <div class="icon sun-snow">
+                            <div class="cloud"></div>
+                            <div class="snow">
+                                <div class="flake"></div>
+                                <div class="flake"></div>
+                            </div>
+                        </div>
+
+                        <div class="icon moon-snow">
+                            <div class="moon">
+                                <div class="cloud"></div>
+                            </div>
+                            <div class="snow">
+                                <div class="flake"></div>
+                                <div class="flake"></div>
+                            </div>
+                        </div>
+
+                        <div class="icon foggy">
+                            <div class="cloud"></div>
+                            <div class="fog"></div>
+                        </div>
+
+                        <div class="icon foggy-night">
+                            <div class="cloud"></div>
+                            <div class="moon"></div>
+                            <div class="fog"></div>
+                        </div>
+
+                        <div class="icon windy">
+                            <div class="cloud"></div>
                             <div class="cloud"></div>
                         </div>
-                        <div class="rain"></div>
-                    </div>
 
-                    <div class="icon thunderstorm">
-                        <div class="cloud"></div>
-                        <div class="lightning">
-                            <div class="bolt"></div>
-                            <div class="bolt"></div>
-                        </div>
-                    </div>
+                    </a>
 
-                    <div class="icon moon-thunderstorm">
-                        <div class="cloud"></div>
-                        <div class="moon"></div>
-
-                        <div class="lightning">
-                            <div class="bolt"></div>
-                            <div class="bolt"></div>
-                        </div>
-                    </div>
-
-                    <div class="icon sun-snow">
-                        <div class="cloud"></div>
-                        <div class="snow">
-                            <div class="flake"></div>
-                            <div class="flake"></div>
-                        </div>
-                    </div>
-
-                    <div class="icon moon-snow">
-                        <div class="moon">
-                            <div class="cloud"></div>
-                        </div>
-                        <div class="snow">
-                            <div class="flake"></div>
-                            <div class="flake"></div>
-                        </div>
-                    </div>
-
-                    <div class="icon foggy">
-                        <div class="cloud"></div>
-                        <div class="fog"></div>
-                    </div>
-
-                    <div class="icon foggy-night">
-                        <div class="cloud"></div>
-                        <div class="moon"></div>
-                        <div class="fog"></div>
-                    </div>
-
-                    <div class="icon windy">
-                        <div class="cloud"></div>
-                        <div class="cloud"></div>
-                    </div>
-
-                </a>
+                </div>
 
             </div>
-
         </div>
 
-        <div class="flexbox">
+        <div class="flexbox" id="flexbox">
 
             <form id="formstretch" action="#" method="post">
                 
                 <label id="inputlabel" for="flexbox-input">
                     
-                    <input type="search" id="flexbox-input" name="s" value="" placeholder="Search..." autocomplete="on" autofocus />
+                    <input type="search" id="flexbox-input" name="s" value="" placeholder=" Search..." autocomplete="on" autofocus />
                 
                 </label>
 
                 <label id="optionlabel" for="flexbox-option" class="t-top t-sm" data-tooltip="Select">
 
-                    <select id="flexbox-option">
-                        <option value="google">Google</option>
-                        <option value="youtube">YouTube</option>
-                        <option value="wiki">Wiki</option>
-                        <option value="imdb">IMDB</option>
-                    </select>
+                    <div class='v-center-flex'>
+                        <div>
+                            <select id="flexbox-option">
+                                <option value="google">Google</option>
+                                <option value="youtube">YouTube</option>
+                                <option value="wiki">Wiki</option>
+                                <option value="imdb">IMDB</option>
+                            </select>
+                        </div>
+                    </div> 
 
                 </label>
 
