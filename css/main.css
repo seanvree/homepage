@@ -336,7 +336,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5em;
     font-weight: 300;
     background-color: rgba(21, 21, 21, 0.70);
-    /* border: 1px red solid; */
+    border: 1px red solid;
 }
 
 #optionlabel {
@@ -349,7 +349,7 @@ body::-webkit-scrollbar-thumb {
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
-    /* border: 1px blue solid; */
+    border: 1px blue solid;
 }
 
 .v-center-flex {
