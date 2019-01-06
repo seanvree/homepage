@@ -31,12 +31,10 @@ $(function() {
         console.log(lastData.name);
         console.log(lastData.id);
 
-
         var cityid = lastData.id;
         $("#weatherlink").attr('href', function(index, attr) {
             return ("https://openweathermap.org/city/") + cityid;
         });
-
 
         $(".icon").addClass('hidden');
         var weatherCode = parseInt(lastData.weather[0].id, 10);
@@ -126,10 +124,14 @@ $(function() {
     };
 
     var geoSuccess = function(position) {
+        console.log('Retrieving updated location:');
         startPos = position;
         lat = startPos.coords.latitude;
         lon = startPos.coords.longitude;
         getWeather(lat, lon);
+        
+        console.log("using location: " + lat,lon + "");
+        console.log('Retrieving weather:');
     };
 
     var geoError = function(error) {
@@ -142,17 +144,19 @@ $(function() {
 
         // ignore it and use the default lat and lon
 
+        console.log("using default location: " + lat,lon + "");
+        console.log('Retrieving weather:');
         getWeather(lat, lon);
     };
 
-    var searchByLocation = function() {
+    var searchByLocation = function () {
+        console.log("starting with location: " + lat,lon + "");
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
         } else {
             getWeather(lat, lon);
         }
     };
-
 
     var resetCity = function() {
         $city.text(lastData.name).blur();
