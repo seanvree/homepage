@@ -275,15 +275,11 @@ body::-webkit-scrollbar-thumb {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: auto;
-    /* width: 700px; */
     width: 43.750em;
     max-width: 90vw;
-    /* max-height: 500px; */
     max-height: 31.250em;
     padding-right: .95em;
     padding-left: .95em;
-    /* padding-right: 15px;
-    padding-left: 15px; */
     z-index: 50;
 }
 
@@ -311,7 +307,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 #inputlabel {
-    /* width: calc(100% - 115px); */
     width: calc(100% - 6em);
     height: 4em;
     border: 0;
@@ -322,35 +317,32 @@ body::-webkit-scrollbar-thumb {
 }
 
 #flexbox-input {
-        /* // CHANGE ME / height: */
-    /* width: calc(100% - 4px); */
-    width: calc(100% - .54em);
-    /* height: 99%; */
-    height: 4em;
+    width: calc(100% - .5em);
+    height: 100%;
+    /* height: 4em; */
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
-    /* padding-left: .5em; */
-    padding: 0;
+    padding-left: .5em;
+    padding-top: 0;
     padding-bottom: 0;
+    padding-right: 0;
     color: #E4E2E2;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 300;
     background-color: rgba(21, 21, 21, 0.70);
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 
 #optionlabel {
     height: 4em;
-    /* // CHANGE ME convert to EM: */
-    /* width: 106px; */
     width: 6em;
     float: right;
     margin-bottom: 0;
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
 }
 
 .v-center-flex {
@@ -381,7 +373,6 @@ body::-webkit-scrollbar-thumb {
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
-    background-color: rgba(21, 21, 21, 0.70);
 } 
 
 #flexbox-option {
@@ -393,7 +384,7 @@ body::-webkit-scrollbar-thumb {
     background-size: 1em;
     background-repeat: no-repeat;
     background-position: 55% 80%;
-    /* background-color: rgba(21, 21, 21, 0.70); */
+    background-color: rgba(21, 21, 21, 0.70);
     padding-bottom: .6em;
     padding-left: 15%;
     outline: none;
@@ -406,23 +397,6 @@ body::-webkit-scrollbar-thumb {
     text-align-last: center;
     cursor: pointer;
 }
-
-
-
-/* .flexbox div select {
-    height: 3.500em;
-    padding-left: .5em;
-    padding-right: .2em;
-    border: 0;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    background-color: rgba(21, 21, 21, 0.70);
-    color: rgb(87, 171, 250);
-    font-size: 1.1em;
-    font-weight: 300;
-    text-align-last: center;
-    cursor: pointer;
-} */
 
 article,
 aside,
@@ -1179,7 +1153,6 @@ i {
     -moz-user-select: none;
     user-select: none; 
 } 
-
 */
 
 .pace-inactive {
