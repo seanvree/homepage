@@ -326,14 +326,15 @@ body::-webkit-scrollbar-thumb {
     /* width: calc(100% - 4px); */
     width: calc(100% - .54em);
     /* height: 99%; */
-    height: 2.62em;
+    height: 4em;
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
     /* padding-left: .5em; */
+    padding: 0;
     padding-bottom: 0;
     color: #E4E2E2;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 300;
     background-color: rgba(21, 21, 21, 0.70);
     border: 1px red solid;
@@ -576,10 +577,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=search] {
     /* -webkit-appearance: textfield; */
-    -webkit-appearance: none;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
     box-sizing: content-box;
+    -webkit-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
     -webkit-border-radius: 0;
     border-radius: 0;
     z-index: 1005;
