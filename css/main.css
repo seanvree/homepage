@@ -44,10 +44,9 @@ body.fade-out {
     color: rgba(37, 37, 37, 0.75);
 }
 
- /* // CHANGE ME: load BG from index JS script / NOT WORKING:  */
-
 .bgday {
     background: url("background_day.jpg");
+    position: static;
     height: 100%;
     margin: 0;
     opacity: 1;
@@ -63,6 +62,7 @@ body.fade-out {
 
 .bgnight {
     background: url("background_night.jpg");
+    position: static;
     height: 100%;
     margin: 0;
     opacity: 1;
@@ -76,30 +76,12 @@ body.fade-out {
     -o-background-size: cover;
 }
 
-
- /* // CHANGE ME: Background darken on hover: */
-
-/* .bgday:hover {
-    -webkit-filter: brightness(70%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-} */
-
-/* .bgnight:hover {
-    -webkit-filter: brightness(70%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-} */
-
-.darken {
-    filter: brightness(70%);
-    -webkit-filter: brightness(70%);
+.darkfilter {
+    filter: brightness(75%);
+    -webkit-filter: brightness(75%);
+    -moz-filter: brightness(75%);
+    -ms-filter: brightness(75%);
+    -o-filter: brightness(75%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -107,9 +89,12 @@ body.fade-out {
     transition: all 1s ease;
 }
 
-.lighten {
-    filter: brightness(100%) !important;
-    -webkit-filter: brightness(100%) !important;
+.lightfilter {
+    filter: brightness(125%);
+    -webkit-filter: brightness(125%);
+    -moz-filter: brightness(125%);
+    -ms-filter: brightness(125%);
+    -o-filter: brightness(125%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -280,24 +265,18 @@ body::-webkit-scrollbar-thumb {
     max-height: 31.250em;
     padding-right: .95em;
     padding-left: .95em;
-    z-index: 50;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+    z-index: 2000;
+
 }
 
 #flexbox {
     border: 0;
 }
-
- /* //change me: */
-
-/* #flexbox:hover {
-    filter: brightness(100%) !important;
-    -webkit-filter: brightness(100%) !important;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-} */
 
 #formstretch {
     height: 4em;
@@ -637,11 +616,25 @@ th {
     width: 50%;
 }
 
+#info {
+    position: fixed;
+    top: 0;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+    z-index: 1000;
+
+}
+
 .timeArea {
-    bottom: 0;
+    top: 0;
     left: 0;
+    position: fixed;
     margin-top: 1em;
-    margin-left: 30px;
+    margin-left: 1.875em;
+    z-index: 1001;
     /* color: rgba(80, 80, 80, 0.90); */
 }
 
@@ -682,14 +675,17 @@ i {
 /* weather Styles */
 
 #weather {
+    top:0;
     width: 9em;
     height: 2.5em;
     display: flex;
-    position: relative;
-    margin-left: 30px;
+    position: fixed;
+    margin-top: 7em;
+    margin-left: 1.875em;
     justify-content: center;
     text-align: center;
     vertical-align: middle;
+    z-index: 1000;
 }
 
 #iconwrapper {
@@ -708,7 +704,11 @@ i {
     z-index: 4;
     display: block;
     float: right;
-    /* color: rgba(80, 80, 80, 0.90); */
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
 }
 
 #tempwrapper #unit:hover {
