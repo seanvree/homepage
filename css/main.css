@@ -23,7 +23,7 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    color: #fff;
+    /* color: #fff; */
     font-family: sans-serif;
     font: 400 16px 'Open Sans', Arial;
     -ms-text-size-adjust: 100%;
@@ -265,11 +265,11 @@ body::-webkit-scrollbar-thumb {
     max-height: 31.250em;
     padding-right: .95em;
     padding-left: .95em;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    transition: all 2s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
     z-index: 2000;
 
 }
@@ -704,11 +704,11 @@ i {
     z-index: 4;
     display: block;
     float: right;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    transition: all 2s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 #tempwrapper #unit:hover {
