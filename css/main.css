@@ -44,10 +44,9 @@ body.fade-out {
     color: rgba(37, 37, 37, 0.75);
 }
 
- /* // CHANGE ME: load BG from index JS script / NOT WORKING:  */
-
 .bgday {
     background: url("background_day.jpg");
+    position: static;
     height: 100%;
     margin: 0;
     opacity: 1;
@@ -63,6 +62,7 @@ body.fade-out {
 
 .bgnight {
     background: url("background_night.jpg");
+    position: static;
     height: 100%;
     margin: 0;
     opacity: 1;
@@ -76,26 +76,31 @@ body.fade-out {
     -o-background-size: cover;
 }
 
-
- /* // CHANGE ME: Background darken on hover: */
-
-/* .bgday:hover {
-    -webkit-filter: brightness(70%);
+.darkfilter {
+    filter: brightness(75%);
+    -webkit-filter: brightness(75%);
+    -moz-filter: brightness(75%);
+    -ms-filter: brightness(75%);
+    -o-filter: brightness(75%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
-} */
+}
 
-/* .bgnight:hover {
-    -webkit-filter: brightness(70%);
+.lightfilter {
+    filter: brightness(125%);
+    -webkit-filter: brightness(125%);
+    -moz-filter: brightness(125%);
+    -ms-filter: brightness(125%);
+    -o-filter: brightness(125%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
-} */
+}
 
 html {
     background-color: black;
@@ -105,7 +110,10 @@ h1 {
     margin: 0rem 0 0;
 }
 
-@media (min-width: 858px) {
+
+    /* // Change me // leave bootstrap off? */
+
+/* @media (min-width: 858px) {
     html {
         font-size: 12px;
     }
@@ -133,7 +141,7 @@ h1 {
     html {
         font-size: 8px;
     }
-}
+} */
 
 body::-webkit-scrollbar {
     width: 10px;
@@ -251,63 +259,119 @@ body::-webkit-scrollbar-thumb {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 700px;
-    max-width: 90vw;
-    max-height: 500px;
     margin: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    z-index: 50;
+    width: 43.750em;
+    max-width: 90vw;
+    max-height: 31.250em;
+    padding-right: .95em;
+    padding-left: .95em;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+    z-index: 2000;
+
+}
+
+#flexbox {
+    border: 0;
 }
 
 #formstretch {
+    height: 4em;
     border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
 }
 
 #inputlabel {
+    width: calc(100% - 6em);
+    height: 4em;
     border: 0;
-    width: calc(100% - 115px);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    margin-bottom: 0;
     z-index: 200;
 }
 
 #flexbox-input {
-    width: calc(100% - 4px);
+    width: calc(100% - .5em);
+    height: 100%;
+    /* height: 4em; */
     border: 0;
-    height: 60px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
     padding-left: .5em;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
     color: #E4E2E2;
     font-size: 1.5em;
-    background-color: rgba(21, 21, 21, 0.70);
     font-weight: 300;
+    background-color: rgba(21, 21, 21, 0.70);
+    /* border: 1px red solid; */
 }
 
 #optionlabel {
-    border: 0;
+    height: 4em;
+    width: 6em;
     float: right;
-    width: 106px;
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    /* border: 1px blue solid; */
 }
+
+.v-center-flex {
+    height: 4em;
+    width: 6em;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.v-center-flex div {
+    height: 4em;
+    width: 6em;
+    outline: none;
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+} 
 
 #flexbox-option {
-    height: 62px;
-    width: 100%;
+    height: 4em;
+    width: 6em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("down-arrow.png");
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: 55% 80%;
     background-color: rgba(21, 21, 21, 0.70);
-    padding-left: 8px;
+    padding-bottom: .6em;
+    padding-left: 15%;
+    outline: none;
     border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
     color: rgb(87, 171, 250);
-    font-size: 1.1em;
-    font-weight: 300;
-    text-align-last: center;
-    cursor: pointer;
-}
-
-.flexbox div select {
-    height: 56px;
-    padding-left: 8px;
-    padding-right: .2em;
-    border: 0;
-    background-color: rgba(21, 21, 21, 0.70);
-    color: rgb(87, 171, 250);
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 300;
     text-align-last: center;
     cursor: pointer;
@@ -400,6 +464,10 @@ textarea {
     margin: 0;
 }
 
+select::-ms-expand {
+    display: none;
+}
+
 textarea:focus,
 input:focus {
     outline: none;
@@ -412,11 +480,13 @@ input:focus {
 
 button {
     overflow: visible;
+    outline: none;
 }
 
 button,
 select {
     text-transform: none;
+    outline: none;
 }
 
 button,
@@ -424,6 +494,10 @@ html input[type=button],
 input[type=reset],
 input[type=submit] {
     -webkit-appearance: button;
+    border: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    outline: none;
     cursor: pointer;
 }
 
@@ -436,6 +510,7 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
+    outline: none;
 }
 
 input {
@@ -455,11 +530,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=search] {
     /* -webkit-appearance: textfield; */
-    -webkit-appearance: none;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
     box-sizing: content-box;
+    -webkit-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-border-radius: 0;
+    border-radius: 0;
     z-index: 1005;
+    outline: none;
 }
 
 input[type=search]::-webkit-search-cancel-button {
@@ -538,11 +616,25 @@ th {
     width: 50%;
 }
 
+#info {
+    position: fixed;
+    top: 0;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+    z-index: 1000;
+
+}
+
 .timeArea {
-    bottom: 0;
+    top: 0;
     left: 0;
+    position: fixed;
     margin-top: 1em;
-    margin-left: 30px;
+    margin-left: 1.875em;
+    z-index: 1001;
     /* color: rgba(80, 80, 80, 0.90); */
 }
 
@@ -583,14 +675,17 @@ i {
 /* weather Styles */
 
 #weather {
+    top:0;
     width: 9em;
     height: 2.5em;
     display: flex;
-    position: relative;
-    margin-left: 30px;
+    position: fixed;
+    margin-top: 7em;
+    margin-left: 1.875em;
     justify-content: center;
     text-align: center;
     vertical-align: middle;
+    z-index: 1000;
 }
 
 #iconwrapper {
@@ -609,7 +704,11 @@ i {
     z-index: 4;
     display: block;
     float: right;
-    /* color: rgba(80, 80, 80, 0.90); */
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
 }
 
 #tempwrapper #unit:hover {
@@ -1005,6 +1104,8 @@ i {
 
 .fw-iframe {
     height: 50px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 #counter {
@@ -1052,7 +1153,6 @@ i {
     -moz-user-select: none;
     user-select: none; 
 } 
-
 */
 
 .pace-inactive {
@@ -1102,7 +1202,6 @@ i {
     -o-animation: pace-spinner 400ms linear infinite;
     animation: pace-spinner 400ms linear infinite;
 }
-
 
 @keyframes pace-spinner {
     0% {
