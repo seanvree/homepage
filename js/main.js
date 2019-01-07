@@ -75,4 +75,32 @@ $(function() {
             search(query, engine);
         }
     });
+
+    $('#searchsubmit').click(function(e) {
+        e.preventDefault();
+        var query = $('.flexbox input').val();
+        var engine = $('.flexbox select option:selected').val();
+        search(query, engine);
+    });
+
+    $('.flexbox input').keypress(function (e) {
+        $('#searchsubmit').removeClass('hidden');
+        $('#searchclear').removeClass('hidden');
+    });
+
+    $('#flexbox').mouseleave(function (e) {
+        $('#searchsubmit').addClass('hidden');
+        $('#searchclear').addClass('hidden');
+    });
+
+    $('#flexbox-option').click(function (e) {
+        $('#searchsubmit').removeClass('hidden');
+        $('#searchclear').removeClass('hidden');
+    });
+
+    $("#searchclear").click(function () {
+        $("#flexbox-input").val('');
+        $('#searchclear').addClass('hidden');
+        $('#searchsubmit').addClass('hidden');
+    });
 });
