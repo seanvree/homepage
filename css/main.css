@@ -369,6 +369,11 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
 article,
 aside,
 details,
