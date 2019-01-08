@@ -532,7 +532,7 @@ input[type=search] {
     outline: none;
 }
 
-    /* // CHANGE ME - Replace w/ JS? */
+    /* // Replaced w/ JS: */
 /* input[type=search]::-webkit-search-cancel-button {
     -webkit-appearance: searchfield-cancel-button;
     cursor: pointer;
@@ -628,7 +628,6 @@ th {
     margin-top: 1em;
     margin-left: 1.875em;
     z-index: 1001;
-    /* color: rgba(80, 80, 80, 0.90); */
 }
 
 .timeArea .time {
@@ -802,7 +801,6 @@ i {
     width: 4.5625em;
     height: 1em;
     background: grey;
-    /* box-shadow: 0 0.4375em 0 -0.0625em rgba(128, 128, 128, 0.493); */
 }
 
 .cloud:nth-child(2) {
