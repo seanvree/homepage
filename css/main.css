@@ -369,10 +369,10 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
-select:-moz-focusring {
+/* select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000;
-}
+} */
 
 /* #flexbox-option::-moz-focusring {
     color: transparent;
