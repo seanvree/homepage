@@ -290,6 +290,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     margin-right: 7em;
     margin-top: .5em;
+    filter: brightness(75%) !important;
     cursor: pointer;
     z-index: 4000;
 }
@@ -302,6 +303,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     margin-right: 7em;
     margin-top: 2em;
+    filter: brightness(75%) !important;
     cursor: pointer;
     z-index: 4000;
 }
@@ -368,17 +370,6 @@ body::-webkit-scrollbar-thumb {
     text-align-last: center;
     cursor: pointer;
 }
-
-/* select:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-} */
-
-/* #flexbox-option::-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-} */
-
 
 article,
 aside,
