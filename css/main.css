@@ -518,8 +518,8 @@ input::-moz-focus-inner {
     border: 0;
     padding: 0;
     outline: none;
-    color: transparent !important;
-    text-shadow: 0 0 0 #000 !important;
+    /* color: transparent !important; */
+    /* text-shadow: 0 0 0 #000 !important; */
 }
 
 input {
