@@ -238,7 +238,6 @@ body::-webkit-scrollbar-thumb {
     -ms-transition: all 1s ease;
     transition: all 1s ease;
     z-index: 2000;
-
 }
 
 #flexbox {
