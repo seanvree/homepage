@@ -374,6 +374,13 @@ select:-moz-focusring {
     text-shadow: 0 0 0 #000;
 }
 
+#flexbox-option::-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+
+
 article,
 aside,
 details,
@@ -473,6 +480,7 @@ input:focus {
 
 *:focus {
     outline: none;
+    border: 0;
 }
 
 button {
@@ -504,11 +512,15 @@ html input[disabled] {
     cursor: default;
 }
 
+select:-moz-focusring,
+select::-moz-focus-inner,
 button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
     outline: none;
+    color: transparent !important;
+    text-shadow: 0 0 0 #000 !important;
 }
 
 input {
