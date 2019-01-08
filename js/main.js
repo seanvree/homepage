@@ -86,21 +86,38 @@ $(function() {
     $('.flexbox input').keypress(function (e) {
         $('#searchsubmit').removeClass('hidden');
         $('#searchclear').removeClass('hidden');
-    });
-
-    $('#flexbox').mouseleave(function (e) {
-        $('#searchsubmit').addClass('hidden');
-        $('#searchclear').addClass('hidden');
+        $('#inputlabel').addClass('lightfilter');
+        $('#optionlabel').addClass('lightfilter');
+        $('#background').addClass('darkfilter');
+        $('#info').addClass('darkfilter');
+        $('#fw-container').addClass('darkfilter');
+        $('#footer').addClass('darkfilter');
     });
 
     $('#flexbox-option').click(function (e) {
         $('#searchsubmit').removeClass('hidden');
         $('#searchclear').removeClass('hidden');
+        
     });
 
     $("#searchclear").click(function () {
         $("#flexbox-input").val('');
         $('#searchclear').addClass('hidden');
         $('#searchsubmit').addClass('hidden');
+        document.getElementById("flexbox-input").focus();
     });
+
+    $("#info").hover(function () {
+        $('#info').removeClass('darkfilter');
+    });
+
+    $('#background').click(function (e) {
+        $('#background').removeClass('darkfilter');
+        $('#info').removeClass('darkfilter');
+        $('#fw-container').removeClass('darkfilter');
+        $('#footer').removeClass('darkfilter');
+        $('#inputlabel').removeClass('lightfilter');
+        $('#optionlabel').removeClass('lightfilter');
+    });
+
 });
