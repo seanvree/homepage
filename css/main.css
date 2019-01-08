@@ -277,7 +277,10 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5em;
     font-weight: 300;
     background-color: rgba(21, 21, 21, 0.70);
-    /* border: 1px red solid; */
+}
+
+#flexbox-input::-ms-clear {
+    display: none;
 }
 
 #searchsubmit {
@@ -285,7 +288,7 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     width: 1.2em;
     height: 1.2em;
-    position: fixed;
+    position: absolute;
     margin-right: 7em;
     margin-top: .5em;
     cursor: pointer;
@@ -297,7 +300,7 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     width: 1.2em;
     height: 1.2em;
-    position: fixed;
+    position: absolute;
     margin-right: 7em;
     margin-top: 2em;
     cursor: pointer;
@@ -312,7 +315,6 @@ body::-webkit-scrollbar-thumb {
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
-    /* border: 1px blue solid; */
 }
 
 .v-center-flex {
