@@ -651,7 +651,7 @@ th {
     display: block;
     font-size: 0.4em;
     font-weight: 500;
-    margin-top: -10px;
+    margin-top: -.5em;
     cursor: default;
     max-width: 100%;
     overflow: hidden;
@@ -681,7 +681,7 @@ i {
     height: 2.5em;
     display: flex;
     position: fixed;
-    margin-top: 7em;
+    margin-top: 6.5em;
     margin-left: 1.875em;
     justify-content: center;
     text-align: center;
