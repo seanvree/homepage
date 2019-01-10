@@ -77,7 +77,7 @@ var t = window.setInterval(searchByLocation, 30000);
 var unit = 'metric';
 ```
 
-- Turn ON search auto-complete by changing the value `< "autocomplete="OFF" >` at the following location:
+- Turn ON search auto-complete by changing the value to `< "autocomplete="ON" >` at the following location:
 
 **`/index.html`: LINE 246:**
 
@@ -86,17 +86,17 @@ var unit = 'metric';
 ```
 
 
-- **WEATHER DATA**: Acquire your FREE API key and replace the default key in **`/js/weather.js` : LINE 11**
+- **WEATHER DATA**: Acquire your FREE API key and replace the default key in **`/js/weather.js` : LINE 13**
  https://home.openweathermap.org/users/sign_up
 ```
-   var weatherApi = 'https://api.openweathermap.org/data/2.5/weather?callback=?';
+   var weatherApiKey = ' YOUR KEY HERE ';
 ```
 
-- **TICKER DATA:** You will need to create your own feed.mikle ticker widget where you can customize your news sources and style.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image "/img/feedmikle.jpg" located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined below. 
+- **TICKER DATA:** You will need to create your own feed.mikle ticker widget where you can customize your news sources and style.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined below. 
  
  feed.mikle.com widget ticker link in **`/index.html` : Line 274**:  
  ```
- " <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script> "
+ <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script>
  ```
 
 <br>
@@ -114,6 +114,7 @@ var unit = 'metric';
 
 - [haltdev](https://github.com/haltdev) | [jonfinley](https://github.com/jonfinley) | [leram84](https://github.com/leram84) | [causefx](https://github.com/causefx)
 
+#
 
 <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
