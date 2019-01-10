@@ -633,7 +633,8 @@ th {
 .timeArea {
     top: 0;
     left: 0;
-    position: fixed;
+    /* position: fixed; */
+    position: static;
     margin-top: 1em;
     margin-left: 1.875em;
     z-index: 1001;
@@ -681,7 +682,6 @@ i {
     display: flex;
     position: fixed;
     /* margin-top: 6.5em; */
-    padding-top: 6.5em;
     margin-left: 1.875em;
     justify-content: center;
     text-align: center;
