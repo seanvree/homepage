@@ -47,7 +47,7 @@
 ## Notes:
 
 - Add your desired background image files
-**/inex.html: LINE 49 & 55**
+**/css/main.css: LINE 48 & 64**
 
 _NOTE_: Background DAY displays from 0800-2000 local browser time
 
