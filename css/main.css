@@ -680,7 +680,8 @@ i {
     height: 2.5em;
     display: flex;
     position: fixed;
-    margin-top: 6.5em;
+    /* margin-top: 6.5em; */
+    padding-top: 6.5em;
     margin-left: 1.875em;
     justify-content: center;
     text-align: center;
