@@ -1,6 +1,6 @@
 # Homepage
 
-**Custom Start/home page (multi Search) with live animated weather and news ticker -  written in HTML/JS. Minimal, self-hosted, and dope.**
+### Custom Start/home page (multi Search) with live animated weather and news ticker -  written in HTML/JS. Minimal, self-hosted, and dope.
 <br>
 
 **DEMO**:  https://seanvree.github.io/homepage/
