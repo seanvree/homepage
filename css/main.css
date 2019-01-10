@@ -676,7 +676,6 @@ i {
 /* weather Styles */
 
 #weather {
-    top:0;
     width: 9em;
     height: 2.5em;
     display: flex;
