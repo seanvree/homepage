@@ -101,7 +101,8 @@ var unit = 'metric';
 - [seanvree](https://github.com/seanvree) (Windows Wizard)
 
 - I usually hang out here [![Discord](https://img.shields.io/discord/102860784329052160.svg)](https://discord.gg/j2XGCtH)
-- Buy me a beer [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/seanvree)
+
+- Buy me a beer [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/monitorrapp)
 
 
 ## Credits:
