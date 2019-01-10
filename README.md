@@ -36,11 +36,9 @@
 
 <img src="https://i.imgur.com/UxVgYgH.gif">
 
-
-
 ## Screenshot Mobile:
 
-<img src="https://i.imgur.com/KKTO7cG.gif">
+<img src="https://i.imgur.com/MAlKhhB.gif">
 
 ## Animated Weather Icons :
 
