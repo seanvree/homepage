@@ -94,7 +94,7 @@ var unit = 'metric';
 
 - **TICKER DATA:** You will need to create your own FREE feed.mikle ticker widget where you can customize your news sources and style.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image "/img/feedmikle.jpg" located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined below. 
  
- feed.mikle.com widget ticker link in **/index.html : Line 274**:  
+ feed.mikle.com widget ticker link in **`/index.html` : Line 274**:  
  ```
  " <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script> "
  ```
