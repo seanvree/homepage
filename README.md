@@ -106,13 +106,7 @@ var unit = 'metric';
 
 ## Credits:
 
-- [haltdev](https://github.com/haltdev) (Resident Cargo Cult Developer)
-
-- [jonfinley](https://github.com/jonfinley)
-
-- [leram84](https://github.com/leram84)
-
-- [causefx](https://github.com/causefx)
+- [haltdev](https://github.com/haltdev) | [jonfinley](https://github.com/jonfinley) | [leram84](https://github.com/leram84) | [causefx](https://github.com/causefx)
 
 
 <p>
