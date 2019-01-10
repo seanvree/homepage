@@ -40,7 +40,7 @@
 
 <img src="https://i.imgur.com/KKTO7cG.gif">
 
-## Animated Icons :
+## Animated Weather Icons :
 
 <img src="https://i.imgur.com/0iamcsT.gif[/img]">
 
