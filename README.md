@@ -79,7 +79,7 @@ var unit = 'metric';
 
 - Turn ON search auto-complete by changing the value `< "autocomplete="OFF" >` at the following location:
 
-**/index.html: LINE 246:**
+**`/index.html`: LINE 246:**
 
 ```
 <input type="search" id="flexbox-input" name="s" value="" placeholder=" Search..." autocomplete="off" autofocus />
