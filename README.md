@@ -49,9 +49,9 @@
 - Add your desired background image files
 **/css/main.css: LINE 48 & 64**:
 
-`
+```
 background: url("background_day.jpg");
-`
+```
 
 _NOTE_: Background DAY displays from 0800-2000 local browser time
 
@@ -77,7 +77,7 @@ var t = window.setInterval(searchByLocation, 30000);
 var unit = 'metric';
 ```
 
-- Turn ON search auto-complete by changing the value < "autocomplete="OFF" > at the following location:
+- Turn ON search auto-complete by changing the value `< "autocomplete="OFF" >` at the following location:
 
 **/index.html: LINE 246:**
 
