@@ -8,9 +8,9 @@ $(function() {
 
     var unit = 'imperial';
     var lastData = {};
-    var weatherApiKey = 'd2ae6d25c09549f38d8feed1d116c580';
-
+    
     var weatherApi = 'https://api.openweathermap.org/data/2.5/weather?callback=?';
+    var weatherApiKey = 'd2ae6d25c09549f38d8feed1d116c580';
     var startPos;
     // seattle
     var lat = 47.6097;
