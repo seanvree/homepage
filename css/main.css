@@ -23,7 +23,7 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    color: #fff;
+    /* color: #fff; */
     font-family: sans-serif;
     font: 400 16px 'Open Sans', Arial;
     -ms-text-size-adjust: 100%;
@@ -109,39 +109,6 @@ html {
 h1 {
     margin: 0rem 0 0;
 }
-
-
-    /* // Change me // leave bootstrap off? */
-
-/* @media (min-width: 858px) {
-    html {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 780px) {
-    html {
-        font-size: 11px;
-    }
-}
-
-@media (min-width: 702px) {
-    html {
-        font-size: 10px;
-    }
-}
-
-@media (min-width: 724px) {
-    html {
-        font-size: 9px;
-    }
-}
-
-@media (max-width: 623px) {
-    html {
-        font-size: 8px;
-    }
-} */
 
 body::-webkit-scrollbar {
     width: 10px;
@@ -265,13 +232,12 @@ body::-webkit-scrollbar-thumb {
     max-height: 31.250em;
     padding-right: .95em;
     padding-left: .95em;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    transition: all 2s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
     z-index: 2000;
-
 }
 
 #flexbox {
@@ -310,7 +276,36 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5em;
     font-weight: 300;
     background-color: rgba(21, 21, 21, 0.70);
-    /* border: 1px red solid; */
+}
+
+#flexbox-input::-ms-clear {
+    display: none;
+}
+
+#searchsubmit {
+    top: 0;
+    right: 0;
+    width: 1.2em;
+    height: 1.2em;
+    position: absolute;
+    margin-right: 7em;
+    margin-top: .5em;
+    filter: brightness(75%) !important;
+    cursor: pointer;
+    z-index: 4000;
+}
+
+#searchclear {
+    top: 0;
+    right: 0;
+    width: 1.2em;
+    height: 1.2em;
+    position: absolute;
+    margin-right: 7em;
+    margin-top: 2em;
+    filter: brightness(75%) !important;
+    cursor: pointer;
+    z-index: 4000;
 }
 
 #optionlabel {
@@ -321,7 +316,6 @@ body::-webkit-scrollbar-thumb {
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
-    /* border: 1px blue solid; */
 }
 
 .v-center-flex {
@@ -476,6 +470,7 @@ input:focus {
 
 *:focus {
     outline: none;
+    border: 0;
 }
 
 button {
@@ -487,6 +482,7 @@ button,
 select {
     text-transform: none;
     outline: none;
+    cursor: pointer;
 }
 
 button,
@@ -506,11 +502,16 @@ html input[disabled] {
     cursor: default;
 }
 
+select:-moz-focusring,
+select::-moz-focus-inner,
 button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
     outline: none;
+    color: transparent !important;
+    /* text-shadow: 0 0 0 #000 !important; */
+    text-shadow: 0 0 0 rgb(87, 171, 250) !important;
 }
 
 input {
@@ -540,9 +541,11 @@ input[type=search] {
     outline: none;
 }
 
-input[type=search]::-webkit-search-cancel-button {
+    /* // Replaced w/ JS: */
+/* input[type=search]::-webkit-search-cancel-button {
     -webkit-appearance: searchfield-cancel-button;
-}
+    cursor: pointer;
+} */
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -625,7 +628,6 @@ th {
     -ms-transition: all 2s ease;
     transition: all 2s ease;
     z-index: 1000;
-
 }
 
 .timeArea {
@@ -635,7 +637,6 @@ th {
     margin-top: 1em;
     margin-left: 1.875em;
     z-index: 1001;
-    /* color: rgba(80, 80, 80, 0.90); */
 }
 
 .timeArea .time {
@@ -704,11 +705,11 @@ i {
     z-index: 4;
     display: block;
     float: right;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    transition: all 2s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 #tempwrapper #unit:hover {
@@ -756,7 +757,6 @@ i {
 
 #tooltiphidden {
     width: 50%;
-    color: pink;
     font-size: 1.5em;
     z-index: 0;
 }
@@ -810,7 +810,6 @@ i {
     width: 4.5625em;
     height: 1em;
     background: grey;
-    /* box-shadow: 0 0.4375em 0 -0.0625em rgba(128, 128, 128, 0.493); */
 }
 
 .cloud:nth-child(2) {
