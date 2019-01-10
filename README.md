@@ -47,13 +47,17 @@
 ## Notes:
 
 - Add your desired background image files
-**/css/main.css: LINE 48 & 64**
+**/css/main.css: LINE 48 & 64**:
+
+`
+background: url("background_day.jpg");
+`
 
 _NOTE_: Background DAY displays from 0800-2000 local browser time
 
 - Weather auto refresh default setting is set at **30** seconds (2 calls per minute), or 30000(ms). Max is 60 API calls per 1 minute. Change at the following location:
 
-**/js/weather.js : LINE 187:**
+**/js/weather.js : LINE 191:**
 
 ```
 var t = window.setInterval(searchByLocation, 30000);
@@ -61,7 +65,7 @@ var t = window.setInterval(searchByLocation, 30000);
 
 - Change the default temp unit from F to C by changing the following two items:
 
-**/index.html: LINE 79:**
+**/index.html: LINE 109:**
 
 ```
 <div id="unit" class="unit">&degC</div>
@@ -73,12 +77,12 @@ var t = window.setInterval(searchByLocation, 30000);
 var unit = 'metric';
 ```
 
-- Turn OFF search auto-complete by changing the value < "autocomplete="OFF" > at the following location:
+- Turn ON search auto-complete by changing the value < "autocomplete="OFF" > at the following location:
 
-**/index.html: LINE 215:**
+**/index.html: LINE 246:**
 
 ```
-<input type="search" id="flexbox-input" name="s" value="" placeholder="Search..." autocomplete="OFF" autofocus />
+<input type="search" id="flexbox-input" name="s" value="" placeholder=" Search..." autocomplete="off" autofocus />
 ```
 
 
@@ -90,7 +94,7 @@ var unit = 'metric';
 
 - **TICKER DATA:** You will need to create your own FREE feed.mikle ticker widget where you can customize your news sources and style.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image "/img/feedmikle.jpg" located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined below. 
  
- feed.mikle.com widget ticker link in **/index.html : Line 235**:  
+ feed.mikle.com widget ticker link in **/index.html : Line 274**:  
  ```
  " <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script> "
  ```
