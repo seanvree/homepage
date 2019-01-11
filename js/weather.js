@@ -36,6 +36,8 @@ $(function() {
             return ("https://openweathermap.org/city/") + cityid;
         });
 
+        $("#weatherloading").addClass('hidden');
+
         $("#unit").removeClass('hidden');
 
         $(".icon").addClass('hidden');
