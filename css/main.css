@@ -676,6 +676,12 @@ i {
 
 /* weather Styles */
 
+#weatherloading {
+    position: fixed;
+    z-index: 1000;
+    cursor: wait;
+}
+
 #weather {
     width: 9em;
     height: 2.5em;
