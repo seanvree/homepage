@@ -36,7 +36,10 @@ $(function() {
             return ("https://openweathermap.org/city/") + cityid;
         });
 
+        $("#unit").removeClass('hidden');
+
         $(".icon").addClass('hidden');
+
         var weatherCode = parseInt(lastData.weather[0].id, 10);
         var icon = lastData.weather[0].icon;
         var description = lastData.weather[0].description;
@@ -44,6 +47,8 @@ $(function() {
         console.log(weatherCode);
         console.log(description);
         console.log(icon);
+
+        $("#iconwrapper").removeClass('hidden');
 
         if (icon == "01d") {
             $(".sunny").removeClass('hidden');
