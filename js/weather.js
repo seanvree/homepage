@@ -12,7 +12,7 @@ $(function() {
     var weatherApi = 'https://api.openweathermap.org/data/2.5/weather?callback=?';
     var weatherApiKey = 'd2ae6d25c09549f38d8feed1d116c580';
     var startPos;
-    // seattle
+    // Seattle:
     var lat = 47.6097;
     var lon = -122.3331;
     var geoOptions = {
