@@ -6,7 +6,7 @@
 
                   Created by:
           https://github.com/seanvree
-          last updated: 09 JAN 2019
+          last updated: 14 JAN 2019
 
     -->
 
@@ -27,13 +27,13 @@
         <link rel="apple-touch-icon" href="favicon.png">
         <link rel="icon" type="image/png" href="favicon.png">
 
+        <script src="js/pace.min.js" async></script>
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/jquery-3.3.1.min.js"></script>
-
-        <script src="js/pace.min.js" async></script>
 
         <script src="js/main.js" async></script>
 
@@ -104,13 +104,17 @@
             </div>
 
             <div id="weather">
+
+                <div id="weatherloading">
+                    Loading weather ...
+                </div>
                 
                 <div id="tempwrapper" class="tempwrapper" >
-                    <div id="unit" class="unit">&degF</div>
                     <div id="temp" class="t-bottom t-sm" data-tooltip="Convert"></div>
+                    <div id="unit" class="unit hidden">&degF</div>
                 </div>
 
-                <div id="iconwrapper" class="t-bottom t-sm" data-tooltip="Forecast">
+                <div id="iconwrapper" class="hidden t-bottom t-sm" data-tooltip="Forecast">
 
                     <a href="#" id="weatherlink" rel="noopener noreferrer" target="_blank"> <h1 class="hidden">Weather</h1>
 
