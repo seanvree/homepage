@@ -157,7 +157,7 @@ $(function() {
     };
 
     var searchByLocation = function () {
-        console.log("starting with location: " + lat,lon + "");
+        console.log("Weather starting location: " + lat,lon + "");
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
         } else {
