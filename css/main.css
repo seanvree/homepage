@@ -744,13 +744,13 @@ i {
     position: relative;
     width: 50%;
     height: 100%;
-    float: right;
+    /* float: right; */
 }
 
 #temp {
     position: absolute;
-    right: .6em;
-    float: right;
+    /* right: .6em; */
+    /* float: right; */
     line-height: 1em;
     cursor: pointer;
     font-size: 2.4em;
@@ -765,8 +765,8 @@ i {
 
 .unit {
     position: absolute;
-    right: .2em;
-    float: right;
+    right: .4em;
+    /* float: right; */
     clear: both;
     cursor: pointer;
     font-size: 20px;
