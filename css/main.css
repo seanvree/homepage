@@ -652,7 +652,7 @@ th {
     display: block;
     font-size: 0.4em;
     font-weight: 500;
-    margin-top: -.5em;
+    margin-top: -.25em;
     cursor: default;
     max-width: 100%;
     overflow: hidden;
@@ -676,11 +676,6 @@ i {
 
 /* weather Styles */
 
-#weatherloading {
-    position: fixed;
-    z-index: 1000;
-    cursor: wait;
-}
 
 #weather {
     width: 9em;
@@ -696,22 +691,30 @@ i {
     z-index: 1000;
 }
 
-#iconwrapper {
-    position: relative;
-    display: block;
-    margin: auto;
-    height: 100%;
-    width: 50%;
-    /* change me: */
-    /* float: left; */
-    z-index: 3;
+#weatherloading {
+    position: fixed;
+    z-index: 1000;
+    cursor: wait;
 }
+
+/* .weather {
+    width: 100%;
+}
+ */
+
+/* .tempwrapper {
+    position: relative;
+    width: 50%;
+    height: 100%;
+} */
 
 #tempwrapper {
     height: 100%;
     width: 50%;
-    z-index: 4;
+    position: relative;
     display: block;
+    margin-top: .25em;
+    z-index: 4;
 }
 
 #tempwrapper #unit:hover {
@@ -722,29 +725,6 @@ i {
 #tempwrapper #temp:hover {
     color: #1E90FF;
     cursor: pointer;
-}
-
-.weather {
-    width: 100%;
-}
-
-.icon {
-    position: absolute;
-    top: 18px;
-    left: 50%;
-    float: left;
-    clear: both;
-    line-height: 0em;
-    /* control weather icon size below */
-    font-size: .5em;
-    /* control weather icon size above */
-}
-
-.tempwrapper {
-    position: relative;
-    width: 50%;
-    height: 100%;
-    /* float: right; */
 }
 
 #temp {
@@ -787,6 +767,29 @@ i {
     background: transparent;
     border-radius: 50%;
     font-size: 10em;
+}
+
+#iconwrapper {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 50%;
+    /* change me: */
+    /* float: left; */
+    z-index: 3;
+}
+
+.icon {
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    float: left;
+    clear: both;
+    line-height: 0em;
+    /* control weather icon size below */
+    font-size: .5em;
+    /* control weather icon size above */
 }
 
 .cloud {
