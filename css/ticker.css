@@ -21,6 +21,16 @@ body::-webkit-scrollbar-thumb {
     background-color: #252525;
 }
 
+.jspVerticalBar {
+    background: transparent !important;
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.jspTrack {
+    display: none !important;
+    visibility: hidden !important;
+}
 
 /*Elements below need to be uploaded to http://feed.mikle.com into your ticker widget settings under "custom .css" */
 
