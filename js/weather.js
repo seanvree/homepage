@@ -12,7 +12,7 @@ $(function() {
     var weatherApi = 'https://api.openweathermap.org/data/2.5/weather?callback=?';
     var weatherApiKey = 'd2ae6d25c09549f38d8feed1d116c580';
     var startPos;
-    // seattle
+    // Seattle:
     var lat = 47.6097;
     var lon = -122.3331;
     var geoOptions = {
@@ -36,7 +36,12 @@ $(function() {
             return ("https://openweathermap.org/city/") + cityid;
         });
 
+        $("#weatherloading").addClass('hidden');
+
+        $("#unit").removeClass('hidden');
+
         $(".icon").addClass('hidden');
+
         var weatherCode = parseInt(lastData.weather[0].id, 10);
         var icon = lastData.weather[0].icon;
         var description = lastData.weather[0].description;
@@ -44,6 +49,8 @@ $(function() {
         console.log(weatherCode);
         console.log(description);
         console.log(icon);
+
+        $("#iconwrapper").removeClass('hidden');
 
         if (icon == "01d") {
             $(".sunny").removeClass('hidden');
@@ -150,7 +157,7 @@ $(function() {
     };
 
     var searchByLocation = function () {
-        console.log("starting with location: " + lat,lon + "");
+        console.log("Weather starting location: " + lat,lon + "");
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
         } else {
