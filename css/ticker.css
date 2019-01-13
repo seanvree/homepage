@@ -23,12 +23,10 @@ body::-webkit-scrollbar-thumb {
 
 .jspVerticalBar {
     background: transparent !important;
-    display: none !important;
     visibility: hidden !important;
 }
 
 .jspTrack {
-    display: none !important;
     visibility: hidden !important;
 }
 
