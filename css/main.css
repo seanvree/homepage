@@ -773,6 +773,7 @@ i {
     position: relative;
     display: block;
     margin: auto;
+    margin-top: .25em;
     height: 100%;
     width: 50%;
     /* change me: */
