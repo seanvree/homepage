@@ -686,7 +686,8 @@ i {
     width: 9em;
     height: 2.5em;
     display: flex;
-    position: fixed;
+    /* position: fixed; */
+    position: static;
     /* margin-top: 6.5em; */
     margin-left: 1.875em;
     /* justify-content: center; */
@@ -701,7 +702,8 @@ i {
     margin: auto;
     height: 100%;
     width: 50%;
-    float: left;
+    /* change me: */
+    /* float: left; */
     z-index: 3;
 }
 
@@ -710,12 +712,6 @@ i {
     width: 50%;
     z-index: 4;
     display: block;
-    /* float: right; */
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
 }
 
 #tempwrapper #unit:hover {
