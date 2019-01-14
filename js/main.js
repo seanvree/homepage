@@ -103,26 +103,9 @@ $(function () {
     });
 
     $('#flexbox-option').click(function (e) {
-        //document.getElementById("flexbox-input").focus();
         $('#searchsubmit').removeClass('hidden');
         $('#searchclear').removeClass('hidden');
     });
-/* 
-    $("#googleselect").click(function (e) {
-        document.getElementById("flexbox-input").focus();
-    });
-
-    $("#youtubeselect").click(function (e) {
-        document.getElementById("flexbox-input").focus();
-    });
-
-    $("#wikiselect").click(function (e) {
-        document.getElementById("flexbox-input").focus();
-    });
-
-    $("#imdbselect").click(function (e) {
-        document.getElementById("flexbox-input").focus();
-    }); */
 
     $("#searchclear").click(function () {
         $("#flexbox-input").val('');
