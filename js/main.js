@@ -14,16 +14,22 @@ function setDate($) {
         $('.timeArea .time .timeInner').html(currentTime);
         $('.timeArea .time .date').html(currentDate);
     }
-    
+
     var toggle = true;
-    setInterval(function() {
-      var d = new Date().toLocaleTimeString('en-US', { hour12: false, hour: 'numeric', minute: 'numeric' });
-      var parts = d.split(":");
-      $('#hours').text(parts[0]);
-      $('#minutes').text(parts[1]);
-      $("#colon").css({ visibility: toggle?"visible":"hidden"});
-      toggle=!toggle;
-    },1000);
+    setInterval(function () {
+        var d = new Date().toLocaleTimeString('en-US', {
+            hour12: false,
+            hour: 'numeric',
+            minute: 'numeric'
+        });
+        var parts = d.split(":");
+        $('#hours').text(parts[0]);
+        $('#minutes').text(parts[1]);
+        $("#colon").css({
+            visibility: toggle ? "visible" : "hidden"
+        });
+        toggle = !toggle;
+    }, 1000);
 }
 
 function search(query, engine) {
@@ -51,10 +57,10 @@ function search(query, engine) {
     }
 }
 
-$(function() {
+$(function () {
     setDate($);
 
-    $(window).keydown(function(e) {
+    $(window).keydown(function (e) {
         if (e.keyCode == 72) {
             $('.hideable').toggleClass('hide');
         }
@@ -63,13 +69,13 @@ $(function() {
         }
     });
 
-    $(window).keyup(function(e) {
+    $(window).keyup(function (e) {
         if (e.keyCode == 16) {
             shiftDown = false;
         }
     });
 
-    $('.flexbox input, .flexbox select').keydown(function(e) {
+    $('.flexbox input, .flexbox select').keydown(function (e) {
         if (e.keyCode == 13) {
             e.preventDefault();
             var query = $('.flexbox input').val();
@@ -78,7 +84,7 @@ $(function() {
         }
     });
 
-    $('#searchsubmit').click(function(e) {
+    $('#searchsubmit').click(function (e) {
         e.preventDefault();
         var query = $('.flexbox input').val();
         var engine = $('.flexbox select option:selected').val();
@@ -97,11 +103,11 @@ $(function() {
     });
 
     $('#flexbox-option').click(function (e) {
-         //document.getElementById("flexbox-input").focus();
+        //document.getElementById("flexbox-input").focus();
         $('#searchsubmit').removeClass('hidden');
         $('#searchclear').removeClass('hidden');
     });
-
+/* 
     $("#googleselect").click(function (e) {
         document.getElementById("flexbox-input").focus();
     });
@@ -116,7 +122,7 @@ $(function() {
 
     $("#imdbselect").click(function (e) {
         document.getElementById("flexbox-input").focus();
-    });
+    }); */
 
     $("#searchclear").click(function () {
         $("#flexbox-input").val('');
