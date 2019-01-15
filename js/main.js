@@ -115,10 +115,10 @@ $(function () {
         $('#footer').addClass('darkfilter');
     });
 
-    $('#flexbox-option').click(function (e) {
-        $('#searchsubmit').removeClass('hidden');
-        $('#searchclear').removeClass('hidden');
-    });
+    // $('#flexbox-option').click(function (e) {
+    //     $('#searchsubmit').removeClass('hidden');
+    //     $('#searchclear').removeClass('hidden');
+    // });
 
     $("#searchclear").click(function () {
         $("#flexbox-input").val('');
