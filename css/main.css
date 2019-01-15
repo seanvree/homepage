@@ -270,14 +270,14 @@ body::-webkit-scrollbar-thumb {
 
 [data-tooltip1].t-top:before {
     bottom: 100%;
-    left: 60%;
+    left: 55%;
     margin-bottom: 5px;
     transform: translateX(-50%);
 }
 
 [data-tooltip1].t-top:after {
     bottom: 100%;
-    left: 60%;
+    left: 55%;
     transform: translateX(-50%);
     border-top: 8px solid #000;
     border-bottom: none;
@@ -285,7 +285,7 @@ body::-webkit-scrollbar-thumb {
 
 [data-tooltip1].t-top-hidden:after {
     bottom: 100%;
-    left: 60%;
+    left: 55%;
     transform: translateX(-50%);
     border-top: 8px solid #000;
     border-bottom: none;
