@@ -85,7 +85,17 @@
                 $('#searchsubmit').removeClass('hidden');
                 $('#searchclear').removeClass('hidden');
             }
-        </script>        
+        </script>    
+        
+            <script>
+                $(document).ready(function () {
+                    $('.flexbox input').keypress(function (e) {
+                        $('#searchsubmit').removeClass('hidden');
+                        $('#searchclear').removeClass('hidden');
+                    });
+                });
+            </script>
+
 
     </head>
 
