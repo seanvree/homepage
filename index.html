@@ -87,14 +87,23 @@
             }
         </script>    
         
-            <script>
+<!--             <script>
                 $(document).ready(function () {
                     $('.flexbox input').keypress(function (e) {
                         $('#searchsubmit').removeClass('hidden');
                         $('#searchclear').removeClass('hidden');
                     });
                 });
-            </script>
+            </script> -->
+
+<!--             <script>
+                $(document).ready(function () {
+                    $('.flexbox input').keypress(function (e) {
+                        $('#searchsubmit').removeClass('hidden');
+                        $('#searchclear').removeClass('hidden');
+                    });
+                });
+            </script> -->
 
 
     </head>
@@ -265,7 +274,7 @@
                 
                 <label id="inputlabel" for="flexbox-input" class="t-top t-md t-md-hidden t-top-hidden" data-tooltip1="Enter a search query">
                     
-                    <input type="search" id="flexbox-input"  name="s" value="" placeholder=" Search..." autocomplete="off" autofocus />
+                    <input type="search" id="flexbox-input" name="s" value="" placeholder=" Search..." autocomplete="off" autofocus onclick="inputFocus()" />
 
                 </label>
 
