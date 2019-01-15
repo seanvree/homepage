@@ -89,14 +89,16 @@
         </script>
 
         <script>
-            function test() {
-                var exmpleInput = document.getElementById('flexbox-input');
-                if (exmpleInput) {
-                    exmpleInput.addEventListener("input", function () {
-                        inputFocus(this)
-                    }, false);
+            $(document).ready(function () {
+                function test() {
+                    var exmpleInput = document.getElementById('flexbox-input');
+                    if (exmpleInput) {
+                        exmpleInput.addEventListener("input", function () {
+                            inputFocus(this)
+                        }, false);
+                    }
                 }
-            }
+            });
         </script>
 
     </head>
