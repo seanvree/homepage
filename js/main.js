@@ -80,7 +80,7 @@ $(function () {
             var x;
             x = document.getElementById("flexbox-input").value;
             if (x == "") {
-                alert("Enter a search term");
+                alert("Enter a search query");
                 document.getElementById("flexbox-input").focus();
                 return false;
             };
@@ -95,7 +95,7 @@ $(function () {
         var x;
         x = document.getElementById("flexbox-input").value;
         if (x == "") {
-            alert("Enter a search term");
+            alert("Enter a search query");
             document.getElementById("flexbox-input").focus();
             return false;
         };
