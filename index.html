@@ -6,7 +6,7 @@
 
                   Created by:
           https://github.com/seanvree
-          last updated: 14 JAN 2019
+          last updated: 15 JAN 2019
 
     -->
 
@@ -83,40 +83,18 @@
             function inputFocus() {
                 document.getElementById("flexbox-input").focus();
                 $('#inputlabel').addClass('t-md-hidden t-top-hidden');
-                // $('#searchsubmit').removeClass('hidden');
-                // $('#searchclear').removeClass('hidden');
             }
         </script>
 
-<!--         <script>
+        <script>
             $(document).ready(function () {
-                function test() {
-                    var exmpleInput = document.getElementById('flexbox-input');
-                    if (exmpleInput) {
-                        exmpleInput.addEventListener("input", function () {
-                            inputFocus(this)
-                        }, false);
-                    }
-                }
+                document.getElementById("flexbox-input").oninput = function (e) {
+                    $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+                    $('#searchsubmit').removeClass('hidden');
+                    $('#searchclear').removeClass('hidden');
+                };
             });
-        </script> -->
-
-                <script>
-                    $(document).ready(function () {
-                        document.getElementById("flexbox-input").oninput = function (e) {
-
-                            $('#inputlabel').addClass('t-md-hidden t-top-hidden');
-                            $('#searchsubmit').removeClass('hidden');
-                            $('#searchclear').removeClass('hidden');
-                            //e = e || window.event;
-                            //var k = e.keyCode || e.which;
-                            //this.value = String.fromCharCode(k);
-                           //console.log(this.value);
-
-                           //return false;
-                        };
-                    });
-                </script>
+        </script>
 
     </head>
 
