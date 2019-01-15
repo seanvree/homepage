@@ -143,7 +143,7 @@ body::-webkit-scrollbar-thumb {
 /* ToolTips */
 
 [data-tooltip] {
-    cursor: pointer;
+    cursor: default;
     position: relative;
     z-index: 4;
 }
@@ -229,8 +229,6 @@ body::-webkit-scrollbar-thumb {
     width: 70px;
 }
 
-
-
 [data-tooltip1] {
     cursor: default;
     position: relative;
@@ -272,14 +270,14 @@ body::-webkit-scrollbar-thumb {
 
 [data-tooltip1].t-top:before {
     bottom: 100%;
-    left: 50%;
+    left: 60%;
     margin-bottom: 5px;
     transform: translateX(-50%);
 }
 
 [data-tooltip1].t-top:after {
     bottom: 100%;
-    left: 50%;
+    left: 60%;
     transform: translateX(-50%);
     border-top: 8px solid #000;
     border-bottom: none;
@@ -287,7 +285,7 @@ body::-webkit-scrollbar-thumb {
 
 [data-tooltip1].t-top-hidden:after {
     bottom: 100%;
-    left: 50%;
+    left: 60%;
     transform: translateX(-50%);
     border-top: 8px solid #000;
     border-bottom: none;
@@ -1176,7 +1174,7 @@ i {
 }
 
 .fw-iframe {
-    height: 50px !important;
+    height: 55px !important;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
