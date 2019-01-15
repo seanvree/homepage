@@ -79,14 +79,14 @@
             });
         </script>
 
-<!--         <script>
+        <script>
             function inputFocus() {
                 document.getElementById("flexbox-input").focus();
-                $('#searchsubmit').removeClass('hidden');
-                $('#searchclear').removeClass('hidden');
                 $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+                // $('#searchsubmit').removeClass('hidden');
+                // $('#searchclear').removeClass('hidden');
             }
-        </script> -->
+        </script>
 
 <!--         <script>
             $(document).ready(function () {
@@ -106,6 +106,8 @@
                         document.getElementById("flexbox-input").oninput = function (e) {
 
                             $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+                            $('#searchsubmit').removeClass('hidden');
+                            $('#searchclear').removeClass('hidden');
                             //e = e || window.event;
                             //var k = e.keyCode || e.which;
                             //this.value = String.fromCharCode(k);
