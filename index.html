@@ -79,16 +79,16 @@
             });
         </script>
 
-        <script>
+<!--         <script>
             function inputFocus() {
                 document.getElementById("flexbox-input").focus();
                 $('#searchsubmit').removeClass('hidden');
                 $('#searchclear').removeClass('hidden');
                 $('#inputlabel').addClass('t-md-hidden t-top-hidden');
             }
-        </script>
+        </script> -->
 
-        <script>
+<!--         <script>
             $(document).ready(function () {
                 function test() {
                     var exmpleInput = document.getElementById('flexbox-input');
@@ -99,7 +99,22 @@
                     }
                 }
             });
-        </script>
+        </script> -->
+
+                <script>
+                    $(document).ready(function () {
+                        document.getElementById("flexbox-input").onkeypress = function (e) {
+
+                            $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+                            //e = e || window.event;
+                            //var k = e.keyCode || e.which;
+                            //this.value = String.fromCharCode(k);
+                           //console.log(this.value);
+
+                           //return false;
+                        };
+                    });
+                </script>
 
     </head>
 
