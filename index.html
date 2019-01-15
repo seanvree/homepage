@@ -82,8 +82,10 @@
         <script>
             function inputFocus() {
                 document.getElementById("flexbox-input").focus();
+                $('#searchsubmit').removeClass('hidden');
+                $('#searchclear').removeClass('hidden');
             }
-        </script>
+        </script>        
 
     </head>
 
@@ -257,7 +259,7 @@
 
                 </label>
 
-                <img src="css/checkmark-green.png" id="searchsubmit" class="hidden" alt="Search"  title="Execute Search">
+                <img src="css/checkmark-green.png" id="searchsubmit" class="hidden" alt="Search" title="Execute Search">
 
                 <img src="css/cancel-red.png" id="searchclear" class="hidden" alt="Clear" title="Clear Search">
 
