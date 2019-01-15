@@ -77,6 +77,13 @@ $(function () {
     $('.flexbox input, .flexbox select').keydown(function (e) {
         if (e.keyCode == 13) {
             e.preventDefault();
+            var x;
+            x = document.getElementById("flexbox-input").value;
+            if (x == "") {
+                alert("Enter a search term");
+                document.getElementById("flexbox-input").focus();
+                return false;
+            };
             var query = $('.flexbox input').val();
             var engine = $('.flexbox select option:selected').val();
             search(query, engine);
@@ -85,6 +92,13 @@ $(function () {
 
     $('#searchsubmit').click(function (e) {
         e.preventDefault();
+        var x;
+        x = document.getElementById("flexbox-input").value;
+        if (x == "") {
+            alert("Enter a search term");
+            document.getElementById("flexbox-input").focus();
+            return false;
+        };
         var query = $('.flexbox input').val();
         var engine = $('.flexbox select option:selected').val();
         search(query, engine);
