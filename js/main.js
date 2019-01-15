@@ -80,7 +80,7 @@ $(function () {
             var x;
             x = document.getElementById("flexbox-input").value;
             if (x == "") {
-                alert("Enter a search query");
+                $('#inputlabel').removeClass('t-md-hidden t-top-hidden');
                 document.getElementById("flexbox-input").focus();
                 return false;
             };
@@ -95,7 +95,7 @@ $(function () {
         var x;
         x = document.getElementById("flexbox-input").value;
         if (x == "") {
-            alert("Enter a search query");
+            $('#inputlabel').removeClass('t-md-hidden t-top-hidden');
             document.getElementById("flexbox-input").focus();
             return false;
         };
@@ -113,12 +113,8 @@ $(function () {
         $('#info').addClass('darkfilter');
         $('#fw-container').addClass('darkfilter');
         $('#footer').addClass('darkfilter');
+        $('#inputlabel').addClass('t-md-hidden t-top-hidden');
     });
-
-    // $('#flexbox-option').click(function (e) {
-    //     $('#searchsubmit').removeClass('hidden');
-    //     $('#searchclear').removeClass('hidden');
-    // });
 
     $("#searchclear").click(function () {
         $("#flexbox-input").val('');
