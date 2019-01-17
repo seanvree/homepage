@@ -1,5 +1,6 @@
 var shiftDown = false;
 
+
 function setDate($) {
     console.log('Retrieving updated time');
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
