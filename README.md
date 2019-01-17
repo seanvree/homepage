@@ -5,13 +5,14 @@
 
 **DEMO**:  https://seanvree.github.io/homepage/
 
-**Last Updated**: 15 JAN 2019: 
+**Last Updated**: 16 JAN 2019: 
 - Added search submit / clear functions.
-- Added fade in/fade out on search input activity.
+- Added fade in/fade out on search input and hover activity.
 - Changed drop-down search engine select behavior.
 - Added detailed browser console outputs.
 - Added transitions for all elements.
-- updated bootstrap.
+- Updated bootstrap.
+- Added search input validation.
 
 
 # Features:
@@ -25,7 +26,7 @@
 - Weather API provided via OpenWeatherMap.
 - Click-to-convert Celsius/Fahrenheit.
 - 5-day forecast data (Click on right weather icon).
-- Page hit counter (bottom right).
+- Page hit counter (PHP) (bottom right).
 - Stand-alone weather app can be found here:  https://github.com/seanvree/Weather
 - Check out my other self-hosted apps here:  https://github.com/Monitorr
 
@@ -65,7 +66,7 @@ var t = window.setInterval(searchByLocation, 30000);
 
 - Change the default temp unit from F to C by changing the following two items:
 
-**`/index.html`: LINE 120:**
+**`/index.html`: LINE 131:**
 
 ```
 <div id="unit" class="unit hidden">&degF</div>
@@ -79,7 +80,7 @@ var unit = 'metric';
 
 - Turn ON search auto-complete by changing the value to `< "autocomplete="ON" >` at the following location:
 
-**`/index.html`: LINE 256:**
+**`/index.html`: LINE 267:**
 
 ```
 <input type="search" id="flexbox-input" name="s" value="" placeholder=" Search..." autocomplete="off" autofocus />
@@ -92,9 +93,9 @@ var unit = 'metric';
    var weatherApiKey = ' YOUR KEY HERE ';
 ```
 
-- **TICKER DATA:** You will need to create your own feed.mikle ticker widget where you can customize your news sources and style.  To do so, go to https://feed.mikle.com and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined below. 
+- **TICKER DATA:** You will need to create your own feed.mikle ticker widget where you can customize your RSS news sources and style.  To do so, go to https://feed.mikle.com, create an account, and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined below. 
  
- feed.mikle.com widget ticker link in **`/index.html` : Line 284**:  
+ feed.mikle.com widget ticker link in **`/index.html` : Line 295**:  
  ```
  <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script>
  ```
