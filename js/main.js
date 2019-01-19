@@ -139,6 +139,17 @@ $(function () {
         $('#optionlabel').removeClass('lightfilter');
         $('#suggestions-container').addClass('hidden');
         $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+       // $('#help').addClass('hidden');
+    });
+
+    $('body').click(function (e) {
+        $('#help').addClass('hidden');
+    });
+
+    $('body').keydown(function (e) {
+        if (e.keyCode == 191) {
+            $('#help').removeClass('hidden');
+        }
     });
 
 });
