@@ -1,11 +1,12 @@
 # Homepage
 
-### Custom Start/home page (multi Search) with live animated weather and news ticker -  written in HTML/JS. Minimal, self-hosted, and dope.
+### Custom Start/home page (multi LIVE Search) with live animated weather and news ticker -  written in HTML/JS. Minimal, self-hosted, and dope.
 <br>
 
 **DEMO**:  https://seanvree.github.io/homepage/
 
-**Last Updated**: 16 JAN 2019: 
+**Last Updated**: 19 JAN 2019: 
+- Added LIVE searching.
 - Added search submit / clear functions.
 - Added fade in/fade out on search input and hover activity.
 - Changed drop-down search engine select behavior.
@@ -17,6 +18,7 @@
 
 # Features:
 - Self hosted, VERY minimal(ish)/lightweight.
+- Live searching.
 - Mobile ready.
 - Fully functional multi-search input form (Google, YouTube, Wiki, IMDB).
 - Live custom news ticker provided by: feed.mikle.com ($1/month).
@@ -100,6 +102,49 @@ var unit = 'metric';
  <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script>
  ```
 
+## LIVE Search Usage:
+
+To go to a site, enter the corresponding key. To view the available sites and
+their keys, press `?`. If your input doesn't match any of the commands, a
+generic Google search will be triggered. For example:
+
+- Entering `r` would redirect you to [www.reddit.com](https://www.reddit.com).
+- Entering `t` would redirect you to [twitch.tv](https://www.twitch.tv).
+- Entering `cats` would search
+  [Google for cats](https://encrypted.google.com/search?q=cats).
+
+### Searching
+
+You can search any of the sites by typing a colon after the site's key, followed
+by your search query. For example:
+
+- Entering `g:tilde` would search
+  [GitHub for tilde](https://github.com/search?q=tilde).
+- Entering `s:radiohead` would search
+  [SoundCloud for radiohead](https://soundcloud.com/search?q=radiohead).
+
+### Specific Locations
+
+You can go to a specific location on a site by typing a forward slash after the
+site's key, followed by the location on the site you'd like to be redirected to.
+For example:
+
+- Entering `r/r/startpages` would redirect you to
+  [www.reddit.com/r/startpages](https://www.reddit.com/r/startpages)
+- Entering `h/popular` would redirect you to
+  [hypem.com/popular](http://hypem.com/popular).
+
+### URL Redirects
+
+If you enter in a full domain or URL, you will be redirected to said domain or
+URL. For example:
+
+- Entering `stallman.org` would redirect you to
+  [stallman.org](https://stallman.org/).
+- Entering `https://smile.amazon.com` would redirect you to
+  [smile.amazon.com](https://smile.amazon.com/).
+
+
 <br>
 
 ## About Me:
@@ -113,7 +158,7 @@ var unit = 'metric';
 
 ## Credits:
 
-- [haltdev](https://github.com/haltdev) | [jonfinley](https://github.com/jonfinley) | [leram84](https://github.com/leram84) | [causefx](https://github.com/causefx)
+- [haltdev](https://github.com/haltdev) | [jonfinley](https://github.com/jonfinley) | [leram84](https://github.com/leram84) | [causefx](https://github.com/causefx) | [cadejscroggins](https://github.com/cadejscroggins) 
 
 #
 
