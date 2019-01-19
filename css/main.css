@@ -752,11 +752,11 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     /* width: 100%; */
     height: 100%;
-    padding-top: 4vw;
+    padding-top: 3vw;
     padding-left: 1em;
     padding-right: 1em;
     background-color: rgba(21, 21, 21, 0.65);
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .help {
