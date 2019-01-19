@@ -1,12 +1,13 @@
 
 <!doctype html>
+<!-- HTML5 -->
 <html lang="en">
 
     <!--
 
-                  Created by:
-          https://github.com/seanvree
-          last updated: 16 JAN 2019
+                Created by:
+        https://github.com/seanvree
+         last updated: 19 JAN 2019
 
     -->
 
@@ -14,7 +15,7 @@
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
         <meta name="theme-color" content="#464646" />
         <meta name="theme_color" content="#464646" />
@@ -23,20 +24,23 @@
 
         <title>Homepage</title>
 
+        <script src="js/pace.js" async></script>
+
         <link rel="manifest" href="webmanifest.json">
         <link rel="apple-touch-icon" href="favicon.png">
         <link rel="icon" type="image/png" href="favicon.png">
 
-        <script src="js/pace.min.js" async></script>
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'">
+        <noscript>
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+        </noscript>
 
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/jquery-3.3.1.min.js"></script>
 
         <script src="js/main.js" async></script>
-
+        
         <script src="js/weather.js" async></script>
 
         <script>
@@ -80,9 +84,18 @@
         </script>
 
         <script>
+            $(document).ready(function () {
+                $('#optionlabel').hover(function () {
+                    $('#optionlabel').removeClass('t-sm-hidden t-top-hidden');
+                });
+            });
+        </script>
+
+        <script>
             function inputFocus() {
                 document.getElementById("flexbox-input").focus();
                 $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+                $('#suggestions-container').addClass('hidden');
             }
         </script>
 
@@ -90,8 +103,10 @@
             $(document).ready(function () {
                 document.getElementById("flexbox-input").oninput = function (e) {
                     $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+                    $('#optionlabel').addClass('t-sm-hidden t-top-hidden');
                     $('#searchsubmit').removeClass('hidden');
                     $('#searchclear').removeClass('hidden');
+                    $('#suggestions-container').removeClass('hidden');
                 };
             });
         </script>
@@ -126,8 +141,8 @@
                     Loading weather ...
                 </div>
                 
-                <div id="tempwrapper" class="tempwrapper" >
-                    <div id="temp" class="t-bottom t-sm" data-tooltip="Convert"></div>
+                <div id="tempwrapper" class="tempwrapper t-bottom t-sm" data-tooltip="Convert">
+                    <div id="temp"></div>
                     <div id="unit" class="unit hidden">&degF</div>
                 </div>
 
@@ -264,7 +279,7 @@
                 
                 <label id="inputlabel" for="flexbox-input" class="t-top t-md t-md-hidden t-top-hidden" data-tooltip1="Enter a search query">
                     
-                    <input type="search" id="flexbox-input" name="s" value="" placeholder=" Search..." autocomplete="off" autofocus/>
+                    <input type="search" id="flexbox-input" name="s" value="" placeholder=" Search..." autocomplete="off" spellcheck="false" autofocus/>
                 
                 </label>
 
@@ -287,6 +302,10 @@
 
                 </label>
 
+                <div id="suggestions-container" class="hidden">
+                    <ul class="search-suggestions" id="search-suggestions"></ul>
+                </div>
+
             </form>
 
             <!-- BUILD YOUR OWN TICKER FROM www.feed.mikle.com and insert your custom link below after "SRC=" -->
@@ -300,18 +319,24 @@
         </div>
 
             <!-- PHP "Hit Counter": -->
-            <!--         
-                <div id="counter">
-                    <p>
-                        <script src="php/hits.php"></script>
-                    </p>
-                </div> 
-            -->
+                <!--         
+                    <div id="counter">
+                        <p>
+                            <script src="php/hits.php"></script>
+                        </p>
+                    </div> 
+                -->
+                
+        <aside class="help overlay" id="help"></aside>
 
         <div id="footer">
             <p> This page was curated from <a href="https://github.com/seanvree/homepage" title="GitHub Repo" rel="noopener noreferrer" target="_blank"> THIS GitHub project</a>
             </p>
         </div>
+
+            <!-- // Live serach function: -->
+        
+        <script src="js/tilde.js" async></script>
 
     </body>
 

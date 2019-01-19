@@ -1,6 +1,5 @@
 var shiftDown = false;
 
-
 function setDate($) {
     console.log('Retrieving updated time');
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
@@ -115,12 +114,15 @@ $(function () {
         $('#fw-container').addClass('darkfilter');
         $('#footer').addClass('darkfilter');
         $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+        $('#suggestions-container').removeClass('hidden');
     });
 
     $("#searchclear").click(function () {
         $("#flexbox-input").val('');
         $('#searchclear').addClass('hidden');
         $('#searchsubmit').addClass('hidden');
+        $('#suggestions-container').addClass('hidden');
+
         document.getElementById("flexbox-input").focus();
     });
 
@@ -135,6 +137,8 @@ $(function () {
         $('#footer').removeClass('darkfilter');
         $('#inputlabel').removeClass('lightfilter');
         $('#optionlabel').removeClass('lightfilter');
+        $('#suggestions-container').addClass('hidden');
+        $('#inputlabel').addClass('t-md-hidden t-top-hidden');
     });
 
 });
