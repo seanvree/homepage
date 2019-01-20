@@ -122,6 +122,11 @@ summary {
     visibility: hidden !important;
 }
 
+.hiddenscreen {
+    display: none !important;
+    visibility: hidden !important;
+}
+
 [hidden],
 template {
     display: none;
