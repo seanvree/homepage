@@ -63,6 +63,14 @@
 
         <script>
             $(document).ready(function () {
+                if ($(window).width() < 480) {
+                    $('#help').addClass('hiddenscreen');
+                }
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
                 $('#formstretch').hover(function () {
                     $('#inputlabel').addClass('lightfilter');
                     $('#optionlabel').addClass('lightfilter');
