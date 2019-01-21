@@ -49,6 +49,10 @@ $(function() {
         console.log(description);
         console.log(icon);
 
+        $("#iconwrapper").attr('data-tooltip', function (index, attr) {
+            return description;
+        });
+
         $("#iconwrapper").removeClass('hidden');
 
         if (icon == "01d") {
