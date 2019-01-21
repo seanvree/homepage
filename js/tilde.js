@@ -272,7 +272,7 @@ $(function () {
 
         pad: v => ('0' + v.toString()).slice(-2),
     };
-    
+
 	class Help {
         constructor(options) {
             this._el = $.el('#help');
@@ -320,7 +320,7 @@ $(function () {
                 <li class="command">
                     <a href="${url}" target="${this._newTab ? '_blank' : '_self'}">
                     <span class="command-key">${key}</span>
-                    <span class="command-name">${name}</span>
+                    <span class="command-name" title="${url}">${name}</span>
                     </a>
                 </li>
                 `;
