@@ -272,6 +272,7 @@ $(function () {
 
         pad: v => ('0' + v.toString()).slice(-2),
     };
+    
 	class Help {
         constructor(options) {
             this._el = $.el('#help');
