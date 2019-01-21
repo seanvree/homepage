@@ -105,7 +105,7 @@ var unit = 'metric';
 ## LIVE Search Usage:
 
 To go to a site, enter the corresponding key. To view the available sites and
-their keys, press `?`. If your input doesn't match any of the commands, a
+their keys, press `?` (NOTE: the Help menu only appears on desktop browsers). If your input doesn't match any of the commands, a
 generic Google search will be triggered. For example:
 
 - Entering `r` would redirect you to [www.reddit.com](https://www.reddit.com).
