@@ -139,7 +139,6 @@ $(function () {
         $('#optionlabel').removeClass('lightfilter');
         $('#suggestions-container').addClass('hidden');
         $('#inputlabel').addClass('t-md-hidden t-top-hidden');
-       // $('#help').addClass('hidden');
     });
 
     $('body').click(function (e) {
