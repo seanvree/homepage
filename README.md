@@ -104,24 +104,20 @@ var unit = 'metric';
 
 ## LIVE Search Usage:
 
-To go to a site, enter the corresponding key. To view the available sites and
-their keys, press `?` (NOTE: the Help menu only appears on desktop browsers). If your input doesn't match any of the commands, a
-generic Google search will be triggered. For example:
+### Key Searching
 
-- Entering `r` would redirect you to [www.reddit.com](https://www.reddit.com).
-- Entering `t` would redirect you to [twitch.tv](https://www.twitch.tv).
-- Entering `cats` would search
-  [Google for cats](https://encrypted.google.com/search?q=cats).
+To view the available sites and their keys, press `?` for the help menu.
+(NOTE: the Help menu only appears on desktop browsers). 
 
-### Searching
-
-You can search any of the sites by typing a colon after the site's key, followed
-by your search query. For example:
+You can search any of the sites by typing a colon after the site's key, followed by your search query. 
+For example:
 
 - Entering `g:tilde` would search
   [GitHub for tilde](https://github.com/search?q=tilde).
 - Entering `s:radiohead` would search
   [SoundCloud for radiohead](https://soundcloud.com/search?q=radiohead).
+
+If your input doesn't match any of the commands, a generic Google search will be triggered.
 
 ### Specific Locations
 
