@@ -11,7 +11,8 @@ $(function () {
         * The category, name, key, url, search path and color for your commands.
         * If none of the specified keys are matched, the '*' key is used.
 
-        * // CHANGE ME:  HELP DOESN't WORk
+        * To invoke the HELP menu, press the "?" key.
+        * NOTE: the HELP menu will not appear on mobile browsers.
 
         * Commands without a category don't show up in the help menu.
         */
@@ -271,8 +272,7 @@ $(function () {
 
         pad: v => ('0' + v.toString()).slice(-2),
     };
-
-    class Help {
+	class Help {
         constructor(options) {
             this._el = $.el('#help');
             this._commands = options.commands;
@@ -344,8 +344,8 @@ $(function () {
             document.addEventListener('keydown', this._handleKeydown);
         }
     };
-
-    class Influencer {
+    
+	class Influencer {
         constructor(options) {
             this._limit = options.limit;
             this._parseQuery = options.parseQuery;
@@ -565,8 +565,8 @@ $(function () {
             if (e) e.preventDefault();
         }
     };
-
-    class QueryParser {
+    
+	class QueryParser {
         constructor(options) {
             this._commands = options.commands;
             this._searchDelimiter = options.searchDelimiter;
@@ -665,8 +665,8 @@ $(function () {
             return `${parser.protocol}//${parser.hostname}`;
         }
     };
-
-    class Form {
+    
+	class Form {
         constructor(options) {
             this._formEl = $.el('#formstretch');
             this._inputEl = $.el('#flexbox-input');
