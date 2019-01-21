@@ -1,4 +1,3 @@
-
 // This script is derived from this GitHub project: https://github.com/cadejscroggins/tilde
 
 $(function () {
