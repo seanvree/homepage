@@ -60,7 +60,7 @@ _NOTE_: Background DAY displays from 0800-2000 local browser time
 
 - Weather auto refresh default setting is set at **30** seconds (2 calls per minute), or 30000(ms). Max is 60 API calls per 1 minute. Change at the following location:
 
-**`/js/weather.js` : LINE 197:**
+**`/js/weather.js` : LINE 201:**
 
 ```
 var t = window.setInterval(searchByLocation, 30000);
