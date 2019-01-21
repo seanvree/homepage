@@ -778,6 +778,8 @@ body.suggestions .search-suggestions {
     color: white;
     height: 2em;
     line-height: .5em;
+    padding-left: .25em;
+    padding-right: .25em;
     background-color: rgba(21, 21, 21, 0.65);
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
