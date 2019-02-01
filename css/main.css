@@ -728,7 +728,10 @@ li {
     color: rgb(87, 171, 250);
     font-size: 1em;
     font-weight: 300;
+    text-align: center;
     text-align-last: center;
+    -moz-text-align-last: center;
+    text-align: -webkit-center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
