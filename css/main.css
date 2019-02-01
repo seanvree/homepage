@@ -698,27 +698,8 @@ li {
     -webkit-border-radius: 0;
 }
 
-.v-center-flex {
-    height: 4em;
-    width: 6em;
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- */
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    /* NEW, Opera 12.1, Firefox 20+ */
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-}
 
+/* 
 .v-center-flex div {
     height: 4em;
     width: 6em;
@@ -726,7 +707,7 @@ li {
     border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
-}
+} */
 
 #flexbox-option {
     height: 4em;
@@ -748,6 +729,9 @@ li {
     font-size: 1em;
     font-weight: 300;
     text-align-last: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     cursor: pointer;
 }
 
