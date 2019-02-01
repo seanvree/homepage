@@ -733,8 +733,9 @@ li {
     -moz-text-align-last: center;
     text-align: -webkit-center;
     -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
+    align-content: center;
+    align-self: center;
     cursor: pointer;
 }
 
