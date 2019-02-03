@@ -698,17 +698,6 @@ li {
     -webkit-border-radius: 0;
 }
 
-
-/* 
-.v-center-flex div {
-    height: 4em;
-    width: 6em;
-    outline: none;
-    border: 0;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-} */
-
 #flexbox-option {
     height: 4em;
     width: 6em;
@@ -738,7 +727,6 @@ li {
     align-self: center;
     cursor: pointer;
 }
-
 
  /*** // Live Search: // ***/
 
@@ -942,6 +930,11 @@ body.form .search-form {
     z-index: 1001;
 }
 
+#time {
+    background: transparent;
+    cursor: pointer;
+}
+
 .timeArea .time {
     font-size: 4.0em;
     font-weight: 400;
@@ -992,6 +985,19 @@ i {
     position: fixed;
     z-index: 1000;
     cursor: wait;
+}
+
+/* // CHANGE ME: */
+
+#pace {
+    visibility: visible;
+    z-index: 50000;
+    background: black;
+    size: 1em;
+    position: fixed;
+    color: pink;
+    height: 1em;
+    width: 1em;
 }
 
 #tempwrapper {
@@ -1521,7 +1527,7 @@ i {
     position: fixed;
     z-index: 2000;
     top: 15px;
-    right: 15px;
+    left: 10px;
     width: 14px;
     height: 14px;
     border: solid 2px transparent;

@@ -13,23 +13,72 @@ function setDate($) {
         $('.timeArea .time .timeInner').html(currentTime);
         $('.timeArea .time .date').html(currentDate);
     }
+};
 
-    var toggle = true;
-    setInterval(function () {
-        var d = new Date().toLocaleTimeString('en-US', {
-            hour12: false,
-            hour: 'numeric',
-            minute: 'numeric'
-        });
-        var parts = d.split(":");
-        $('#hours').text(parts[0]);
-        $('#minutes').text(parts[1]);
-        $("#colon").css({
-            visibility: toggle ? "visible" : "hidden"
-        });
-        toggle = !toggle;
-    }, 1000);
-}
+var toggle = true;
+
+function setTime24() {
+    var d = new Date().toLocaleTimeString('en-US', {
+        hour12: false,
+        hour: 'numeric',
+        minute: 'numeric',
+    });
+    var parts = d.split(":");
+    $('#hours').text(parts[0]);
+    $('#minutes').text(parts[1]);
+    $("#colon").css({
+        visibility: toggle ? "visible" : "hidden"
+    });
+    toggle = !toggle;
+};
+
+function setTime12() {
+    var d = new Date().toLocaleTimeString('en-US', {
+        hour12: true,
+        hour: 'numeric',
+        minute: 'numeric',
+    });
+    var parts = d.split(":");
+    $('#hours').text(parts[0]);
+    $('#minutes').text(parts[1]);
+    $("#colon").css({
+        visibility: toggle ? "visible" : "hidden"
+    });
+    toggle = !toggle;
+};
+
+setDate($);
+
+var myVar12, myVar24;
+$('#time').click(function (e) {
+    e.preventDefault();
+    var that = $(this);
+    switch (that.data('switch')) {
+        case 'a':
+            console.log('Set Time to 24h');
+            $('#time').removeClass('12hr');
+            $('#time').addClass('24hr');
+            myVar24 = setInterval(setTime24, 500);
+            clearInterval(myVar12);
+            that.data('switch', 'b');
+            break;
+        case 'b':
+            console.log('Set Time to 12h');
+            $('#time').removeClass('24hr');
+            $('#time').addClass('12hr');
+            //setTime12()
+            myVar12 = setInterval(setTime12, 500);
+            clearInterval(myVar24);
+            that.data('switch', 'a');
+            break;
+    };
+});
+
+
+// CHANGE ME:
+
+$("#minutes:contains('PM')").css("text-decoration", "underline");
+
 
 function search(query, engine) {
     query = query.replace(/ /g, '+', query);
@@ -57,7 +106,6 @@ function search(query, engine) {
 }
 
 $(function () {
-    setDate($);
 
     $(window).keydown(function (e) {
         if (e.keyCode == 72) {
@@ -122,7 +170,7 @@ $(function () {
         $('#searchclear').addClass('hidden');
         $('#searchsubmit').addClass('hidden');
         $('#suggestions-container').addClass('hidden');
-
+        $('#inputlabel').addClass('t-md-hidden t-top-hidden');
         document.getElementById("flexbox-input").focus();
     });
 

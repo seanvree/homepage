@@ -7,7 +7,7 @@
 
                 Created by:
         https://github.com/seanvree
-         last updated: 21 JAN 2019
+         last updated: 03 FEB 2019
 
     -->
 
@@ -38,10 +38,6 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/jquery-3.3.1.min.js"></script>
-
-        <script src="js/main.js" async></script>
-        
-        <script src="js/weather.js" async></script>
 
         <script>
             $(document).ready(function() {  
@@ -119,6 +115,26 @@
             });
         </script>
 
+            <!-- //CHANGE ME: -->
+
+            <script>
+                $(document).ready(function () {
+
+                    myVar24 = setInterval(setTime24, 500);
+
+                    //myVar12 = setInterval(setTime12, 1000);
+
+                });
+            </script>
+
+            <!-- //CHANGE ME: -->
+
+            <script>
+                $(document).ready(function () {
+                    $("#minutes:contains('PM')").css("text-decoration", "underline");
+                });
+            </script>
+
     </head>
 
     <body style="background-color: #000000">
@@ -137,8 +153,8 @@
         <div id="info">
             
             <div class="timeArea">
-                <p class="time">
-                    <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
+                <p class="time" id="time" data-switch="b" title="Convert time format">
+                    <span id="hours"></span><span id="colon">:</span><span id="minutes" title="minutes"></span>
                     <span class="date"></span>
                 </p>
             </div>
@@ -279,6 +295,10 @@
 
             </div>
 
+            <!-- // CHANGE ME: -->
+
+            <!-- <div id="pacetest" class="pacetest"></div> -->
+
         </div>
 
         <div class="flexbox" id="flexbox">
@@ -332,16 +352,20 @@
             <!-- <p><script src="php/hits.php"></script></p> -->
         </div> 
 
-            <!-- Live serach function: -->
+            <!-- Live search function: -->
 
         <aside class="overlay hidden" id="help"></aside>
-        
-        <script src="js/tilde.js" async></script>
 
         <div id="footer">
             <p> This page was curated from <a href="https://github.com/seanvree/homepage" title="GitHub Repo" rel="noopener noreferrer" target="_blank"> THIS GitHub project</a>
             </p>
         </div>
+
+        <script src="js/main.js"></script>
+
+        <script src="js/weather.js" async></script>
+        
+        <script src="js/tilde.js" async></script>
 
     </body>
 

@@ -18,7 +18,9 @@
     target: 'body',
     elements: {
       checkInterval: 100,
+      // CHANGE ME:
       selectors: ['body']
+      // selectors: ['body,.pacetest']
     },
     eventLag: {
       minSamples: 10,

@@ -168,10 +168,6 @@ $(function() {
         }
     };
 
-    var resetCity = function() {
-        $city.text(lastData.name).blur();
-    };
-
     var changeUnit = function() {
         var $temp = $("#temp");
         var $unit = $('#unit');
