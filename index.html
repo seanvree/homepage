@@ -58,6 +58,22 @@
         </script>
 
         <script>
+            console.log('Retrieving updated time');
+
+            $(document).ready(function () {
+
+                //Default time format - 24H:
+
+                myVar24 = setInterval(setTime24, 500);
+
+                //Default time format - 12H:
+
+                //myVar12 = setInterval(setTime12, 500);
+
+            });
+        </script>
+
+        <script>
             $(document).ready(function () {
                 if ($(window).width() < 480) {
                     $('#help').addClass('hiddenscreen');
@@ -114,22 +130,6 @@
                 };
             });
         </script>
-
-            <!-- //CHANGE ME: -->
-
-            <script>
-                console.log('Retrieving updated time');
-
-                $(document).ready(function () {
-
-                    //setTime12();
-
-                    myVar24 = setInterval(setTime24, 500);
-
-                    //myVar12 = setInterval(setTime12, 500);
-
-                });
-            </script>
 
     </head>
 
@@ -342,7 +342,7 @@
             <!-- <p><script src="php/hits.php"></script></p> -->
         </div> 
 
-            <!-- Live search function: -->
+            <!-- Live search help function: -->
 
         <aside class="overlay hidden" id="help"></aside>
 
