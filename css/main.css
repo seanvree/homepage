@@ -703,7 +703,7 @@ li {
     width: 6em;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background: url("down-arrow.png");
+    background: url("down-arrow.gif");
     background-size: 1em;
     background-repeat: no-repeat;
     background-position: 55% 80%;
