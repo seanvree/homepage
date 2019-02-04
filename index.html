@@ -153,9 +153,11 @@
         <div id="info">
             
             <div class="timeArea">
-                <p class="time" id="time" data-switch="b" title="Convert time format">
-                    <span id="hours"></span><span id="colon">:</span><span id="minutes" title="minutes"></span>
-                    <span class="date"></span>
+                <p>
+                    <span id="time" class="time" data-switch="b" title="Convert time format">
+                        <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
+                    </span>
+                    <span id="date" class="date"></span>
                 </p>
             </div>
 
@@ -313,16 +315,12 @@
 
                 <label id="optionlabel" for="flexbox-option" class="t-top t-sm" data-tooltip="Select">
 
-                    <!-- <div class='v-center-flex'> -->
-                        <!-- <div> -->
-                            <select id="flexbox-option" onchange="inputFocus()">
-                                <option value="google" id="googleselect">Google</option>
-                                <option value="youtube" id="youtubeselect" style="color: red">YouTube</option>
-                                <option value="wiki" id="wikiselect" style="color: black">Wiki</option>
-                                <option value="imdb"  id="imdbselect" style="color: orange">IMDB</option>
-                            </select>
-                        <!-- </div> -->
-                    <!-- </div>  -->
+                    <select id="flexbox-option" onchange="inputFocus()">
+                        <option value="google" id="googleselect">Google</option>
+                        <option value="youtube" id="youtubeselect" style="color: red">YouTube</option>
+                        <option value="wiki" id="wikiselect" style="color: black">Wiki</option>
+                        <option value="imdb"  id="imdbselect" style="color: orange">IMDB</option>
+                    </select>
 
                 </label>
 
