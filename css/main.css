@@ -490,6 +490,7 @@ li {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
+    min-width: 6em !important;
 }
 
 [data-tooltip].t-bottom:after {
