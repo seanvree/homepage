@@ -1,18 +1,30 @@
 var shiftDown = false;
 
 function setDate($) {
+
+    
     console.log('Retrieving updated time');
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-        months = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'August', 'Sep', 'Oct', 'Nov', 'Dec'],
-        d = new Date(),
-        currentDate = days[d.getDay()] + ' | ' + d.getDate() + '&nbsp;' + months[d.getMonth()],
-        mins = (d.getMinutes() > 9) ? d.getMinutes() : '0' + d.getMinutes(),
-        currentTime = d.getHours() + ':' + mins,
-        previousTime = $('.timeArea .time .timeInner').html();
+    months = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'August', 'Sep', 'Oct', 'Nov', 'Dec'],
+    d = new Date(),
+    currentDate = days[d.getDay()] + ' | ' + d.getDate() + '&nbsp;' + months[d.getMonth()],
+    mins = (d.getMinutes() > 9) ? d.getMinutes() : '0' + d.getMinutes(),
+    currentTime = d.getHours() + ':' + mins,
+    previousTime = $('.timeArea .time .timeInner').html();
     if (currentTime != previousTime) {
         $('.timeArea .time .timeInner').html(currentTime);
         $('#date').html(currentDate);
+    };
+    var hours = new Date().getHours();
+    var hours = (hours + 24) % 24;
+    var mid = ' AM';
+    if (hours == 0) { //At 00 hours show 12 am
+        hours = 12;
+    } else if (hours > 12) {
+        hours = hours % 12;
+        mid = ' PM';
     }
+    $('#ampm').text(mid);
 };
 
 var toggle = true;
@@ -40,7 +52,16 @@ function setTime12() {
     });
     var parts = d.split(":");
     $('#hours').text(parts[0]);
-    $('#minutes').text(parts[1]);
+
+    //CHANGE ME: minutes will not update:
+    
+    //$('#minutes').text(parts[2]);
+
+    $('#minutes').text();
+
+    //$('#minutes').load(document.URL + ' #minutes');
+    $("#minutes").load(location.href + " #minutes");
+    
     $("#colon").css({
         visibility: toggle ? "visible" : "hidden"
     });
@@ -56,16 +77,14 @@ $('#time').click(function (e) {
     switch (that.data('switch')) {
         case 'a':
             console.log('Set Time to 24h');
-            $('#time').removeClass('12hr');
-            $('#time').addClass('24hr');
+            $('#ampm').addClass('hidden');
             myVar24 = setInterval(setTime24, 500);
             clearInterval(myVar12);
             that.data('switch', 'b');
             break;
         case 'b':
             console.log('Set Time to 12h');
-            $('#time').removeClass('24hr');
-            $('#time').addClass('12hr');
+            $('#ampm').removeClass('hidden');
             //setTime12()
             myVar12 = setInterval(setTime12, 500);
             clearInterval(myVar24);
@@ -73,12 +92,6 @@ $('#time').click(function (e) {
             break;
     };
 });
-
-
-// CHANGE ME:
-
-$("#minutes:contains('PM')").css("text-decoration", "underline");
-
 
 function search(query, engine) {
     query = query.replace(/ /g, '+', query);
