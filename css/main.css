@@ -507,7 +507,8 @@ li {
 }
 
 [data-tooltip].t-sm:before {
-    /* width: 70px; */
+    /* width: 5em; */
+    min-width: 3em;
     width: max-content;
     width: -moz-max-content;
     padding-left: 1em;
