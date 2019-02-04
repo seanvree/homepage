@@ -1,9 +1,7 @@
 var shiftDown = false;
 
 function setDate($) {
-
-    
-    console.log('Retrieving updated time');
+    //console.log('Retrieving updated time');
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
     months = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'August', 'Sep', 'Oct', 'Nov', 'Dec'],
     d = new Date(),
@@ -24,8 +22,11 @@ function setDate($) {
         hours = hours % 12;
         mid = ' PM';
     }
+    $('#minutes').text(mins);
     $('#ampm').text(mid);
 };
+
+setDate($);
 
 var toggle = true;
 
@@ -41,6 +42,7 @@ function setTime24() {
     $("#colon").css({
         visibility: toggle ? "visible" : "hidden"
     });
+    $('#ampm').addClass('hidden');
     toggle = !toggle;
 };
 
@@ -52,36 +54,28 @@ function setTime12() {
     });
     var parts = d.split(":");
     $('#hours').text(parts[0]);
-
-    //CHANGE ME: minutes will not update:
-    
-    //$('#minutes').text(parts[2]);
-
-    $('#minutes').text();
-    
     $("#colon").css({
         visibility: toggle ? "visible" : "hidden"
     });
+    $('#ampm').removeClass('hidden');
     toggle = !toggle;
+    setDate($);
 };
 
-setDate($);
-
 var myVar12, myVar24;
+
 $('#time').click(function (e) {
     e.preventDefault();
     var that = $(this);
     switch (that.data('switch')) {
         case 'a':
             console.log('Set Time to 24h');
-            $('#ampm').addClass('hidden');
             myVar24 = setInterval(setTime24, 500);
             clearInterval(myVar12);
             that.data('switch', 'b');
             break;
         case 'b':
             console.log('Set Time to 12h');
-            $('#ampm').removeClass('hidden');
             //setTime12()
             myVar12 = setInterval(setTime12, 500);
             clearInterval(myVar24);
