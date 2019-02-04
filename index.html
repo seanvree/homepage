@@ -115,6 +115,7 @@
             });
         </script>
 
+
             <!-- //CHANGE ME: -->
 
             <script>
@@ -133,6 +134,16 @@
                 $(document).ready(function () {
                     $("#minutes:contains('PM')").css("text-decoration", "underline");
                 });
+            </script>
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133756821-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-133756821-1');
             </script>
 
     </head>
@@ -366,6 +377,10 @@
         <script src="js/weather.js" async></script>
         
         <script src="js/tilde.js" async></script>
+
+        <!-- CHANGE ME: -->
+
+        <script src="js/vendor/gtag.js" async></script>
 
     </body>
 
