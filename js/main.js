@@ -58,10 +58,6 @@ function setTime12() {
     //$('#minutes').text(parts[2]);
 
     $('#minutes').text();
-
-    //$('#minutes').load(document.URL + ' #minutes');
-    //$("#minutes").load(location.href + " #minutes");
-    $("#minutes").load(location.href + " #minutes>*", "");
     
     $("#colon").css({
         visibility: toggle ? "visible" : "hidden"
