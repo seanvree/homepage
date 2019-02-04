@@ -987,19 +987,6 @@ i {
     cursor: wait;
 }
 
-/* // CHANGE ME: */
-
-#pace {
-    visibility: visible;
-    z-index: 50000;
-    background: black;
-    size: 1em;
-    position: fixed;
-    color: pink;
-    height: 1em;
-    width: 1em;
-}
-
 #tempwrapper {
     height: 100%;
     width: 50%;
@@ -1483,15 +1470,16 @@ i {
 
 /* Progress Bar */
 
-/*
+
+/* // CHANGE ME: comment .pace */
+
 .pace {
     -webkit-pointer-events: none;
     pointer-events: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none; 
-} 
-*/
+}
 
 .pace-inactive {
     display: none;
