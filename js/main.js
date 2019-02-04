@@ -11,7 +11,7 @@ function setDate($) {
         previousTime = $('.timeArea .time .timeInner').html();
     if (currentTime != previousTime) {
         $('.timeArea .time .timeInner').html(currentTime);
-        $('.timeArea .time .date').html(currentDate);
+        $('#date').html(currentDate);
     }
 };
 
