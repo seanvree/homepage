@@ -160,6 +160,9 @@ URL. For example:
 
 #
 
+[![BrowserStack Status](https://i.imgur.com/Pnri9gE.gif)](https://automate.browserstack.com/)
+
+
 <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
