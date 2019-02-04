@@ -946,7 +946,6 @@ body.form .search-form {
 
 .timeArea .date {
     display: block;
-    /* font-size: 0.4em; */
     font-size: 2em;
     font-weight: 400;
     margin-top: -.25em;
@@ -959,6 +958,10 @@ body.form .search-form {
 
 #colon {
     visibility: hidden
+}
+
+#ampm {
+    font-size: .75em;
 }
 
 i {
@@ -1471,9 +1474,6 @@ i {
 }
 
 /* Progress Bar */
-
-
-/* // CHANGE ME: comment .pace */
 
 .pace {
     -webkit-pointer-events: none;
