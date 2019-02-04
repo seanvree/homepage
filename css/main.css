@@ -932,7 +932,6 @@ body.form .search-form {
 }
 
 #time {
-    background: transparent;
     cursor: pointer;
 }
 
@@ -946,14 +945,15 @@ body.form .search-form {
 
 .timeArea .date {
     display: block;
-    font-size: 0.4em;
+    /* font-size: 0.4em; */
+    font-size: 2em;
     font-weight: 500;
     margin-top: -.25em;
-    cursor: default;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    cursor: default;
 }
 
 #colon {
