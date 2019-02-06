@@ -649,8 +649,8 @@ li {
     width: calc(100% - 1.3em);
     height: 100%;
     border: 0;
-    border-radius: 0;
-    -webkit-border-radius: 0;
+    border-radius: .2em 0 0 .2em;
+    -webkit-border-radius: .2em 0 0 .2em;
     padding-left: .5em;
     padding-top: 0;
     padding-bottom: 0;
@@ -727,8 +727,8 @@ li {
     padding-left: 15%;
     outline: none;
     border: 0;
-    border-radius: 0;
-    -webkit-border-radius: 0;
+    border-radius: 0 .2em .2em 0;
+    -webkit-border-radius: 0 .2em .2em 0;
     color: rgb(87, 171, 250);
     font-size: 1em;
     font-weight: 300;
@@ -767,6 +767,8 @@ li {
     flex-direction: column;
     flex-wrap: wrap;
     overflow: hidden;
+    border-radius: 0 0 .2em .2em;
+    -webkit-border-radius: 0 0 .2em .2em;
 }
 
 body.suggestions .search-suggestions {
@@ -777,7 +779,7 @@ body.suggestions .search-suggestions {
     line-height: .5em;
     padding-left: .25em;
     padding-right: .25em;
-    background-color: rgba(21, 21, 21, 0.65);
+    background-color: rgba(21, 21, 21, 0.70);
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
     -moz-filter: brightness(100%);
@@ -894,7 +896,8 @@ body.form .search-form {
     height: 60px;
     text-align: left;
     font-family: 'Noto Sans', Helvetica, sans-serif;
-    border-radius: 0px;
+    border-radius: .2em .2em .2em .2em;
+    -webkit-border-radius: .2em .2em .2em .2em;
     box-sizing: border-box;
     background-color: rgba(21, 21, 21, 0.70);
     vertical-align: middle;
@@ -1483,6 +1486,8 @@ i {
     font-size: 10px;
     font-weight: 300;
     text-shadow: 1px 1px 1px black;
+    border-radius: .2em .2em .2em .2em;
+    -webkit-border-radius: .2em .2em .2em .2em;
     z-index: 25;
 }
 
