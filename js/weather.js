@@ -142,9 +142,11 @@ $(function() {
         
         console.log("using location: " + lat,lon + "");
         console.log('Retrieving weather:');
+        $('#weathererror').addClass('hidden');
     };
 
     var geoError = function(error) {
+        $('#weathererror').removeClass('hidden');
         console.log('Error occurred. Error code: ' + error.code);
         // error.code can be:
         //   0: unknown error
