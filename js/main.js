@@ -205,4 +205,8 @@ $(function () {
         }
     });
 
+    $('#helpclear').click(function (e) {
+        $('#help').addClass('hidden');
+    });
+
 });
