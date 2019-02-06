@@ -73,15 +73,20 @@
             });
         </script>
 
-
-            <!-- CHANGE ME:  -->
         <script>
             $(document).ready(function () {
                 if ($(window).width() < 480) {
-                //if ($(window).width() < 990) {
                     $('#help').addClass('hiddenscreen');
                 }
             });
+        </script>
+
+        <script>
+            function inputFocus() {
+                document.getElementById("flexbox-input").focus();
+                $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+                $('#suggestions-container').addClass('hidden');
+            }
         </script>
 
     </head>
@@ -258,10 +263,8 @@
                 
                 </label>
 
-
-                <div id="searchbutton">
+                <div id="searchbutton" onclick="inputFocus()">
                     <img src="css/checkmark-green.gif" id="searchsubmit" class="hidden" alt="Search" title="Execute Search">
-
                     <img src="css/cancel-red.gif" id="searchclear" class="hidden" alt="Clear" title="Clear Search">
                 </div>
 
@@ -313,55 +316,59 @@
         
         <script src="js/tilde.js" async></script>
 
-            <script>
-                $(document).ready(function () {
-                    $('#formstretch').hover(function () {
-                        $('#inputlabel').addClass('lightfilter');
-                        $('#optionlabel').addClass('lightfilter');
-                        $('#background').addClass('darkfilter');
-                        $('#info').addClass('darkfilter');
-                        $('#fw-container').addClass('darkfilter');
-                        $('#footer').addClass('darkfilter');
-                    },
-                        function () {
-                            $('#background').removeClass('darkfilter');
-                            $('#info').removeClass('darkfilter');
-                            $('#fw-container').removeClass('darkfilter');
-                            $('#footer').removeClass('darkfilter');
-                            $('#inputlabel').removeClass('lightfilter');
-                            $('#optionlabel').removeClass('lightfilter');
-                        }
-                    );
-                });
-            </script>
+        <script>
+            $(document).ready(function () {
+                $('#formstretch').hover(function () {
+                    $('#inputlabel').addClass('lightfilter');
+                    $('#optionlabel').addClass('lightfilter');
+                    $('#searchbutton').addClass('lightfilter');
+                    $('#background').addClass('darkfilter');
+                    $('#info').addClass('darkfilter');
+                    $('#fw-container').addClass('darkfilter');
+                    $('#footer').addClass('darkfilter');
+                },
+                    function () {
+                        $('#background').removeClass('darkfilter');
+                        $('#info').removeClass('darkfilter');
+                        $('#fw-container').removeClass('darkfilter');
+                        $('#footer').removeClass('darkfilter');
+                        $('#inputlabel').removeClass('lightfilter');
+                        $('#optionlabel').removeClass('lightfilter');
+                        $('#searchbutton').removeClass('lightfilter');
+                    }
+                );
+            });
+        </script>
 
-            <script>
-                $(document).ready(function () {
-                    $('#optionlabel').hover(function () {
-                        $('#optionlabel').removeClass('t-sm-hidden t-top-hidden');
-                    });
+        <script>
+            $(document).ready(function () {
+                $('#optionlabel').hover(function () {
+                    $('#optionlabel').removeClass('t-sm-hidden t-top-hidden');
                 });
-            </script>
-                
-            <script>
-                function inputFocus() {
-                    document.getElementById("flexbox-input").focus();
-                    $('#inputlabel').addClass('t-md-hidden t-top-hidden');
-                    $('#suggestions-container').addClass('hidden');
-                }
-            </script>
+            });
+        </script>
+
+        <!-- CHANGE ME: -->
             
-            <script>
-                $(document).ready(function () {
-                    document.getElementById("flexbox-input").oninput = function (e) {
-                        $('#inputlabel').addClass('t-md-hidden t-top-hidden');
-                        $('#optionlabel').addClass('t-sm-hidden t-top-hidden');
-                        $('#searchsubmit').removeClass('hidden');
-                        $('#searchclear').removeClass('hidden');
-                        $('#suggestions-container').removeClass('hidden');
-                    };
-                });
-            </script>
+        <!-- <script>
+            function inputFocus() {
+                document.getElementById("flexbox-input").focus();
+                $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+                $('#suggestions-container').addClass('hidden');
+            }
+        </script> -->
+        
+        <script>
+            $(document).ready(function () {
+                document.getElementById("flexbox-input").oninput = function (e) {
+                    $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+                    $('#optionlabel').addClass('t-sm-hidden t-top-hidden');
+                    $('#searchsubmit').removeClass('hidden');
+                    $('#searchclear').removeClass('hidden');
+                    $('#suggestions-container').removeClass('hidden');
+                };
+            });
+        </script>
 
     </body>
 
