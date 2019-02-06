@@ -753,6 +753,15 @@ li {
     background-color: transparent;
     overflow: hidden;
     -webkit-appearance: none;
+    -moz-appearance: none !important;
+}
+
+#flexbox-option::-webkit-scrollbar-thumb {
+    width: 1px;
+    background-color: transparent;
+    overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none !important;
 }
 
  /*** // Live Search: // ***/
