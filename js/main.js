@@ -161,6 +161,7 @@ $(function () {
         $('#searchclear').removeClass('hidden');
         $('#inputlabel').addClass('lightfilter');
         $('#optionlabel').addClass('lightfilter');
+        $('#searchbutton').addClass('lightfilter');
         $('#background').addClass('darkfilter');
         $('#info').addClass('darkfilter');
         $('#fw-container').addClass('darkfilter');
@@ -189,6 +190,7 @@ $(function () {
         $('#footer').removeClass('darkfilter');
         $('#inputlabel').removeClass('lightfilter');
         $('#optionlabel').removeClass('lightfilter');
+        $('#searchbutton').removeClass('lightfilter');
         $('#suggestions-container').addClass('hidden');
         $('#inputlabel').addClass('t-md-hidden t-top-hidden');
     });
