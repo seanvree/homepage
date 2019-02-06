@@ -744,7 +744,14 @@ li {
     align-items: center;
     align-content: center;
     align-self: center;
+    overflow: hidden;
     cursor: pointer;
+}
+
+#flexbox-option::-webkit-scrollbar {
+    width: 1px;
+    background-color: transparent;
+    overflow: hidden;
 }
 
  /*** // Live Search: // ***/
