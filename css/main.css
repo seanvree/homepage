@@ -646,7 +646,7 @@ li {
 
 #flexbox-input {
     /* width: calc(100% - .5em); */
-    width: calc(100% - 1.3em);
+    width: calc(100% - 1.28em);
     height: 100%;
     border: 0;
     border-radius: .2em 0 0 .2em;
@@ -670,8 +670,10 @@ li {
     top: 0;
     right: 0;
     height: 4em;
-    width: 1.22em;
-    margin-right: 6.92em;
+    /* width: 1.22em;
+    margin-right: 6.92em; */
+        width: 1.24em;
+        margin-right: 6.9em;
     background-color: rgba(21, 21, 21, 0.70);
     cursor: text;
     z-index: 4000;
