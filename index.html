@@ -17,8 +17,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-        <meta name="theme-color" content="#464646" />
-        <meta name="theme_color" content="#464646" />
+        <meta name="theme-color" content="#464646"/>
+        <meta name="theme_color" content="#464646"/>
         <meta name="Search" content="Homepage">
         <meta name="Description" content="Homepage">
 
@@ -58,9 +58,9 @@
         </script>
 
         <script>
-            console.log('Retrieving updated time');
-
             $(document).ready(function () {
+
+                console.log('Retrieving updated time');
 
                 //Default time format - 24H:
 
@@ -73,61 +73,14 @@
             });
         </script>
 
+
+            <!-- CHANGE ME:  -->
         <script>
             $(document).ready(function () {
                 if ($(window).width() < 480) {
+                //if ($(window).width() < 990) {
                     $('#help').addClass('hiddenscreen');
                 }
-            });
-        </script>
-
-        <script>
-            $(document).ready(function () {
-                $('#formstretch').hover(function () {
-                    $('#inputlabel').addClass('lightfilter');
-                    $('#optionlabel').addClass('lightfilter');
-                    $('#background').addClass('darkfilter');
-                    $('#info').addClass('darkfilter');
-                    $('#fw-container').addClass('darkfilter');
-                    $('#footer').addClass('darkfilter');
-                },
-                function () {
-                    $('#background').removeClass('darkfilter');
-                    $('#info').removeClass('darkfilter');
-                    $('#fw-container').removeClass('darkfilter');
-                    $('#footer').removeClass('darkfilter');
-                    $('#inputlabel').removeClass('lightfilter');
-                    $('#optionlabel').removeClass('lightfilter');
-                }
-                );
-            });
-        </script>
-
-        <script>
-            $(document).ready(function () {
-                $('#optionlabel').hover(function () {
-                    $('#optionlabel').removeClass('t-sm-hidden t-top-hidden');
-                });
-            });
-        </script>
-
-        <script>
-            function inputFocus() {
-                document.getElementById("flexbox-input").focus();
-                $('#inputlabel').addClass('t-md-hidden t-top-hidden');
-                $('#suggestions-container').addClass('hidden');
-            }
-        </script>
-
-        <script>
-            $(document).ready(function () {
-                document.getElementById("flexbox-input").oninput = function (e) {
-                    $('#inputlabel').addClass('t-md-hidden t-top-hidden');
-                    $('#optionlabel').addClass('t-sm-hidden t-top-hidden');
-                    $('#searchsubmit').removeClass('hidden');
-                    $('#searchclear').removeClass('hidden');
-                    $('#suggestions-container').removeClass('hidden');
-                };
             });
         </script>
 
@@ -305,9 +258,12 @@
                 
                 </label>
 
-                <img src="css/checkmark-green.gif" id="searchsubmit" class="hidden" alt="Search" title="Execute Search">
 
-                <img src="css/cancel-red.gif" id="searchclear" class="hidden" alt="Clear" title="Clear Search">
+                <div id="searchbutton">
+                    <img src="css/checkmark-green.gif" id="searchsubmit" class="hidden" alt="Search" title="Execute Search">
+
+                    <img src="css/cancel-red.gif" id="searchclear" class="hidden" alt="Clear" title="Clear Search">
+                </div>
 
                 <label id="optionlabel" for="flexbox-option" class="t-top t-sm" data-tooltip="Select">
 
@@ -356,6 +312,56 @@
         <script src="js/weather.js" async></script>
         
         <script src="js/tilde.js" async></script>
+
+            <script>
+                $(document).ready(function () {
+                    $('#formstretch').hover(function () {
+                        $('#inputlabel').addClass('lightfilter');
+                        $('#optionlabel').addClass('lightfilter');
+                        $('#background').addClass('darkfilter');
+                        $('#info').addClass('darkfilter');
+                        $('#fw-container').addClass('darkfilter');
+                        $('#footer').addClass('darkfilter');
+                    },
+                        function () {
+                            $('#background').removeClass('darkfilter');
+                            $('#info').removeClass('darkfilter');
+                            $('#fw-container').removeClass('darkfilter');
+                            $('#footer').removeClass('darkfilter');
+                            $('#inputlabel').removeClass('lightfilter');
+                            $('#optionlabel').removeClass('lightfilter');
+                        }
+                    );
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                    $('#optionlabel').hover(function () {
+                        $('#optionlabel').removeClass('t-sm-hidden t-top-hidden');
+                    });
+                });
+            </script>
+                
+            <script>
+                function inputFocus() {
+                    document.getElementById("flexbox-input").focus();
+                    $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+                    $('#suggestions-container').addClass('hidden');
+                }
+            </script>
+            
+            <script>
+                $(document).ready(function () {
+                    document.getElementById("flexbox-input").oninput = function (e) {
+                        $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+                        $('#optionlabel').addClass('t-sm-hidden t-top-hidden');
+                        $('#searchsubmit').removeClass('hidden');
+                        $('#searchclear').removeClass('hidden');
+                        $('#suggestions-container').removeClass('hidden');
+                    };
+                });
+            </script>
 
     </body>
 
