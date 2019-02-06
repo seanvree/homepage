@@ -760,6 +760,17 @@ li {
     z-index: 5000;
 }
 
+#helpclear {
+    position: fixed;
+    height: 1em;
+    width: 1em;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    filter: brightness(75%) !important;
+    cursor: pointer;
+}
+
 #suggestions-container {
     height: 2em;
 }
@@ -995,7 +1006,7 @@ i {
 /* weather Styles */
 
 #weather {
-    width: 9em;
+    width: 10em;
     height: 2.5em;
     display: flex;
     position: static;
@@ -1012,7 +1023,7 @@ i {
 
 #tempwrapper {
     height: 100%;
-    width: 50%;
+    width: 45%;
     position: relative;
     display: block;
     margin-top: .25em;
@@ -1066,13 +1077,25 @@ i {
     width: 100%;
 }
 
+#weathererror {
+    position: relative;
+    margin: auto;
+    z-index: 3;
+    cursor: help;
+}
+
+#erroricon {
+    height: 1em;
+    width: 1em;
+}
+
 #iconwrapper {
     position: relative;
     display: block;
     margin: auto;
     margin-top: .25em;
     height: 100%;
-    width: 50%;
+    width: 45%;
     z-index: 3;
 }
 
