@@ -111,20 +111,22 @@ function search(query, engine) {
 
 $(function () {
 
-    $(window).keydown(function (e) {
-        if (e.keyCode == 72) {
-            $('.hideable').toggleClass('hide');
-        }
-        if (e.keyCode == 16) {
-            shiftDown = true;
-        }
-    });
+        // CHANGE ME - IS THIS NEEDED ??
 
-    $(window).keyup(function (e) {
-        if (e.keyCode == 16) {
-            shiftDown = false;
-        }
-    });
+    // $(window).keydown(function (e) {
+    //     if (e.keyCode == 72) {
+    //         $('.hideable').toggleClass('hide');
+    //     }
+    //     if (e.keyCode == 16) {
+    //         shiftDown = true;
+    //     }
+    // });
+
+    // $(window).keyup(function (e) {
+    //     if (e.keyCode == 16) {
+    //         shiftDown = false;
+    //     }
+    // });
 
     $('.flexbox input, .flexbox select').keydown(function (e) {
         if (e.keyCode == 13) {
@@ -200,7 +202,7 @@ $(function () {
     });
 
     $('body').keydown(function (e) {
-        if (e.keyCode == 191) {
+        if (e.keyCode == 191 && e.shiftKey) {
             $('#help').removeClass('hidden');
         }
     });

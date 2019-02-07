@@ -751,7 +751,7 @@ $(function () {
         }
 
         _registerEvents() {
-            document.addEventListener('keydown', this._handleKeydown);
+           // document.addEventListener('keydown', this._handleKeydown);
             this._inputEl.addEventListener('input', this._handleInput);
             this._formEl.addEventListener('submit', this._submitForm, false);
 
