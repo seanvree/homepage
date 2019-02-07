@@ -35,6 +35,8 @@
             <link rel="stylesheet" href="css/bootstrap.min.css">
         </noscript>
 
+        <link rel="stylesheet" href="css/calendar.css">
+
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/jquery-3.3.1.min.js"></script>
@@ -45,7 +47,7 @@
                 if (8 <= currentTime && currentTime < 20) {
                     if (document.body) {
                         $('#background').addClass('bgday');
-                        document.body.className = " day";
+                        document.body.className = " day1";
                     }
 
                 } else {
@@ -70,14 +72,6 @@
 
                 //myVar12 = setInterval(setTime12, 500);
 
-            });
-        </script>
-
-        <script>
-            $(document).ready(function () {
-                if ($(window).width() < 480) {
-                    $('#help').addClass('hiddenscreen');
-                }
             });
         </script>
 
@@ -111,7 +105,7 @@
                     <span id="time" class="time t-bottom t-sm" data-tooltip="Convert time" data-switch="b">
                         <span id="hours"></span><span id="colon">:</span><span id="minutes"></span><span id="ampm"></span>
                     </span>
-                    <span id="date" class="date"></span>
+                    <span id="date" class="date" title="Show Calendar"></span>
                 </p>
             </div>
 
@@ -311,6 +305,14 @@
             <img src="css/cancel-red.gif" id="helpclear" alt="Clear" title="Close Help">
         </aside>
 
+        <div id="calendarwrapper" ng-app="myApp" ng-controller="AppCtrl" class="hidden">
+        
+            <div calendar class="calendar" id="calendar">
+                <img src="css/cancel-red.gif" id="calendarclear" alt="Clear" title="Close Calendar">
+            </div>
+        
+        </div>
+
         <div id="footer">
             <p> This page was curated from <a href="https://github.com/seanvree/homepage" title="GitHub Repo" rel="noopener noreferrer" target="_blank"> THIS GitHub project</a>
             </p>
@@ -321,6 +323,48 @@
         <script src="js/weather.js" async></script>
         
         <script src="js/tilde.js" async></script>
+
+        <script src="js/vendor/angular.min.js"></script>
+        
+        <script src="js/vendor/moment.min.js"></script>
+        
+        <script src="js/calendar.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                if ($(window).width() < 480) {
+                    $('#help').addClass('hiddenscreen');
+                }
+            });
+        </script>
+                
+        <script>
+            $(document).ready(function () {
+                if ($(window).height() < 815) {
+                    if ($(window).height() > 731) {
+
+                        $('#date').click(function () {
+                            $('#flexbox').addClass('flexboxresize');
+                            $('#calendarwrapper').removeClass('hidden');
+                        });
+                        document.getElementById("flexbox-input").onfocus = function () {
+                            $('#calendarwrapper').addClass('hidden');
+                            $('#flexbox').removeClass('flexboxresize');
+                        };
+                    };
+                };
+            });
+        </script>
+                
+        <script>
+            $(document).ready(function () {
+                if ($(window).height() < 730) {
+                    console.log('test');
+                    $('#calendarwrapper').addClass('hiddenscreen');
+
+                };
+            });
+        </script>
 
         <script>
             $(document).ready(function () {
@@ -365,6 +409,26 @@
                 };
             });
         </script>
+
+        <script>
+            $(document).ready(function () {
+
+                $('#date').click(function () {
+                    $('#calendarwrapper').removeClass('hidden');
+                });
+
+                $('#background').click(function () {
+                    $('#calendarwrapper').addClass('hidden');
+                    $('#flexbox').removeClass('flexboxresize');
+                });
+
+                $('#calendarclear').click(function () {
+                    $('#calendarwrapper').addClass('hidden');
+                    $('#flexbox').removeClass('flexboxresize');
+                });
+            });
+        </script>
+
 
     </body>
 
