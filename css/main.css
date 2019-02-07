@@ -34,7 +34,7 @@ body.fade-out {
     transition: none;
 }
 
-.day {
+.day1 {
     color: rgba(100, 100, 100, 0.75);
 }
 
@@ -616,6 +616,10 @@ li {
     z-index: 2000;
 }
 
+.flexboxresize {
+    top: 42% !important;
+}
+
 #flexbox {
     border: 0;
 }
@@ -937,6 +941,22 @@ body.form .search-form {
     z-index: 20;
 }
 
+
+  /* Calendar: */
+
+  #calendarwrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 3em;
+    margin-left: 1.875em;
+    background-color: rgba(21, 21, 21, 0.70);
+    color: white;
+    border-radius: .2em .2em .2em .2em;
+    -webkit-border-radius: .2em .2em .2em .2em;
+    z-index: 7000;
+  }
+
 /*  Time & Temp: */
 
 #info {
@@ -979,7 +999,7 @@ body.form .search-form {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    cursor: default;
+    cursor: pointer;
 }
 
 #colon {
@@ -1501,11 +1521,11 @@ i {
     height: 30px;
     padding-top: 10px;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 1.875em;
     text-align: center;
     color: rgb(150, 150, 150);
     background-color: rgba(21, 21, 21, 0.70);
-    font-size: 10px;
+    font-size: .75em;
     font-weight: 300;
     text-shadow: 1px 1px 1px black;
     border-radius: .2em .2em .2em .2em;
