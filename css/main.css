@@ -426,7 +426,9 @@ li {
 
 [data-tooltip]:before {
     padding: 5px;
-    width: 10em;
+    /* width: 10em; */
+    width: max-content;
+    width: -moz-max-content;
     border-radius: 3px;
     background: rgba(21, 21, 21, 0.70);
     color: rgb(87, 171, 250);
