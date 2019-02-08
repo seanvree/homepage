@@ -340,15 +340,10 @@
             $(document).ready(function () {
                 if ($(window).height() < 815) {
                     if ($(window).height() > 731) {
-
                         $('#date').click(function () {
                             $('#flexbox').addClass('flexboxresize');
                             $('#calendarwrapper').removeClass('hidden');
                         });
-                      //  document.getElementById("flexbox-input").onfocus = function () {
-                           // $('#calendarwrapper').addClass('hidden');
-                       //     $('#flexbox').removeClass('flexboxresize');
-                      //  };
                     };
                 };
             });
@@ -416,11 +411,6 @@
                 $('#date').click(function () {
                     $('#calendarwrapper').removeClass('hidden');
                 });
-
-                // $('#background').click(function () {
-                //     $('#calendarwrapper').addClass('hidden');
-                //     $('#flexbox').removeClass('flexboxresize');
-                // });
 
                 $('#calendarclear').click(function () {
                     $('#calendarwrapper').addClass('hidden');
