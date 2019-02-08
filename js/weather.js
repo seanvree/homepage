@@ -181,10 +181,12 @@ $(function() {
             newTemp = (currentTemp - 32) * 5 / 9;
             unit = 'metric';
             $unit.text('°C');
+            console.log("Convert temp unit to °C");
         } else {
             newTemp = currentTemp * 9 / 5 + 32;
             unit = 'imperial';
             $unit.text('°F');
+            console.log("Convert temp unit to °F");
         }
         $temp.text(newTemp.toFixed(0));
     };
