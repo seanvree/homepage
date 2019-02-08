@@ -1030,6 +1030,11 @@ body.form .search-form {
     cursor: pointer;
 }
 
+.datemobile:hover {
+    color: rgba(100, 100, 100, 0.75);
+    cursor: default;
+}
+
 #colon {
     visibility: hidden
 }
