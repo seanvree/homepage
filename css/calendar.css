@@ -92,10 +92,18 @@
     left: 20px;
 }
 
+.left:hover {
+    border-color: transparent #1E90FF transparent transparent;
+}
+
 .right {
     border-width: 7.5px 0 7.5px 10px;
     border-color: transparent transparent transparent grey;
     right: 20px;
+}
+
+.right:hover {
+    border-color: transparent transparent transparent #1E90FF;
 }
 
 .month {
