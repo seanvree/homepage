@@ -111,23 +111,6 @@ function search(query, engine) {
 
 $(function () {
 
-        // CHANGE ME - IS THIS NEEDED ??
-
-    // $(window).keydown(function (e) {
-    //     if (e.keyCode == 72) {
-    //         $('.hideable').toggleClass('hide');
-    //     }
-    //     if (e.keyCode == 16) {
-    //         shiftDown = true;
-    //     }
-    // });
-
-    // $(window).keyup(function (e) {
-    //     if (e.keyCode == 16) {
-    //         shiftDown = false;
-    //     }
-    // });
-
     $('.flexbox input, .flexbox select').keydown(function (e) {
         if (e.keyCode == 13) {
             e.preventDefault();
@@ -179,10 +162,6 @@ $(function () {
         $('#suggestions-container').addClass('hidden');
         $('#inputlabel').addClass('t-md-hidden t-top-hidden');
         document.getElementById("flexbox-input").focus();
-    });
-
-    $("#info").hover(function () {
-        $('#info').removeClass('darkfilter');
     });
 
     $('#background').click(function (e) {
