@@ -412,7 +412,7 @@ li {
 [data-tooltip] {
     cursor: default;
     position: relative;
-    z-index: 4;
+    /* z-index: 4; */
 }
 
 [data-tooltip]:before,
@@ -478,6 +478,7 @@ li {
 [data-tooltip].t-top:hover:before,
 [data-tooltip].t-top:hover:after {
     transform: translateX(-50%) translateY(-5px);
+    z-index: 5000 !important;
 }
 
 [data-tooltip].t-bottom:before {
@@ -496,10 +497,24 @@ li {
     border-top: none;
 }
 
+
+  /* CHANGE ME: */
+[data-tooltip].t-bottom-hidden:after {
+    top: 100%;
+    left: 55%;
+    transform: translateX(-50%);
+    border-top: 8px solid #000;
+    border-bottom: none;
+    opacity: 0 !important;
+}
+
+
 [data-tooltip].t-bottom:hover:before,
 [data-tooltip].t-bottom:hover:after {
     transform: translateX(-50%) translateY(5px);
+    z-index: 5000 !important;
 }
+
 
 [data-tooltip].t-sm:before {
     min-width: 5em;
@@ -923,25 +938,6 @@ body.form .search-form {
     -moz-appearance: none;
 }
 
-#counter {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    height: 30px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    text-align: center;
-    color: rgb(150, 150, 150);
-    background-color: rgba(21, 21, 21, 0.42);
-    font-size: 12px;
-    font-weight: 300;
-    text-shadow: 1px 1px 1px black;
-    z-index: 20;
-}
-
-
   /* Calendar: */
 
   #calendarwrapper {
@@ -1006,7 +1002,7 @@ body.form .search-form {
     font-weight: 400;
     margin-top: -.25em;
     max-width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-overflow: ellipsis;
     white-space: nowrap;
     cursor: pointer;
@@ -1528,6 +1524,24 @@ i {
     100% {
         transform: translateX(0.5em);
     }
+}
+
+#counter {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: rgb(150, 150, 150);
+    background-color: rgba(21, 21, 21, 0.42);
+    font-size: 12px;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px black;
+    z-index: 20;
 }
 
 #footer {
