@@ -101,6 +101,7 @@
                         <span id="hours"></span><span id="colon">:</span><span id="minutes"></span><span id="ampm"></span>
                     </span>
                     <span id="date" class="date t-top t-md" data-tooltip="Show Calendar"></span>
+                    <span id="datemobile" class="date datemobile"></span>
                 </p>
             </div>
 
@@ -335,7 +336,6 @@
                 
         <script>
             $(document).ready(function () {
-                //if ($(window).height() < 815) {
                 if ($(window).height() < 900) {
                     if ($(window).height() > 731) {
                         $('#date').click(function () {
@@ -351,7 +351,10 @@
             $(document).ready(function () {
                 if ($(window).height() < 730) {
                     $('#calendarwrapper').addClass('hiddenscreen');
-                };
+                    $('#date').addClass('hiddenscreen');
+                } else {
+                    $('#datemobile').addClass('hiddenscreen');
+                }
             });
         </script>
 
