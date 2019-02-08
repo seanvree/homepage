@@ -967,6 +967,11 @@ body.form .search-form {
     -o-transition: all 2s ease;
     -ms-transition: all 2s ease;
     transition: all 2s ease;
+    user-select:none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    -o-user-select:none;
     z-index: 1000;
 }
 
@@ -1068,7 +1073,7 @@ i {
 
 .unit {
     position: absolute;
-    right: .4em;
+    right: .2em;
     clear: both;
     cursor: pointer;
     font-size: 1.2em;
@@ -1525,7 +1530,7 @@ i {
     text-align: center;
     color: rgb(150, 150, 150);
     background-color: rgba(21, 21, 21, 0.70);
-    font-size: .75em;
+    font-size: .60em;
     font-weight: 300;
     text-shadow: 1px 1px 1px black;
     border-radius: .2em .2em .2em .2em;
