@@ -389,7 +389,7 @@
 
 var app = angular.module('myApp', []);
 app.controller('AppCtrl', function ($scope) {
-    //alert("pepe")
+    //console.log("Launch Calendar");
 });
 app.directive('calendar', [function () {
     return {
