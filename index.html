@@ -7,7 +7,7 @@
 
                 Created by:
         https://github.com/seanvree
-         last updated: 07 FEB 2019
+         last updated: 09 FEB 2019
 
     -->
 
@@ -305,13 +305,11 @@
             <img src="css/cancel-red.gif" id="helpclear" alt="Clear" title="Close Help">
         </aside>
 
-        <div id="calendarwrapper" ng-app="myApp" ng-controller="AppCtrl" class="hidden">
-        
+        <span id="calendarwrapper" ng-app="myApp" ng-controller="AppCtrl" class="hidden">
             <div calendar class="calendar" id="calendar">
                 <img src="css/cancel-red.gif" id="calendarclear" alt="Clear" title="Close Calendar">
             </div>
-        
-        </div>
+        </span>
 
         <div id="footer">
             <p> This page was curated from <a href="https://github.com/seanvree/homepage" title="GitHub Repo" rel="noopener noreferrer" target="_blank"> THIS GitHub project</a>
@@ -347,10 +345,10 @@
                             $('#flexbox').addClass('flexboxresize');
                             $('#calendarwrapper').removeClass('hidden');
                         });
-                        document.getElementById("flexbox-input").onfocus = function () {
-                            $('#calendarwrapper').addClass('hidden');
-                            $('#flexbox').removeClass('flexboxresize');
-                        };
+                      //  document.getElementById("flexbox-input").onfocus = function () {
+                           // $('#calendarwrapper').addClass('hidden');
+                       //     $('#flexbox').removeClass('flexboxresize');
+                      //  };
                     };
                 };
             });
@@ -359,9 +357,7 @@
         <script>
             $(document).ready(function () {
                 if ($(window).height() < 730) {
-                    console.log('test');
                     $('#calendarwrapper').addClass('hiddenscreen');
-
                 };
             });
         </script>
@@ -412,15 +408,19 @@
 
         <script>
             $(document).ready(function () {
+                document.getElementById("flexbox-input").onfocus = function () {
+                    $('#calendarwrapper').addClass('hidden');
+                    $('#flexbox').removeClass('flexboxresize');
+                };
 
                 $('#date').click(function () {
                     $('#calendarwrapper').removeClass('hidden');
                 });
 
-                $('#background').click(function () {
-                    $('#calendarwrapper').addClass('hidden');
-                    $('#flexbox').removeClass('flexboxresize');
-                });
+                // $('#background').click(function () {
+                //     $('#calendarwrapper').addClass('hidden');
+                //     $('#flexbox').removeClass('flexboxresize');
+                // });
 
                 $('#calendarclear').click(function () {
                     $('#calendarwrapper').addClass('hidden');
@@ -428,7 +428,6 @@
                 });
             });
         </script>
-
 
     </body>
 
