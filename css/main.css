@@ -535,6 +535,7 @@ li {
     width: 10em;
     width: max-content;
     width: -moz-max-content;
+    width: -webkit-fit-content !important;
     padding: .5em;
 }
 
@@ -542,6 +543,7 @@ li {
     width: 10em;
     width: max-content;
     width: -moz-max-content;
+    width: -webkit-fit-content !important;
     opacity: 0 !important;
     display: none;
 }
