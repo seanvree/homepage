@@ -988,6 +988,11 @@ body.form .search-form {
     cursor: pointer;
 }
 
+#time:hover {
+    color: #1E90FF;
+    cursor: pointer;
+}
+
 .timeArea .time {
     font-size: 4.0em;
     font-weight: 400;
@@ -1004,6 +1009,11 @@ body.form .search-form {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    cursor: pointer;
+}
+
+.date:hover {
+    color: #1E90FF;
     cursor: pointer;
 }
 
