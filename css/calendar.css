@@ -43,7 +43,6 @@
 .calendar .header .month {
     opacity: 1;
     text-align: center;
-    /* CHANGE ME: */
     padding: 0px 40px;
     font-size: 1.5em;
     margin-bottom: 0px;
@@ -530,7 +529,6 @@
         -webkit-transform: translateX(-200%) scale(0.95);
     }
 }
-
 
 @keyframes moveFromLeftFadeMonth {
     from {
