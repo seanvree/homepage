@@ -1035,6 +1035,11 @@ body.form .search-form {
     cursor: default;
 }
 
+.datemobilenight:hover {
+    color: rgba(37, 37, 37, 0.75);
+    cursor: default;
+}
+
 #colon {
     visibility: hidden
 }
