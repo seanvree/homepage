@@ -796,7 +796,7 @@ li {
     padding-top: 3vw;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: rgba(21, 21, 21, 0.65);
+    background-color: rgba(21, 21, 21, 0.70);
     z-index: 5000;
 }
 
@@ -965,7 +965,7 @@ body.form .search-form {
 /*  Time & Temp: */
 
 #info {
-    position: absolute;
+    position: fixed;
     top: 0;
     -webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
