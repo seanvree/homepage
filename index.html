@@ -36,6 +36,8 @@
 
         <script src="js/vendor/jquery-3.3.1.min.js"></script>
 
+        <link rel="preload" href="js/main.js" as="script">
+
         <script>
             $(document).ready(function() {  
                 var currentTime = new Date().getHours();
@@ -360,7 +362,6 @@
         <script>
             $(document).ready(function () {
                 $('#formstretch').hover(function () {
-                    //$('#background').addClass('darkfilter');
                     $('#background').addClass('js-blur');
                     $('#info').addClass('darkfilter');
                     $('#fw-container').addClass('darkfilter');
@@ -368,7 +369,6 @@
                     $('#searchbutton').addClass('lightfilter');
                 },
                     function () {
-                        //$('#background').removeClass('darkfilter');
                         $('#background').removeClass('js-blur');
                         $('#info').removeClass('darkfilter');
                         $('#fw-container').removeClass('darkfilter');
