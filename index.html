@@ -36,6 +36,8 @@
 
         <script src="js/vendor/jquery-3.3.1.min.js"></script>
 
+        <link rel="preload" href="js/main.js" as="script">
+
         <script>
             $(document).ready(function() {  
                 var currentTime = new Date().getHours();
@@ -313,7 +315,7 @@
             </p>
         </div>
 
-        <script src="js/main.js"></script>
+        <script src="js/main.js" async></script>
 
         <script src="js/weather.js" async></script>
         
