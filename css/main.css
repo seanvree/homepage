@@ -678,9 +678,9 @@ li {
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
-    color: #E4E2E2;
+    /* color: #E4E2E2; */
+    color: white;
     font-size: 1.5em;
-    font-weight: 300;
 }
 
 #flexbox-input::-ms-clear {
@@ -821,7 +821,7 @@ body.suggestions .search-suggestions {
     line-height: .5em;
     padding-left: .25em;
     padding-right: .25em;
-    background-color: rgba(21, 21, 21, 0.70);
+    background-color: rgba(21, 21, 21, 0.75);
     filter: brightness(125%);
     -webkit-filter: brightness(125%);
     -moz-filter: brightness(125%);
