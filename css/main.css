@@ -100,6 +100,19 @@ body.fade-out {
     transition: all .5s ease;
 }
 
+.js-blur {
+    filter: brightness(75%) blur(1px);
+    -webkit-filter: brightness(75%) blur(1px);
+    -moz-filter: brightness(75%) blur(1px);
+    -ms-filter: brightness(75%) blur(1px);
+    -o-filter: brightness(75%) blur(1px);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
 article,
 aside,
 details,
