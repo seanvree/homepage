@@ -360,14 +360,16 @@
         <script>
             $(document).ready(function () {
                 $('#formstretch').hover(function () {
-                    $('#background').addClass('darkfilter');
+                    //$('#background').addClass('darkfilter');
+                    $('#background').addClass('js-blur');
                     $('#info').addClass('darkfilter');
                     $('#fw-container').addClass('darkfilter');
                     $('#footer').addClass('darkfilter');
                     $('#searchbutton').addClass('lightfilter');
                 },
                     function () {
-                        $('#background').removeClass('darkfilter');
+                        //$('#background').removeClass('darkfilter');
+                        $('#background').removeClass('js-blur');
                         $('#info').removeClass('darkfilter');
                         $('#fw-container').removeClass('darkfilter');
                         $('#footer').removeClass('darkfilter');
