@@ -534,7 +534,8 @@ li {
 [data-tooltip].t-md:before {
     width: 8em;
     width: -moz-fit-content;
-    padding: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
 }
 
 [data-tooltip].t-md-hidden:before {
