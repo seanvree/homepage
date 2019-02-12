@@ -360,21 +360,17 @@
         <script>
             $(document).ready(function () {
                 $('#formstretch').hover(function () {
-                    //$('#inputlabel').addClass('lightfilter');
-                    //$('#optionlabel').addClass('lightfilter');
-                    $('#searchbutton').addClass('lightfilter');
                     $('#background').addClass('darkfilter');
                     $('#info').addClass('darkfilter');
                     $('#fw-container').addClass('darkfilter');
                     $('#footer').addClass('darkfilter');
+                    $('#searchbutton').addClass('lightfilter');
                 },
                     function () {
                         $('#background').removeClass('darkfilter');
                         $('#info').removeClass('darkfilter');
                         $('#fw-container').removeClass('darkfilter');
                         $('#footer').removeClass('darkfilter');
-                        //$('#inputlabel').removeClass('lightfilter');
-                        //$('#optionlabel').removeClass('lightfilter');
                         $('#searchbutton').removeClass('lightfilter');
                     }
                 );
