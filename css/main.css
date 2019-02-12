@@ -533,17 +533,17 @@ li {
 
 [data-tooltip].t-md:before {
     width: 10em;
-    width: max-content;
+    /* width: max-content;
     width: -moz-max-content;
-    width: -webkit-fit-content !important;
-    padding: .5em;
+    width: -webkit-fit-content !important; */
+    /* padding: .5em; */
 }
 
 [data-tooltip].t-md-hidden:before {
     width: 10em;
-    width: max-content;
+    /* width: max-content;
     width: -moz-max-content;
-    width: -webkit-fit-content !important;
+    width: -webkit-fit-content !important; */
     opacity: 0 !important;
     display: none;
 }
