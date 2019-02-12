@@ -145,8 +145,8 @@ $(function () {
     $('.flexbox input').keypress(function (e) {
         $('#searchsubmit').removeClass('hidden');
         $('#searchclear').removeClass('hidden');
-        $('#inputlabel').addClass('lightfilter');
-        $('#optionlabel').addClass('lightfilter');
+        //$('#inputlabel').addClass('lightfilter');
+        //$('#optionlabel').addClass('lightfilter');
         $('#searchbutton').addClass('lightfilter');
         $('#background').addClass('darkfilter');
         $('#info').addClass('darkfilter');
@@ -170,8 +170,8 @@ $(function () {
         $('#info').removeClass('darkfilter');
         $('#fw-container').removeClass('darkfilter');
         $('#footer').removeClass('darkfilter');
-        $('#inputlabel').removeClass('lightfilter');
-        $('#optionlabel').removeClass('lightfilter');
+        //$('#inputlabel').removeClass('lightfilter');
+        //$('#optionlabel').removeClass('lightfilter');
         $('#searchbutton').removeClass('lightfilter');
         $('#suggestions-container').addClass('hidden');
         $('#inputlabel').addClass('t-md-hidden t-top-hidden');
