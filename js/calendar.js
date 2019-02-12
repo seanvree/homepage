@@ -18,7 +18,6 @@
         if (current) {
             var self = this;
             window.setTimeout(function () {
-           //     self.openDay(current);
             }, 500);
         }
     }
@@ -28,8 +27,6 @@
         this.drawHeader();
         //Draw Month
         this.drawMonth();
-        // Draw Legend
-        //this.drawLegend();
     }
 
     Calendar.prototype.drawHeader = function () {
@@ -55,18 +52,8 @@
                 self.prevMonth();
             });
 
-            //var ringLeft = createElement('div', 'ring-left');
-            //var ringRight = createElement('div', 'ring-right');
-
-
-            //Append the Elements
-            //this.header.appendChild(this.title);
-
             this.header.appendChild(this.title.month);
             this.header.appendChild(this.title.year);
-
-            //this.header.appendChild(ringLeft);
-            //this.header.appendChild(ringRight);
 
             this.header.appendChild(right);
             this.header.appendChild(left);
@@ -74,7 +61,6 @@
             this.drawWeekDays();
         }
 
-        //this.title.innerHTML = this.current.format('MMMM YYYY');
         this.title.month.innerHTML = this.current.format('MMMM');
         this.title.year.innerHTML = this.current.format('YYYY');
     }
@@ -188,14 +174,7 @@
         //Day Number
         var number = createElement('div', 'day-number', day.format('DD'));
 
-        //Events
-       // var events = createElement('div', 'day-events');
-        //this.drawEvents(day, events);
-
-        //outer.appendChild(name);
-        //outer.appendChild(circle);
         outer.appendChild(number);
-        //outer.appendChild(events);
         this.week.appendChild(outer);
     }
 
@@ -221,65 +200,9 @@
             classes.push('other');
         } else if (today.isSame(day, 'day')) {
             classes.push('today');
-
-            //CHANGE ME:  ADD TODAY JUMP TO BUTTON:
         }
         return classes.join(' ');
     }
-
-  //  Calendar.prototype.openDay = function (el) {
-       // var details, arrow;
-  //      var dayNumber = +el.querySelectorAll('.day-number')[0].innerText || +el.querySelectorAll('.day-number')[0].textContent;
-   //     var day = this.current.clone().date(dayNumber);
-
-       // var currentOpened = document.querySelector('.details');
-
-        //Check to see if there is an open detais box on the current row
-    //    if (currentOpened && currentOpened.parentNode === el.parentNode) {
-          //  details = currentOpened;
-         //   arrow = document.querySelector('.arrow');
-   //     } else {
-            //Close the open events on differnt week row
-            //currentOpened && currentOpened.parentNode.removeChild(currentOpened);
-     //       if (currentOpened) {
-       //         currentOpened.addEventListener('webkitAnimationEnd', function () {
-         //           currentOpened.parentNode.removeChild(currentOpened);
-           //     });
-             //   currentOpened.addEventListener('oanimationend', function () {
-               //     currentOpened.parentNode.removeChild(currentOpened);
-            ///    });
-            //    currentOpened.addEventListener('msAnimationEnd', function () {
-             //       currentOpened.parentNode.removeChild(currentOpened);
-           //     });
-             //   currentOpened.addEventListener('animationend', function () {
-               //     currentOpened.parentNode.removeChild(currentOpened);
-              //  });
-              //  currentOpened.className = 'details out';
-         //   }
-
-
-            //Change me:  Remove DETAILS:
-            
-            //Create the Details Container
-           // details = createElement('div', 'details in');
-
-            //Create the arrow
-       //     var arrow = createElement('div', 'arrow');
-
-            //Create the event wrapper
-           // details.appendChild(arrow);
-           // el.parentNode.appendChild(details);
-     //   }
-
-     //   var todaysEvents = this.events.filter(function (event) {
-    //        return event.date.isSame(day, 'day');
-    //    });
-
-     //   console.log('m: ', todaysEvents)
-       // this.renderEvents(todaysEvents, details);
-
-    //    arrow.style.left = el.offsetLeft - el.parentNode.offsetLeft + (el.offsetWidth / 2) + 'px';
-  //  }
 
     Calendar.prototype.renderEvents = function (events, ele) {
         //Remove any events in the current details element
@@ -389,7 +312,6 @@
 
 var app = angular.module('myApp', []);
 app.controller('AppCtrl', function ($scope) {
-    //console.log("Launch Calendar");
 });
 app.directive('calendar', [function () {
     return {
