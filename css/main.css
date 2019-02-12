@@ -426,7 +426,6 @@ li {
 
 [data-tooltip]:before {
     padding: 5px;
-    /* width: 10em; */
     width: max-content;
     width: -moz-max-content;
     border-radius: 3px;
@@ -678,7 +677,6 @@ li {
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
-    /* color: #E4E2E2; */
     color: white;
     font-size: 1.5em;
 }
@@ -1658,7 +1656,6 @@ i {
 }
 
 .month {
-    /*overflow: hidden;*/
     opacity: 0;
     transition: all 0.4s ease;
 }
