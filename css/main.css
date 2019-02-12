@@ -965,7 +965,7 @@ body.form .search-form {
 /*  Time & Temp: */
 
 #info {
-    position: fixed;
+    position: absolute;
     top: 0;
     -webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
