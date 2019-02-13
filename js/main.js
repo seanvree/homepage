@@ -145,8 +145,6 @@ $(function () {
     $('.flexbox input').keypress(function (e) {
         $('#searchsubmit').removeClass('hidden');
         $('#searchclear').removeClass('hidden');
-        //$('#background').addClass('darkfilter');
-        $('#background').addClass('js-blur');
         $('#searchbutton').addClass('lightfilter');
         $('#info').addClass('darkfilter');
         $('#fw-container').addClass('darkfilter');
@@ -165,7 +163,7 @@ $(function () {
     });
 
     $('#background').click(function (e) {
-        //$('#background').removeClass('darkfilter');
+        $('#background').removeClass('darkfilter');
         $('#background').removeClass('js-blur');
         $('#info').removeClass('darkfilter');
         $('#fw-container').removeClass('darkfilter');
