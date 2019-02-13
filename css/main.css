@@ -774,6 +774,10 @@ li {
     cursor: pointer;
 }
 
+#flexbox-option:hover {
+    font-weight: 600;
+}
+
 #flexbox-option::-webkit-scrollbar {
     width: 1px;
     background-color: transparent;
@@ -1005,7 +1009,6 @@ body.form .search-form {
 
 .timeArea .time {
     font-size: 4.0em;
-    font-weight: 400;
     margin-top: 0px;
     padding: 0 0 0 0;
 }
@@ -1013,10 +1016,8 @@ body.form .search-form {
 .timeArea .date {
     display: block;
     font-size: 2em;
-    font-weight: 400;
     margin-top: -.25em;
     max-width: 100%;
-    /* overflow: hidden; */
     text-overflow: ellipsis;
     white-space: nowrap;
     cursor: pointer;
