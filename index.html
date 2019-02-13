@@ -355,16 +355,28 @@
                 if ($(window).height() < 730) {
                     $('#calendarwrapper').addClass('hiddenscreen');
                     $('#date').addClass('hiddenscreen');
+                    $('.flexbox input').keypress(function (e) {
+                        $('#background').addClass('darkfilter');
+                    });
+                    $('#formstretch').hover(function () {
+                        $('#background').addClass('darkfilter');
+                    });
+
                 } else {
                     $('#datemobile').addClass('hiddenscreen');
-                }
+                    $('.flexbox input').keypress(function (e) {
+                        $('#background').addClass('js-blur');
+                    });
+                    $('#formstretch').hover(function () {
+                        $('#background').addClass('js-blur');
+                    });
+                };
             });
         </script>
 
         <script>
             $(document).ready(function () {
                 $('#formstretch').hover(function () {
-                    $('#background').addClass('js-blur');
                     $('#info').addClass('darkfilter');
                     $('#fw-container').addClass('darkfilter');
                     $('#footer').addClass('darkfilter');
@@ -372,10 +384,12 @@
                 },
                     function () {
                         $('#background').removeClass('js-blur');
+                        $('#background').removeClass('darkfilter');
                         $('#info').removeClass('darkfilter');
                         $('#fw-container').removeClass('darkfilter');
                         $('#footer').removeClass('darkfilter');
                         $('#searchbutton').removeClass('lightfilter');
+                        $('#background').removeClass('darkfilter');
                     }
                 );
             });
