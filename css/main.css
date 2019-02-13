@@ -729,6 +729,10 @@ li {
 }
 
 #optionlabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     height: 4em;
     width: 6em;
     float: right;
@@ -739,6 +743,7 @@ li {
 }
 
 #flexbox-option {
+    display: flex;
     height: 4em;
     width: 6em;
     -webkit-appearance: none;
@@ -756,7 +761,6 @@ li {
     -webkit-border-radius: 0 .2em .2em 0;
     color: rgb(87, 171, 250);
     font-size: 1em;
-    font-weight: 300;
     text-align: center;
     text-align-last: center;
     -moz-text-align-last: center;
@@ -765,6 +769,7 @@ li {
     align-items: center;
     align-content: center;
     align-self: center;
+    justify-content: center;
     overflow: hidden;
     cursor: pointer;
 }
