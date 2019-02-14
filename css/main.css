@@ -21,12 +21,12 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    /* color: #fff; */
     font-family: sans-serif;
     font: 400 16px 'Open Sans', Arial;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     overflow: hidden;
+    color: rgba(37, 37, 37, 0.75)
 }
 
 body.fade-out {
@@ -35,11 +35,11 @@ body.fade-out {
 }
 
 .day1 {
-    color: rgba(100, 100, 100, 0.75);
+    color: rgba(100, 100, 100, 0.75) !important;
 }
 
 .night {
-    color: rgba(37, 37, 37, 0.75);
+    color: rgba(37, 37, 37, 0.75) !important;
 }
 
 .bgday {
