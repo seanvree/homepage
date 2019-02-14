@@ -513,9 +513,6 @@ li {
     border-top: none;
 }
 
-
-/* CHANGE ME: */
-
 [data-tooltip].t-bottom2:before {
     top: 100%;
     left: 50%;
@@ -533,7 +530,6 @@ li {
     border-bottom: 8px solid #000;
     border-top: none;
 }
-
 
 [data-tooltip].t-bottom-hidden:after {
     top: 100%;
