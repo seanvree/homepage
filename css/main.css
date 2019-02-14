@@ -425,7 +425,6 @@ li {
 [data-tooltip] {
     cursor: default;
     position: relative;
-    /* z-index: 4; */
 }
 
 [data-tooltip]:before,
@@ -480,7 +479,7 @@ li {
     transform: translateX(-50%);
     border-top: 8px solid #000;
     border-bottom: none;
-}
+} 
 
 [data-tooltip].t-top-hidden:after {
     bottom: 100%;
@@ -548,6 +547,15 @@ li {
     width: -moz-fit-content;
     padding-left: .5em;
     padding-right: .5em;
+    left: 10em;
+    height: 2em;
+    bottom: 2.5em;
+    margin-bottom: 0;
+}
+
+[data-tooltip].t-md:after {
+    bottom: 40%;
+    left: 52%;
 }
 
 [data-tooltip].t-md-hidden:before {
@@ -999,6 +1007,7 @@ body.form .search-form {
 }
 
 #time {
+    white-space: nowrap;
     cursor: pointer;
 }
 
@@ -1021,6 +1030,15 @@ body.form .search-form {
     text-overflow: ellipsis;
     white-space: nowrap;
     cursor: pointer;
+}
+
+#date {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 90vw;
+    margin-top: -1em;
+    padding-top: 1em;
 }
 
 .date:hover {
