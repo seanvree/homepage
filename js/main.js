@@ -187,4 +187,70 @@ $(function () {
         $('#help').addClass('hidden');
     });
 
+
+    // CHANGE ME:
+    
+    if ($(window).height() < 730) {
+        $('#calendarwrapper').addClass('hiddenscreen');
+        $('#date').addClass('hiddenscreen');
+        $('.flexbox input').keypress(function (e) {
+            $('#background').addClass('darkfilter');
+        });
+        $('#formstretch').hover(function () {
+            $('#background').addClass('darkfilter');
+        });
+
+    } else {
+        $('#datemobile').addClass('hiddenscreen');
+        $('.flexbox input').keypress(function (e) {
+            $('#background').addClass('js-blur');
+        });
+        $('#formstretch').hover(function () {
+            $('#background').addClass('js-blur');
+        });
+    };
+
+    $('#formstretch').hover(function () {
+            $('#info').addClass('darkfilter');
+            $('#fw-container').addClass('darkfilter');
+            $('#footer').addClass('darkfilter');
+            $('#searchbutton').addClass('lightfilter');
+        },
+        function () {
+            $('#background').removeClass('js-blur');
+            $('#background').removeClass('darkfilter');
+            $('#info').removeClass('darkfilter');
+            $('#fw-container').removeClass('darkfilter');
+            $('#footer').removeClass('darkfilter');
+            $('#searchbutton').removeClass('lightfilter');
+            $('#background').removeClass('darkfilter');
+        }
+    );
+
+    $('#optionlabel').hover(function () {
+        $('#optionlabel').removeClass('t-sm-hidden t-top-hidden');
+    });
+
+    document.getElementById("flexbox-input").oninput = function (e) {
+        $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+        $('#optionlabel').addClass('t-sm-hidden t-top-hidden');
+        $('#searchsubmit').removeClass('hidden');
+        $('#searchclear').removeClass('hidden');
+        $('#suggestions-container').removeClass('hidden');
+    };
+
+    document.getElementById("flexbox-input").onfocus = function () {
+        $('#calendarwrapper').addClass('hidden');
+        $('#flexbox').removeClass('flexboxresize');
+    };
+
+    $('#date').click(function () {
+        $('#calendarwrapper').removeClass('hidden');
+    });
+
+    $('#calendarclear').click(function () {
+        $('#calendarwrapper').addClass('hidden');
+        $('#flexbox').removeClass('flexboxresize');
+    });
+
 });
