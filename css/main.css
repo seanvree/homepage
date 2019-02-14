@@ -520,8 +520,8 @@ li {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    min-width: 6em !important;
-    /* width: 8em !important; */
+    /* min-width: 6em !important; */
+    width: 8em !important;
     z-index: 8000;
 }
 
@@ -533,9 +533,6 @@ li {
     border-bottom: 8px solid #000;
     border-top: none;
 }
-
-
-
 
 
 [data-tooltip].t-bottom-hidden:after {
