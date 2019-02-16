@@ -10,6 +10,7 @@
 html,
 body {
     /* background: #000000; */
+    background: url("background_night.jpg");
     height: 100%;
     margin: 0;
     opacity: 1;
@@ -26,7 +27,7 @@ body {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     overflow: hidden;
-    color: rgba(37, 37, 37, 0.75)
+    /* color: rgba(37, 37, 37, 0.75) */
 }
 
 body.fade-out {
