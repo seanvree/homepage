@@ -45,8 +45,8 @@ body.fade-out {
     background-repeat: no-repeat;
     background-position: center;
     /* background-attachment: fixed; */
-    /* object-fit: cover; */
-    /* object-position: center; */
+    object-fit: cover;
+    object-position: center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
