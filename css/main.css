@@ -43,9 +43,9 @@ body.fade-out {
     transition: 1s opacity;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-attachment: fixed;
-    object-fit: cover;
-    object-position: center; */
+    background-attachment: fixed;
+    /* object-fit: cover; */
+    /* object-position: center; */
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1002,7 +1002,7 @@ body.form .search-form {
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
-    user-select:none;
+    user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select:none;
