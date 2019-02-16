@@ -10,7 +10,7 @@
 html,
 body {
     /* background: #000000; */
-    background: url("background_night.jpg");
+    background: url("background_day.jpg");
     height: 100%;
     margin: 0;
     opacity: 1;
