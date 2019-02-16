@@ -176,16 +176,16 @@ $(function () {
         document.getElementById("flexbox-input").focus();
     });
 
-    $('#background').click(function (e) {
-        //$('#background').removeClass('darkfilter');
-        //$('#background').removeClass('js-blur');
-        $('#info').removeClass('darkfilter');
-        $('#fw-container').removeClass('darkfilter');
-        $('#footer').removeClass('darkfilter');
-        $('#searchbutton').removeClass('lightfilter');
-        $('#suggestions-container').addClass('hidden');
-        $('#inputlabel').addClass('t-md-hidden t-top-hidden');
-    });
+    // $('#background').click(function (e) {
+    //     //$('#background').removeClass('darkfilter');
+    //     //$('#background').removeClass('js-blur');
+    //     $('#info').removeClass('darkfilter');
+    //     $('#fw-container').removeClass('darkfilter');
+    //     $('#footer').removeClass('darkfilter');
+    //     $('#searchbutton').removeClass('lightfilter');
+    //     $('#suggestions-container').addClass('hidden');
+    //     $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+    // });
 
     $('body').click(function (e) {
         $('#help').addClass('hidden');
@@ -237,18 +237,18 @@ $(function () {
         }
     );
 
-    $('#optionlabel').hover(function () {
-        $('#optionlabel').removeClass('t-sm-hidden t-top-hidden');
-    });
+    // $('#optionlabel').hover(function () {
+    //     $('#optionlabel').removeClass('t-sm-hidden t-top-hidden');
+    // });
 
 
-    $('#date').click(function () {
-        $('#calendarwrapper').removeClass('hidden');
-    });
+    // $('#date').click(function () {
+    //     $('#calendarwrapper').removeClass('hidden');
+    // });
 
-    $('#calendarclear').click(function () {
-        $('#calendarwrapper').addClass('hidden');
-        $('#flexbox').removeClass('flexboxresize');
-    });
+    // $('#calendarclear').click(function () {
+    //     $('#calendarwrapper').addClass('hidden');
+    //     $('#flexbox').removeClass('flexboxresize');
+    // });
 
 });
