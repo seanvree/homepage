@@ -200,10 +200,10 @@ $(function () {
     } else {
         $('#datemobile').addClass('hiddenscreen');
         $('.flexbox input').keypress(function (e) {
-            $('#background').addClass('js-blur');
+           // $('#background').addClass('js-blur');
         });
         $('#formstretch').hover(function () {
-            $('#background').addClass('js-blur');
+          //  $('#background').addClass('js-blur');
         });
     };
 
@@ -214,7 +214,7 @@ $(function () {
             $('#searchbutton').addClass('lightfilter');
         },
         function () {
-            $('#background').removeClass('js-blur');
+          //  $('#background').removeClass('js-blur');
             $('#background').removeClass('darkfilter');
             $('#info').removeClass('darkfilter');
             $('#fw-container').removeClass('darkfilter');
