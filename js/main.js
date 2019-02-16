@@ -187,25 +187,25 @@ $(function () {
         $('#help').addClass('hidden');
     });
     
-    if ($(window).height() < 730) {
-        $('#calendarwrapper').addClass('hiddenscreen');
-        $('#date').addClass('hiddenscreen');
-        $('.flexbox input').keypress(function (e) {
-            //$('#background').addClass('darkfilter');
-        });
-        $('#formstretch').hover(function () {
-           // $('#background').addClass('darkfilter');
-        });
+    // if ($(window).height() < 730) {
+    //     $('#calendarwrapper').addClass('hiddenscreen');
+    //     $('#date').addClass('hiddenscreen');
+    //     $('.flexbox input').keypress(function (e) {
+    //         //$('#background').addClass('darkfilter');
+    //     });
+    //     $('#formstretch').hover(function () {
+    //        // $('#background').addClass('darkfilter');
+    //     });
 
-    } else {
-        $('#datemobile').addClass('hiddenscreen');
-        $('.flexbox input').keypress(function (e) {
-           // $('#background').addClass('js-blur');
-        });
-        $('#formstretch').hover(function () {
-          //  $('#background').addClass('js-blur');
-        });
-    };
+    // } else {
+    //     $('#datemobile').addClass('hiddenscreen');
+    //     $('.flexbox input').keypress(function (e) {
+    //        // $('#background').addClass('js-blur');
+    //     });
+    //     $('#formstretch').hover(function () {
+    //       //  $('#background').addClass('js-blur');
+    //     });
+    // };
 
     $('#formstretch').hover(function () {
             $('#info').addClass('darkfilter');
