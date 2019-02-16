@@ -191,10 +191,10 @@ $(function () {
         $('#calendarwrapper').addClass('hiddenscreen');
         $('#date').addClass('hiddenscreen');
         $('.flexbox input').keypress(function (e) {
-            $('#background').addClass('darkfilter');
+            //$('#background').addClass('darkfilter');
         });
         $('#formstretch').hover(function () {
-            $('#background').addClass('darkfilter');
+           // $('#background').addClass('darkfilter');
         });
 
     } else {
@@ -215,7 +215,7 @@ $(function () {
         },
         function () {
           //  $('#background').removeClass('js-blur');
-            $('#background').removeClass('darkfilter');
+           // $('#background').removeClass('darkfilter');
             $('#info').removeClass('darkfilter');
             $('#fw-container').removeClass('darkfilter');
             $('#footer').removeClass('darkfilter');
