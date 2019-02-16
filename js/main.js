@@ -165,6 +165,8 @@ $(function () {
     document.getElementById("flexbox-input").onfocus = function () {
         $('#calendarwrapper').addClass('hidden');
         $('#flexbox').removeClass('flexboxresize');
+        //CHANGE ME
+        $('#background').addClass('darkfilter');
     };
 
     $("#searchclear").click(function () {
