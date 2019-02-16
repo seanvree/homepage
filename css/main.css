@@ -43,9 +43,9 @@ body.fade-out {
     transition: 1s opacity;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     object-fit: cover;
-    object-position: center;
+    object-position: center; */
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
