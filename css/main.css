@@ -29,6 +29,7 @@ html,
 } */
 
 body {
+    position: static;
     background: url("background_day.jpg");
     height: 100%;
     margin: 0;
@@ -36,10 +37,16 @@ body {
     transition: 1.5s opacity;
     object-fit: cover;
     object-position: center;
-    /* background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    /* background-size: cover;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover; */
