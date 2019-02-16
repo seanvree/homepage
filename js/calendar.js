@@ -113,7 +113,7 @@
     }
 
     Calendar.prototype.fowardFill = function () {
-        var clone = this.current.clone().add(1, 'months').subtract('days', 1);
+        var clone = this.current.clone().add(1, 'months').subtract(1, 'days');
         var dayOfWeek = clone.day();
 
         if (dayOfWeek === 6) {
