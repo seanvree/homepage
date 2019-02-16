@@ -17,6 +17,7 @@ body {
     font: 400 16px 'Open Sans', Arial;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    background-attachment: fixed;
     overflow: hidden;
 }
 
@@ -43,7 +44,7 @@ body.fade-out {
     transition: 1s opacity;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* object-fit: cover; */
     /* object-position: center; */
     background-size: cover;
