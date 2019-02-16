@@ -142,29 +142,6 @@ $(function () {
         search(query, engine);
     });
 
-
-
-
-    // $('.flexbox input').keypress(function (e) {
-    //     $('#searchsubmit').removeClass('hidden');
-    //     $('#searchclear').removeClass('hidden');
-    //     $('#searchbutton').addClass('lightfilter');
-    //     $('#info').addClass('darkfilter');
-    //     $('#fw-container').addClass('darkfilter');
-    //     $('#footer').addClass('darkfilter');
-    //     $('#inputlabel').addClass('t-md-hidden t-top-hidden');
-    //     $('#suggestions-container').removeClass('hidden');
-    //     $('#optionlabel').addClass('t-sm-hidden t-top-hidden');
-    // });
-
-    // document.getElementById("flexbox-input").oninput = function (e) {
-    //     $('#inputlabel').addClass('t-md-hidden t-top-hidden');
-    //     $('#optionlabel').addClass('t-sm-hidden t-top-hidden');
-    //     $('#searchsubmit').removeClass('hidden');
-    //     $('#searchclear').removeClass('hidden');
-    //     $('#suggestions-container').removeClass('hidden');
-    // };
-
     document.getElementById("flexbox-input").oninput = function (e) {
         $('#searchsubmit').removeClass('hidden');
         $('#searchclear').removeClass('hidden');
@@ -176,20 +153,6 @@ $(function () {
         $('#suggestions-container').removeClass('hidden');
         $('#optionlabel').addClass('t-sm-hidden t-top-hidden');
     };
-
-
-
-
-
-    document.getElementById("flexbox-input").onfocus = function () {
-        $('#calendarwrapper').addClass('hidden');
-        $('#flexbox').removeClass('flexboxresize');
-    };
-
-
-
-
-
 
     $("#searchclear").click(function () {
         $("#flexbox-input").val('');
@@ -265,6 +228,10 @@ $(function () {
         $('#optionlabel').removeClass('t-sm-hidden t-top-hidden');
     });
 
+    document.getElementById("flexbox-input").onfocus = function () {
+        $('#calendarwrapper').addClass('hidden');
+        $('#flexbox').removeClass('flexboxresize');
+    };
 
     $('#date').click(function () {
         $('#calendarwrapper').removeClass('hidden');
