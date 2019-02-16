@@ -12,7 +12,7 @@ function setDate($) {
     if (currentTime != previousTime) {
         $('.timeArea .time .timeInner').html(currentTime);
         $('#date').html(currentDate);
-        $('#datemobile').html(currentDate);
+        //$('#datemobile').html(currentDate);
     };
     var hours = new Date().getHours();
     var hours = (hours + 24) % 24;
