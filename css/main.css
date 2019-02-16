@@ -8,8 +8,7 @@
 }
 
 html,
-body {
-    /* background: #000000; */
+/* body {
     background: url("background_day.jpg");
     height: 100%;
     margin: 0;
@@ -27,8 +26,30 @@ body {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     overflow: hidden;
-    /* color: rgba(37, 37, 37, 0.75) */
+} */
+
+body {
+    background: url("background_day.jpg");
+    height: 100%;
+    margin: 0;
+    opacity: 1;
+    transition: 1.5s opacity;
+    object-fit: cover;
+    object-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: sans-serif;
+    font: 400 16px 'Open Sans', Arial;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow: hidden;
 }
+
 
 body.fade-out {
     opacity: 0;
