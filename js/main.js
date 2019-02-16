@@ -210,7 +210,7 @@ $(function () {
             $('#background').addClass('darkfilter');
         });
         $('#formstretch').hover(function () {
-            ('#background').addClass('darkfilter');
+            $('#background').addClass('darkfilter');
         });
 
     } else {
