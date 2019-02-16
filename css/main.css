@@ -15,13 +15,13 @@ body {
     margin: 0;
     opacity: 1;
     transition: 1.5s opacity;
-    /* background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover; */
+    -o-background-size: cover;
     font-family: sans-serif;
     font: 400 16px 'Open Sans', Arial;
     -ms-text-size-adjust: 100%;
