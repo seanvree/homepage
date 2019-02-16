@@ -220,7 +220,6 @@ $(function () {
             $('#fw-container').removeClass('darkfilter');
             $('#footer').removeClass('darkfilter');
             $('#searchbutton').removeClass('lightfilter');
-            $('#background').removeClass('darkfilter');
         }
     );
 
