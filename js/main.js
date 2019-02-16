@@ -163,8 +163,8 @@ $(function () {
     });
 
     $('#background').click(function (e) {
-        $('#background').removeClass('darkfilter');
-        $('#background').removeClass('js-blur');
+        //$('#background').removeClass('darkfilter');
+        //$('#background').removeClass('js-blur');
         $('#info').removeClass('darkfilter');
         $('#fw-container').removeClass('darkfilter');
         $('#footer').removeClass('darkfilter');
@@ -186,9 +186,6 @@ $(function () {
     $('#helpclear').click(function (e) {
         $('#help').addClass('hidden');
     });
-
-
-    // CHANGE ME:
     
     if ($(window).height() < 730) {
         $('#calendarwrapper').addClass('hiddenscreen');
