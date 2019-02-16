@@ -162,10 +162,10 @@ $(function () {
     //     $('#suggestions-container').removeClass('hidden');
     // };
 
-    document.getElementById("flexbox-input").onfocus = function () {
-        $('#calendarwrapper').addClass('hidden');
-        $('#flexbox').removeClass('flexboxresize');
-    };
+    // document.getElementById("flexbox-input").onfocus = function () {
+    //     $('#calendarwrapper').addClass('hidden');
+    //     $('#flexbox').removeClass('flexboxresize');
+    // };
 
     $("#searchclear").click(function () {
         $("#flexbox-input").val('');
