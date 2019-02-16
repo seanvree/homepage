@@ -58,7 +58,7 @@ body.fade-out {
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-
+/* 
 .bgnight {
     background: url("background_night.jpg");
     position: static;
@@ -73,7 +73,7 @@ body.fade-out {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-}
+} */
 
 .darkfilter {
     filter: brightness(75%);
