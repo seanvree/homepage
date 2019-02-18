@@ -5,15 +5,12 @@
 
 **DEMO**:  https://seanvree.github.io/homepage/
 
-**Last Updated**: 21 JAN 2019: 
+**Last Updated**: 18 FEB 2019: 
 - Added LIVE searching.
-- Added search submit / clear functions.
-- Added fade in/fade out on search input and hover activity.
-- Changed drop-down search engine select behavior.
-- Added detailed browser console outputs.
-- Added transitions for all elements.
+-	Added monthly calendar modal (Click on date).
+-	Added time convert (12/24hr) function (Click on time).
+-	Added help menu (press “?” key while on page).
 - Updated bootstrap.
-- Added search input validation.
 
 
 # Features:
@@ -23,12 +20,14 @@
 - Fully functional multi-search input form (Google, YouTube, Wiki, IMDB).
 - Live custom news ticker provided by: feed.mikle.com ($1/month).
 - Background auto change (day/night).
-- Live DTG.
+-	Monthly calendar modal (Click on date) (Appears only on desktop browsers - screen height > 730px).
+- Live DTG with click-to-convert time (12/24hr).
 - Weather data auto generated via Geolocation.
 - Weather API provided via OpenWeatherMap.
 - Click-to-convert Celsius/Fahrenheit.
 - 5-day forecast data (Click on right weather icon).
 - Page hit counter (PHP) (bottom right).
+
 - Stand-alone weather app can be found here:  https://github.com/seanvree/Weather
 - Check out my other self-hosted apps here:  https://github.com/Monitorr
 
