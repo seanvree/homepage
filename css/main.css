@@ -1154,7 +1154,7 @@ i {
 #tempwrapper:hover {
     color: #1E90FF;
     cursor: pointer;
-    text-shadow: 1px 1px rgba(37, 37, 37, 0.75);
+    text-shadow: .5px .5px rgba(37, 37, 37, 0.75);
 }
 
 #temp {
