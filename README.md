@@ -27,7 +27,6 @@
 - Click-to-convert Celsius/Fahrenheit.
 - 5-day forecast data (Click on right weather icon).
 - Page hit counter (PHP) (bottom right).
-
 - Stand-alone weather app can be found here:  https://github.com/seanvree/Weather
 - Check out my other self-hosted apps here:  https://github.com/Monitorr
 
