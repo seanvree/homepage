@@ -14,6 +14,7 @@
 
 
 # Features:
+
 - Self hosted, VERY minimal(ish)/lightweight.
 - Live searching.
 - Mobile ready.
@@ -48,7 +49,7 @@
 ## Notes:
 
 - Add your desired background image files
-**`/css/main.css`: LINE 46 & 62**:
+**`/css/main.css`: LINE 38 & 55**:
 
 ```
 background: url("background_day.jpg");
@@ -66,7 +67,7 @@ var t = window.setInterval(searchByLocation, 30000);
 
 - Change the default temp unit from F to C by changing the following two items:
 
-**`/index.html`: LINE 154:**
+**`/index.html`: LINE 122:**
 
 ```
 <div id="unit" class="unit hidden">&degF</div>
@@ -80,10 +81,10 @@ var unit = 'metric';
 
 - Turn ON search auto-complete by changing the value to `< "autocomplete="ON" >` at the following location:
 
-**`/index.html`: LINE 290:**
+**`/index.html`: LINE 259:**
 
 ```
-<input type="search" id="flexbox-input" name="s" value="" placeholder=" Search..." autocomplete="off" autofocus />
+<input type="search" id="flexbox-input" name="s" value="" placeholder=" Search..." autocomplete="off" spellcheck="false" autofocus>
 ```
 
 
@@ -95,9 +96,10 @@ var unit = 'metric';
 
 - **TICKER DATA:** You will need to create your own feed.mikle ticker widget where you can customize your RSS news sources and style.  To do so, go to https://feed.mikle.com, create an account, and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined below. 
  
- feed.mikle.com widget ticker link in **`/index.html` : Line 322**:  
+ feed.mikle.com widget ticker link in **`/index.html` : Line 287**:
+ 
  ```
- <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script>
+ <script src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script>
  ```
 
 ## LIVE Search Usage:
