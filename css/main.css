@@ -1,6 +1,6 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
-/******** Reset *************/
+/******** Reset ***********/
 
 * {
     box-sizing: border-box;
@@ -292,6 +292,25 @@ input[type=search] {
     border-radius: 0;
     z-index: 1005;
     outline: none;
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=text]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
 }
 
 input:-webkit-autofill,
@@ -702,6 +721,12 @@ li {
     margin-bottom: 0;
     background-color: rgba(21, 21, 21, 0.70);
     z-index: 200;
+}
+
+/* CHANGE ME: */
+
+#inputlabel:hover {
+    background-color: rgba(21, 21, 21, 0.80);
 }
 
 #flexbox-input {
