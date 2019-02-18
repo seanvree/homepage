@@ -33,7 +33,6 @@
 
 <br>
 
- 
 ## Screenshot Desktop:
 
 <img src="https://i.imgur.com/WkiO88x.gif">
@@ -94,9 +93,7 @@ var unit = 'metric';
    var weatherApiKey = ' YOUR KEY HERE ';
 ```
 
-- **TICKER DATA:** You will need to create your own feed.mikle ticker widget where you can customize your RSS news sources and style.  To do so, go to https://feed.mikle.com, create an account, and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo. You will then have your own custom ticker widget URL which you will then input into index.html as outlined below. 
- 
- feed.mikle.com widget ticker link in **`/index.html` : Line 287**:
+- **TICKER DATA:** You will need to create your own feed.mikle ticker widget where you can customize your RSS news sources and style.  To do so, go to https://feed.mikle.com, create an account, and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo. You will then have your own custom ticker widget URL which you will then input into  **`/index.html` : Line 287**:
  
  ```
  <script src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script>
@@ -104,11 +101,11 @@ var unit = 'metric';
 
 ## LIVE Search Usage:
 
-### Key Searching
+### Key Searching:
 
-Make changes to the live search behavior in `/js/tilde.js` .
+- Make changes to the live search behavior in `/js/tilde.js` .
 
-To view the available sites and their keys, press `?` for the help menu.
+- To view the available sites and their keys, press `?` for the help menu.
 (NOTE: the Help menu only appears on desktop browsers). 
 
 You can search any of the sites by typing a colon after the site's key, followed by your search query. 
@@ -121,7 +118,7 @@ For example:
 
 If your input doesn't match any of the commands, a generic Google search will be triggered.
 
-### Specific Locations
+### Specific Locations:
 
 You can go to a specific location on a site by typing a forward slash after the
 site's key, followed by the location on the site you'd like to be redirected to.
@@ -132,7 +129,7 @@ For example:
 - Entering `h/popular` would redirect you to
   [hypem.com/popular](http://hypem.com/popular).
 
-### URL Redirects
+### URL Redirects:
 
 If you enter in a full domain or URL, you will be redirected to said domain or
 URL. For example:
