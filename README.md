@@ -37,7 +37,7 @@
  
 ## Screenshot Desktop:
 
-<img src="https://i.imgur.com/UxVgYgH.gif">
+<img src="https://i.imgur.com/WkiO88x.gif">
 
 ## Screenshot Mobile:
 
