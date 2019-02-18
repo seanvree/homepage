@@ -109,7 +109,6 @@ body.fade-out {
 }
 
 .js-darkfilterinput {
-    /* CHANGE ME: */
     background-color: rgba(21, 21, 21, 0.80) !important;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -1854,58 +1853,6 @@ i {
 .day-number {
     font-size: 1em;
     letter-spacing: 1.5px;
-}
-
-.events {
-    padding: 7px 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.events.in {
-    -webkit-animation: fadeIn 0.3s ease both;
-    -moz-animation: fadeIn 0.3s ease both;
-    animation: fadeIn 0.3s ease both;
-    -webkit-animation-delay: 0.3s;
-    -moz-animation-delay: 0.3s;
-    animation-delay: 0.3s;
-}
-
-.details.out .events {
-    -webkit-animation: fadeOutShrink 0.4s ease both;
-    -moz-animation: fadeOutShink 0.4s ease both;
-    animation: fadeOutShink 0.4s ease both;
-}
-
-.events.out {
-    -webkit-animation: fadeOut 0.3s ease both;
-    -moz-animation: fadeOut 0.3s ease both;
-    animation: fadeOut 0.3s ease both;
-}
-
-.event {
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.5px;
-    padding: 2px 16px;
-    vertical-align: top;
-}
-
-.event.empty {
-    color: #eee;
-}
-
-.event span {
-    display: inline-block;
-    padding: 0 0 0 7px;
-}
-
-.event-category {
-    height: 10px;
-    width: 10px;
-    display: inline-block;
-    margin: 8px 0 0;
-    vertical-align: top;
 }
 
 .legend {
