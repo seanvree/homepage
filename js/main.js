@@ -149,7 +149,9 @@ $(function () {
         $('#info').addClass('darkfilter');
         $('#fw-container').addClass('darkfilter');
         $('#footer').addClass('darkfilter');
-        $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+        //$('#inputlabel').addClass('t-md-hidden t-top-hidden');
+        $('#inputlabel').addClass('t-md-hidden t-top-hidden js-darkfilterinput');
+        $('#flexbox-option').addClass('js-darkfilterinput');
         $('#suggestions-container').removeClass('hidden');
         $('#optionlabel').addClass('t-sm-hidden t-top-hidden');
     };
@@ -172,6 +174,8 @@ $(function () {
         $('#searchbutton').removeClass('lightfilter');
         $('#suggestions-container').addClass('hidden');
         $('#inputlabel').addClass('t-md-hidden t-top-hidden');
+        $('#inputlabel').removeClass('js-darkfilterinput');
+        $('#flexbox-option').removeClass('js-darkfilterinput');
     });
 
     $('body').click(function (e) {
@@ -213,6 +217,9 @@ $(function () {
             $('#fw-container').addClass('darkfilter');
             $('#footer').addClass('darkfilter');
             $('#searchbutton').addClass('lightfilter');
+            //CHANG ME:
+            //$('#inputlabel').addClass('js-darkfilterinput');
+            //$('#flexbox-option').addClass('js-darkfilterinput');
         },
         function () {
             $('#background').removeClass('js-blur');
@@ -221,6 +228,9 @@ $(function () {
             $('#fw-container').removeClass('darkfilter');
             $('#footer').removeClass('darkfilter');
             $('#searchbutton').removeClass('lightfilter');
+            //CHANG ME:
+            $('#inputlabel').removeClass('js-darkfilterinput');
+            $('#flexbox-option').removeClass('js-darkfilterinput');
         }
     );
 
