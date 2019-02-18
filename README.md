@@ -57,6 +57,22 @@ background: url("background_day.jpg");
 _NOTE_: Background DAY displays from 0800-2000 local browser time
 
 
+- Turn ON search auto-complete by changing the value to `< "autocomplete="ON" >` at the following location:
+
+**`/index.html`: LINE 259:**
+
+```
+<input type="search" id="flexbox-input" name="s" value="" placeholder=" Search..." autocomplete="off" spellcheck="false" autofocus>
+```
+
+### WEATHER DATA: 
+- Acquire your FREE API key and replace the default key in **`/js/weather.js` : LINE 12**
+ https://home.openweathermap.org/users/sign_up
+ 
+```
+   var weatherApiKey = ' YOUR KEY HERE ';
+```
+
 - Change the default temp unit from F to C by changing the following two items:
 
 **`/index.html`: LINE 122:**
@@ -71,21 +87,6 @@ _NOTE_: Background DAY displays from 0800-2000 local browser time
 var unit = 'metric';
 ```
 
-- Turn ON search auto-complete by changing the value to `< "autocomplete="ON" >` at the following location:
-
-**`/index.html`: LINE 259:**
-
-```
-<input type="search" id="flexbox-input" name="s" value="" placeholder=" Search..." autocomplete="off" spellcheck="false" autofocus>
-```
-
-### WEATHER DATA: 
-Acquire your FREE API key and replace the default key in **`/js/weather.js` : LINE 12**
- https://home.openweathermap.org/users/sign_up
-```
-   var weatherApiKey = ' YOUR KEY HERE ';
-```
-
 - Weather auto refresh default setting is  **30** seconds (2 calls per minute), or 30000(ms). Max is 60 API calls per 1 minute. Change at the following location:
 
 **`/js/weather.js` : LINE 201:**
@@ -95,7 +96,7 @@ var t = window.setInterval(searchByLocation, 30000);
 ```
 
 ### TICKER DATA: 
-You will need to create your own feed.mikle ticker widget where you can customize your RSS news sources and style.  To do so, go to https://feed.mikle.com, create an account, and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo. You will then have your own custom ticker widget URL which you will then input into  **`/index.html` : Line 287**:
+- You will need to create your own feed.mikle ticker widget where you can customize your RSS news sources and style.  To do so, go to https://feed.mikle.com, create an account, and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo. You will then have your own custom ticker widget URL which you will then input into  **`/index.html` : Line 287**:
  
  ```
  <script src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script>
