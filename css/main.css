@@ -43,7 +43,6 @@ body.fade-out {
     transition: 1s opacity;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-attachment: fixed; */
     object-fit: cover;
     object-position: center;
     background-size: cover;
