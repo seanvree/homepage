@@ -20,7 +20,7 @@
       checkInterval: 100,
       // CHANGE ME:
       selectors: ['body']
-      // selectors: ['body,.pacetest']
+      //selectors: ['body','pacetest']
     },
     eventLag: {
       minSamples: 10,

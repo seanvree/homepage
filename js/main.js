@@ -166,7 +166,6 @@ $(function () {
 
     $('#background').click(function (e) {
         $('#background').removeClass('darkfilter js-blur');
-        //$('#background').removeClass('js-blur');
         $('#info').removeClass('darkfilter');
         $('#fw-container').removeClass('darkfilter');
         $('#footer').removeClass('darkfilter');
@@ -219,7 +218,6 @@ $(function () {
         },
         function () {
             $('#background').removeClass('js-blur darkfilter');
-            //$('#background').removeClass('darkfilter');
             $('#info').removeClass('darkfilter');
             $('#fw-container').removeClass('darkfilter');
             $('#footer').removeClass('darkfilter');
