@@ -143,16 +143,15 @@ $(function () {
     });
 
     document.getElementById("flexbox-input").oninput = function (e) {
+        $('#inputlabel').addClass('t-md-hidden t-top-hidden js-darkfilterinput');
+        $('#flexbox-option').addClass('js-darkfilterinput');
+        $('#suggestions-container').removeClass('hidden');
         $('#searchsubmit').removeClass('hidden');
         $('#searchclear').removeClass('hidden');
         $('#searchbutton').addClass('lightfilter');
         $('#info').addClass('darkfilter');
         $('#fw-container').addClass('darkfilter');
         $('#footer').addClass('darkfilter');
-        //$('#inputlabel').addClass('t-md-hidden t-top-hidden');
-        $('#inputlabel').addClass('t-md-hidden t-top-hidden js-darkfilterinput');
-        $('#flexbox-option').addClass('js-darkfilterinput');
-        $('#suggestions-container').removeClass('hidden');
         $('#optionlabel').addClass('t-sm-hidden t-top-hidden');
     };
 
@@ -166,8 +165,8 @@ $(function () {
     });
 
     $('#background').click(function (e) {
-        $('#background').removeClass('darkfilter');
-        $('#background').removeClass('js-blur');
+        $('#background').removeClass('darkfilter js-blur');
+        //$('#background').removeClass('js-blur');
         $('#info').removeClass('darkfilter');
         $('#fw-container').removeClass('darkfilter');
         $('#footer').removeClass('darkfilter');
@@ -217,18 +216,14 @@ $(function () {
             $('#fw-container').addClass('darkfilter');
             $('#footer').addClass('darkfilter');
             $('#searchbutton').addClass('lightfilter');
-            //CHANG ME:
-            //$('#inputlabel').addClass('js-darkfilterinput');
-            //$('#flexbox-option').addClass('js-darkfilterinput');
         },
         function () {
-            $('#background').removeClass('js-blur');
-            $('#background').removeClass('darkfilter');
+            $('#background').removeClass('js-blur darkfilter');
+            //$('#background').removeClass('darkfilter');
             $('#info').removeClass('darkfilter');
             $('#fw-container').removeClass('darkfilter');
             $('#footer').removeClass('darkfilter');
             $('#searchbutton').removeClass('lightfilter');
-            //CHANG ME:
             $('#inputlabel').removeClass('js-darkfilterinput');
             $('#flexbox-option').removeClass('js-darkfilterinput');
         }
