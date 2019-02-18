@@ -108,6 +108,11 @@ body.fade-out {
     transition: all 1s ease;
 }
 
+.js-darkfilterinput {
+    /* CHANGE ME: */
+    background-color: rgba(21, 21, 21, 0.80) !important;
+}
+
 article,
 aside,
 details,
@@ -723,12 +728,6 @@ li {
     z-index: 200;
 }
 
-/* CHANGE ME: */
-
-#inputlabel:hover {
-    background-color: rgba(21, 21, 21, 0.80);
-}
-
 #flexbox-input {
     width: calc(100% - 1.24em);
     height: 100%;
@@ -888,7 +887,7 @@ body.suggestions .search-suggestions {
     line-height: .5em;
     padding-left: .25em;
     padding-right: .25em;
-    background-color: rgba(21, 21, 21, 0.75);
+    background-color: rgba(21, 21, 21, 0.80);
     filter: brightness(125%);
     -webkit-filter: brightness(125%);
     -moz-filter: brightness(125%);
