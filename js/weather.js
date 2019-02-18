@@ -195,7 +195,7 @@ $(function() {
 
     searchByLocation();
 
-    // How frequent API call is made for weather update//
+    // How frequent API call is made for weather update //
     // Max is 60 calls per 1 minute. Default is 30 seconds (2 calls per minute), or 30000(ms) //
 
     var t = window.setInterval(searchByLocation, 30000);
