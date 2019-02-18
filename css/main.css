@@ -1028,6 +1028,7 @@ body.form .search-form {
 #time:hover {
     color: #1E90FF;
     cursor: pointer;
+    text-shadow: 1px 1px rgba(37, 37, 37, 0.75);
 }
 
 .timeArea .time {
@@ -1058,16 +1059,19 @@ body.form .search-form {
 .date:hover {
     color: #1E90FF;
     cursor: pointer;
+    text-shadow: 1px 1px rgba(37, 37, 37, 0.75);
 }
 
 .datemobile:hover {
     color: rgba(100, 100, 100, 0.75);
     cursor: default;
+    text-shadow: 1px 1px rgba(37, 37, 37, 0.75);
 }
 
 .datemobilenight:hover {
     color: rgba(37, 37, 37, 0.75);
     cursor: default;
+    text-shadow: 1px 1px rgba(37, 37, 37, 0.75);
 }
 
 #colon {
@@ -1150,6 +1154,7 @@ i {
 #tempwrapper:hover {
     color: #1E90FF;
     cursor: pointer;
+    text-shadow: 1px 1px rgba(37, 37, 37, 0.75);
 }
 
 #temp {
