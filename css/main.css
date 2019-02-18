@@ -1065,13 +1065,13 @@ body.form .search-form {
 .datemobile:hover {
     color: rgba(100, 100, 100, 0.75);
     cursor: default;
-    text-shadow: 1px 1px rgba(37, 37, 37, 0.75);
+    text-shadow: none !important;
 }
 
 .datemobilenight:hover {
     color: rgba(37, 37, 37, 0.75);
     cursor: default;
-    text-shadow: 1px 1px rgba(37, 37, 37, 0.75);
+    text-shadow: none !important;
 }
 
 #colon {
