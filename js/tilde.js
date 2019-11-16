@@ -343,7 +343,7 @@ $(function () {
         _registerEvents() {
             document.addEventListener('keydown', this._handleKeydown);
         }
-    };
+    }
     
 	class Influencer {
         constructor(options) {
@@ -367,7 +367,7 @@ $(function () {
             } = this._parseQuery(query);
             return isSearch ? `${key}${split} ` : false;
         }
-    };
+    }
 
     class DuckDuckGoInfluencer extends Influencer {
         constructor({

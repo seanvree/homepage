@@ -204,6 +204,6 @@ $(function() {
         $.ajaxSetup({
             cache: false
         });
-    };
+    }
 
 });

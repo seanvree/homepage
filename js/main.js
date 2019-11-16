@@ -13,7 +13,7 @@ function setDate($) {
         $('.timeArea .time .timeInner').html(currentTime);
         $('#date').html(currentDate);
         $('#datemobile').html(currentDate);
-    };
+    }
     var hours = new Date().getHours();
     var hours = (hours + 24) % 24;
     var mid = ' AM';
@@ -25,7 +25,7 @@ function setDate($) {
     }
     $('#minutes').text(mins);
     $('#ampm').text(mid);
-};
+}
 
 setDate($);
 
@@ -45,7 +45,7 @@ function setTime24() {
     });
     $('#ampm').addClass('hidden');
     toggle = !toggle;
-};
+}
 
 function setTime12() {
     var d = new Date().toLocaleTimeString('en-US', {
@@ -61,7 +61,7 @@ function setTime12() {
     $('#ampm').removeClass('hidden');
     toggle = !toggle;
     setDate($);
-};
+}
 
 var myVar12, myVar24;
 
@@ -82,7 +82,7 @@ $('#time').click(function (e) {
             clearInterval(myVar24);
             that.data('switch', 'a');
             break;
-    };
+    }
 });
 
 function search(query, engine) {
@@ -121,7 +121,7 @@ $(function () {
                 $('#inputlabel').removeClass('t-md-hidden t-top-hidden');
                 document.getElementById("flexbox-input").focus();
                 return false;
-            };
+            }
             var query = $('.flexbox input').val();
             var engine = $('.flexbox select option:selected').val();
             search(query, engine);
@@ -136,7 +136,7 @@ $(function () {
             $('#inputlabel').removeClass('t-md-hidden t-top-hidden');
             document.getElementById("flexbox-input").focus();
             return false;
-        };
+        }
         var query = $('.flexbox input').val();
         var engine = $('.flexbox select option:selected').val();
         search(query, engine);
@@ -208,7 +208,7 @@ $(function () {
         $('#formstretch').hover(function () {
             $('#background').addClass('js-blur');
         });
-    };
+    }
 
     $('#formstretch').hover(function () {
             $('#info').addClass('darkfilter');

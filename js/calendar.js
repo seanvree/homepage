@@ -27,7 +27,7 @@
         this.drawHeader();
         //Draw Month
         this.drawMonth();
-    }
+    };
 
     Calendar.prototype.drawHeader = function () {
         var self = this;
@@ -40,7 +40,7 @@
             this.title = {
                 month: createElement('div', 'month', this.current.format('MMMM')),
                 year: createElement('div', 'year', this.current.format('YYYY'))
-            }
+            };
 
             var right = createElement('div', 'right');
             right.addEventListener('click', function () {
@@ -63,7 +63,7 @@
 
         this.title.month.innerHTML = this.current.format('MMMM');
         this.title.year.innerHTML = this.current.format('YYYY');
-    }
+    };
 
     Calendar.prototype.drawMonth = function () {
         var self = this;
@@ -95,7 +95,7 @@
             this.fowardFill();
             this.month.className = 'month new';
         }
-    }
+    };
 
     Calendar.prototype.backFill = function () {
         var clone = this.current.clone();
@@ -110,7 +110,7 @@
         for (var i = dayOfWeek; i > 0; i--) {
             this.drawDay(clone.add(1, 'days'));
         }
-    }
+    };
 
     Calendar.prototype.fowardFill = function () {
         var clone = this.current.clone().add(1, 'months').subtract(1, 'days');
@@ -123,7 +123,7 @@
         for (var i = dayOfWeek; i < 6; i++) {
             this.drawDay(clone.add(1, 'days'));
         }
-    }
+    };
 
     Calendar.prototype.currentMonth = function () {
         var clone = this.current.clone();
@@ -132,14 +132,14 @@
             this.drawDay(clone);
             clone.add(1, 'days');
         }
-    }
+    };
 
     Calendar.prototype.getWeek = function (day) {
         if (!this.week || day.day() === 0) {
             this.week = createElement('div', 'week');
             this.month.appendChild(this.week);
         }
-    }
+    };
 
     Calendar.prototype.drawDay = function (day) {
         var self = this;
@@ -176,7 +176,7 @@
 
         outer.appendChild(number);
         this.week.appendChild(outer);
-    }
+    };
 
     Calendar.prototype.drawEvents = function (day, element) {
         if (day.month() === this.current.month()) {
@@ -192,7 +192,7 @@
                 element.appendChild(evSpan);
             });
         }
-    }
+    };
 
     Calendar.prototype.getDayClass = function (day) {
         classes = ['day'];
@@ -202,7 +202,7 @@
             classes.push('today');
         }
         return classes.join(' ');
-    }
+    };
 
     Calendar.prototype.renderEvents = function (events, ele) {
         //Remove any events in the current details element
@@ -253,18 +253,18 @@
         } else {
             ele.appendChild(wrapper);
         }
-    }
+    };
 
     Calendar.prototype.drawWeekDays = function (el) {
         var self = this;
-        this.weekDays = createElement('div', 'week-days')
-        var weekdays = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
+        this.weekDays = createElement('div', 'week-days');
+        var weekdays = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
         weekdays.forEach(function (weekday) {
             var day = createElement('span', 'day', weekday);
             self.weekDays.appendChild(day);
-        })
+        });
         this.el.appendChild(this.weekDays);
-    }
+    };
 
     Calendar.prototype.drawLegend = function () {
         var legend = createElement('div', 'legend');
@@ -281,19 +281,19 @@
             legend.appendChild(entry);
         });
         this.el.appendChild(legend);
-    }
+    };
 
     Calendar.prototype.nextMonth = function () {
         this.current.add(1, 'months');
         this.next = true;
         this.draw();
-    }
+    };
 
     Calendar.prototype.prevMonth = function () {
         this.current.subtract(1, 'months');
         this.next = false;
         this.draw();
-    }
+    };
 
     window.Calendar = Calendar;
 
@@ -307,7 +307,7 @@
         }
         return element;
     }
-    ''
+    '';
 }();
 
 var app = angular.module('myApp', []);
@@ -397,7 +397,7 @@ app.directive('calendar', [function () {
                     type: 'malware',
                     color: 'yellow'
                 }]
-            }, , {
+            }, {
                 date: new Date(2017, 0, 19),
                 events: [{
                     name: 'zeus',
@@ -411,8 +411,8 @@ app.directive('calendar', [function () {
                     type: 'bot',
                     color: 'yellow'
                 }]
-            }]
+            }];
             var calendar = new Calendar('#calendar', data);
         }
-    }
+    };
 }]);
