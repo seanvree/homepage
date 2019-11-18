@@ -107,7 +107,6 @@ var t = window.setInterval(searchByLocation, 30000);
 ### Key Searching:
 
 - Make changes to the live search behavior in `/js/tilde.js` .
-
 - To view the available sites and their keys, press `?` for the help menu.
 (NOTE: the Help menu only appears on desktop browsers). 
 
