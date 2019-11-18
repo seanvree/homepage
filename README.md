@@ -5,11 +5,10 @@
 
 **DEMO**:  https://seanvree.github.io/homepage/
 
-**Last Updated**: 18 FEB 2019: 
-- Added LIVE searching.
--	Added time convert (12/24hr) function (Click on time).
--	Added help menu (press “?” key while on page).
-- Updated bootstrap.
+**Last Updated**: 17 NOV 2019:
+-	Added Google Analytics (**Action Required**).
+-	Code maintenance.
+- Updated JQuery, Bootstrap.
 
 
 # Features:
