@@ -6,8 +6,8 @@
 **DEMO**:  https://seanvree.github.io/homepage/
 
 **Last Updated**: 17 NOV 2019:
--	Added Google Analytics (**Action Required**).
--	Code maintenance.
+- Added Google Analytics (**Action Required**).
+- Code maintenance.
 - Updated JQuery, Bootstrap.
 
 
@@ -19,7 +19,7 @@
 - Fully functional multi-search input form (Google, YouTube, Wiki, IMDB).
 - Live custom news ticker provided by: feed.mikle.com ($1/month).
 - Background auto change (day/night).
-- xMonthly calendar modal (Click on date) (Appears only on desktop browsers - screen height > 730px).
+- Monthly calendar modal (Click on date) (Appears only on desktop browsers - screen height > 730px).
 - Live DTG with click-to-convert time (12/24hr).
 - Weather data auto generated via Geolocation.
 - Weather API provided via OpenWeatherMap.
