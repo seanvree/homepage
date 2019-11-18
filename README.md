@@ -7,7 +7,6 @@
 
 **Last Updated**: 18 FEB 2019: 
 - Added LIVE searching.
--	Added monthly calendar modal (Click on date).
 -	Added time convert (12/24hr) function (Click on time).
 -	Added help menu (press “?” key while on page).
 - Updated bootstrap.
