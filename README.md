@@ -20,7 +20,7 @@
 - Fully functional multi-search input form (Google, YouTube, Wiki, IMDB).
 - Live custom news ticker provided by: feed.mikle.com ($1/month).
 - Background auto change (day/night).
-- Monthly calendar modal (Click on date) (Appears only on desktop browsers - screen height > 730px).
+- xMonthly calendar modal (Click on date) (Appears only on desktop browsers - screen height > 730px).
 - Live DTG with click-to-convert time (12/24hr).
 - Weather data auto generated via Geolocation.
 - Weather API provided via OpenWeatherMap.
