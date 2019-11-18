@@ -94,7 +94,7 @@ var t = window.setInterval(searchByLocation, 30000);
 ```
 
 ### TICKER DATA: 
-- You will need to create your own feed.mikle ticker widget where you can customize your RSS news sources and style.  To do so, go to https://feed.mikle.com, create an account, and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo. You will then have your own custom ticker widget URL which you will then input into  **`/index.html` : Line 287**:
+You will need to create your own feed.mikle ticker widget where you can customize your RSS news sources and style.  To do so, go to https://feed.mikle.com, create an account, and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo. You will then have your own custom ticker widget URL which you will then input into  **`/index.html` : Line 287**:
  
  ```
  <script src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script>
@@ -124,20 +124,20 @@ You can go to a specific location on a site by typing a forward slash after the
 site's key, followed by the location on the site you'd like to be redirected to.
 For example:
 
-- Entering `r/r/startpages` would redirect you to
+- Entering `r/r/startpages` would redirect to
   [www.reddit.com/r/startpages](https://www.reddit.com/r/startpages)
-- Entering `h/popular` would redirect you to
-  [hypem.com/popular](http://hypem.com/popular).
+- Entering `h/popular` would redirect to
+  [hypem.com/popular](http://hypem.com/popular)
 
 ### URL Redirects:
 
-If you enter in a full domain or URL, you will be redirected to said domain or
+If a full domain is entered into the search field, the browser will be redirected to that domain or
 URL. For example:
 
-- Entering `stallman.org` would redirect you to
-  [stallman.org](https://stallman.org/).
-- Entering `https://smile.amazon.com` would redirect you to
-  [smile.amazon.com](https://smile.amazon.com/).
+- Entering `stallman.org` would redirect to:
+  [stallman.org](https://stallman.org/)
+- Entering `https://smile.amazon.com` would redirect to:
+  [smile.amazon.com](https://smile.amazon.com/)
 
 
 <br>
@@ -153,7 +153,7 @@ URL. For example:
 
 ## Credits:
 
-- [haltdev](https://github.com/haltdev) | [jonfinley](https://github.com/jonfinley) | [leram84](https://github.com/leram84) | [causefx](https://github.com/causefx) | [cadejscroggins](https://github.com/cadejscroggins) 
+ [haltdev](https://github.com/haltdev) | [jonfinley](https://github.com/jonfinley) | [leram84](https://github.com/leram84) | [causefx](https://github.com/causefx) | [cadejscroggins](https://github.com/cadejscroggins) 
 
 #
 
