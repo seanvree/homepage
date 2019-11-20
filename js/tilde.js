@@ -5,15 +5,14 @@ $(function () {
     const CONFIG = {
 
         /*
+        * To invoke the HELP menu, press the "?" key.
+        * NOTE: The HELP menu will NOT appear on mobile browsers.
+
         * When using commands you MUST select the result from the suggestions result list below the input field.
         * Google Search will ALWAYS be used when pressing the ENTER key or clicking search.
-        * The category, name, key, url, search path and color for your commands.
-        * If none of the specified keys are matched, the '*' key is used.
-
-        * To invoke the HELP menu, press the "?" key.
-        * NOTE: the HELP menu will not appear on mobile browsers.
-
-        * Commands without a category don't show up in the help menu.
+        * If none of the specified keys are matched, the '*' (Google) key is used.
+        * The category, name, key, url, and search path for commands are required.
+        * Commands without a category don't show in the help menu.
         */
 
         commands: [{
@@ -175,7 +174,7 @@ $(function () {
         
         /*          
         * The "influencer" is how the live search aggrogates results while typing.
-        * These results come from DuckDuckGo which uses the Google API and will direct the user to google when a result is clicked.
+        * These results come from DuckDuckGo which uses the Google API and will direct the user to Google when a result is clicked.
         */
 
         influencers: [
