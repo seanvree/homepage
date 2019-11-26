@@ -64,8 +64,9 @@ _NOTE_: Background DAY displays from 0800-2000 local browser time
 ```
 
 ### WEATHER DATA: 
-- Acquire your FREE API key and replace the default key in **`/js/weather.js` : LINE 12**
- https://home.openweathermap.org/users/sign_up
+- Acquire your FREE API key at https://home.openweathermap.org/users/sign_up
+- Replace the default key:
+**`/js/weather.js` : LINE 12:**
  
 ```
    var weatherApiKey = ' YOUR KEY HERE ';
@@ -94,11 +95,24 @@ var t = window.setInterval(searchByLocation, 30000);
 ```
 
 ### TICKER DATA: 
-You will need to create your own feed.mikle ticker widget where you can customize your RSS news sources and style.  To do so, go to https://feed.mikle.com, create an account, and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo. You will then have your own custom ticker widget URL which you will then input into  **`/index.html` : Line 287**:
+- Create a customized feed.mikle ticker widget for RSS news sources and style.  Go to https://feed.mikle.com, create an account, and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo.  
+- Input the custom ticker widget URL at the following location:
+
+**`/index.html` : Line 287**:
  
  ```
  <script src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script>
  ```
+
+### GOOGLE ANALYTICS 
+- Acquire a FREE Google Analytics site ID at: https://analytics.google.com/ 
+- Replace the default site ID 'UA-XXXXX-Y' at the following location:
+
+**`/js/analytics.js` : Line 9**:
+ 
+```
+   ga('create', 'UA-133756821-1', 'auto');
+```
 
 ## LIVE Search Usage:
 
