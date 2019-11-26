@@ -15,6 +15,7 @@
 
 - Self hosted, VERY minimal(ish)/lightweight.
 - Live searching.
+- Customizable Bookmarks.
 - Mobile ready.
 - Fully functional multi-search input form (Google, YouTube, Wiki, IMDB).
 - Live custom news ticker provided by: feed.mikle.com ($1/month).
@@ -45,7 +46,8 @@
 
 ## Notes:
 
-- Add your desired background image files
+- Add desired background image files:
+
 **`/css/main.css`: LINE 38 & 55**:
 
 ```
@@ -57,7 +59,7 @@ _NOTE_: Background DAY displays from 0800-2000 local browser time
 
 - Turn ON search auto-complete by changing the value to `< "autocomplete="ON" >` at the following location:
 
-**`/index.html`: LINE 259:**
+**`/index.html`: LINE 265:**
 
 ```
 <input type="search" id="flexbox-input" name="s" value="" placeholder=" Search..." autocomplete="off" spellcheck="false" autofocus>
@@ -66,6 +68,7 @@ _NOTE_: Background DAY displays from 0800-2000 local browser time
 ### WEATHER DATA: 
 - Acquire your FREE API key at https://home.openweathermap.org/users/sign_up
 - Replace the default key:
+
 **`/js/weather.js` : LINE 12:**
  
 ```
@@ -74,7 +77,7 @@ _NOTE_: Background DAY displays from 0800-2000 local browser time
 
 - Change the default temp unit from F to C by changing the following two items:
 
-**`/index.html`: LINE 122:**
+**`/index.html`: LINE 128:**
 
 ```
 <div id="unit" class="unit hidden">&degF</div>
@@ -98,7 +101,7 @@ var t = window.setInterval(searchByLocation, 30000);
 - Create a customized feed.mikle ticker widget for RSS news sources and style.  Go to https://feed.mikle.com, create an account, and replicate the settings of the screenshot image `/img/feedmikle.jpg ` located in this repo.  
 - Input the custom ticker widget URL at the following location:
 
-**`/index.html` : Line 287**:
+**`/index.html` : Line 293**:
  
  ```
  <script src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script>
@@ -108,10 +111,10 @@ var t = window.setInterval(searchByLocation, 30000);
 - Acquire a FREE Google Analytics site ID at: https://analytics.google.com/ 
 - Replace the default site ID 'UA-XXXXX-Y' at the following location:
 
-**`/js/analytics.js` : Line 9**:
+**`/js/analytics.js` : LINE 9**:
  
 ```
-   ga('create', 'UA-133756821-1', 'auto');
+   ga('create', `UA-133756821-1`, 'auto');
 ```
 
 ## LIVE Search Usage:
