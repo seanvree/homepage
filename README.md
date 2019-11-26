@@ -109,12 +109,12 @@ var t = window.setInterval(searchByLocation, 30000);
 
 ### GOOGLE ANALYTICS 
 - Acquire a FREE Google Analytics site ID at: https://analytics.google.com/ 
-- Replace the default site ID 'UA-XXXXX-Y' at the following location:
+- Replace the default site ID `UA-XXXXX-Y` at the following location:
 
 **`/js/analytics.js` : LINE 9**:
  
 ```
-   ga('create', `UA-133756821-1`, 'auto');
+   ga('create', 'UA-133756821-1', 'auto');
 ```
 
 ## LIVE Search Usage:
