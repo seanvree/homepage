@@ -107,7 +107,7 @@ var t = window.setInterval(searchByLocation, 30000);
  <script src="https://feed.mikle.com/js/fw-loader.js" data-fw-param=" YOUR NUMBER HERE "></script>
  ```
 
-### GOOGLE ANALYTICS 
+### GOOGLE ANALYTICS:
 - Acquire a FREE Google Analytics site ID at: https://analytics.google.com/ 
 - Replace the default site ID `UA-XXXXX-Y` at the following location:
 
