@@ -104,11 +104,12 @@ You will need to create your own feed.mikle ticker widget where you can customiz
 
 ### Key Searching:
 
-- Make changes to the live search behavior in `/js/tilde.js` .
+- Make changes to the live search behavior and/or bookmarks in `/js/tilde.js` .
+- When using commands the disired result MUST be selected from the suggestions result list below the input field.
 - To view the available sites and their keys, press `?` for the help menu.
-(NOTE: the Help menu only appears on desktop browsers). 
+(NOTE: The help menu only appears on desktop browsers). 
 
-You can search any of the sites by typing a colon after the site's key, followed by your search query. 
+Search any of the sites by typing a colon after the site's key, followed by a search query.
 For example:
 
 - Entering `g:tilde` would search
@@ -116,12 +117,11 @@ For example:
 - Entering `s:radiohead` would search
   [SoundCloud for radiohead](https://soundcloud.com/search?q=radiohead).
 
-If your input doesn't match any of the commands, a generic Google search will be triggered.
+If an input doesn't match any of the commands, a generic Google search will be triggered.
 
 ### Specific Locations:
 
-You can go to a specific location on a site by typing a forward slash after the
-site's key, followed by the location on the site you'd like to be redirected to.
+Navigate directly to a specific location by typing a forward slash after the site's key, followed by the location on the site.
 For example:
 
 - Entering `r/r/startpages` would redirect to
@@ -131,8 +131,8 @@ For example:
 
 ### URL Redirects:
 
-If a full domain is entered into the search field, the browser will be redirected to that domain or
-URL. For example:
+If a full domain is entered into the search field, the browser will be redirected to that domain or URL.
+For example:
 
 - Entering `stallman.org` would redirect to:
   [stallman.org](https://stallman.org/)
