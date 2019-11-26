@@ -44,7 +44,7 @@
 
 <img src="https://i.imgur.com/0iamcsT.gif[/img]">
 
-## Notes:
+# Notes:
 
 - Add desired background image files:
 
@@ -176,6 +176,8 @@ For example:
  [haltdev](https://github.com/haltdev) | [jonfinley](https://github.com/jonfinley) | [leram84](https://github.com/leram84) | [causefx](https://github.com/causefx) | [cadejscroggins](https://github.com/cadejscroggins) 
 
 #
+
+#### Featured on: https://startpages.github.io/
 
 [![BrowserStack Status](https://i.imgur.com/Pnri9gE.gif)](https://automate.browserstack.com/)
 
