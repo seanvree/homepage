@@ -110,6 +110,7 @@ You will need to create your own feed.mikle ticker widget where you can customiz
 (NOTE: The help menu only appears on desktop browsers). 
 
 Search any of the sites by typing a colon after the site's key, followed by a search query.
+
 For example:
 
 - Entering `g:tilde` would search
@@ -122,6 +123,7 @@ If an input doesn't match any of the commands, a generic Google search will be t
 ### Specific Locations:
 
 Navigate directly to a specific location by typing a forward slash after the site's key, followed by the location on the site.
+
 For example:
 
 - Entering `r/r/startpages` would redirect to
@@ -132,6 +134,7 @@ For example:
 ### URL Redirects:
 
 If a full domain is entered into the search field, the browser will be redirected to that domain or URL.
+
 For example:
 
 - Entering `stallman.org` would redirect to:
