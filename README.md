@@ -123,8 +123,9 @@ var t = window.setInterval(searchByLocation, 30000);
 
 - Make changes to the live search behavior and/or bookmarks in `/js/tilde.js` .
 - When using commands the disired result MUST be selected from the suggestions result list below the input field.
-- To view the available sites and their keys, press `?` for the help menu.
-(NOTE: The help menu only appears on desktop browsers). 
+- To view the bookmarks and site keys, press `?` for the help menu.
+
+(NOTE: The help menu only appears on desktop browsers).
 
 Search any of the sites by typing a colon after the site's key, followed by a search query.
 
