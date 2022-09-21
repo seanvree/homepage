@@ -9,11 +9,11 @@ $(function() {
     var lastData = {};
     
     var weatherApi = 'https://api.openweathermap.org/data/2.5/weather?callback=?';
-    var weatherApiKey = 'd2ae6d25c09549f38d8feed1d116c580';
+    var weatherApiKey = '000a02d5408caf0abbc02b36a279fc97';
     var startPos;
-    // Seattle:
-    var lat = 47.6097;
-    var lon = -122.3331;
+    // Luebbecke:
+    var lat = 52.3097;
+    var lon = -8.6223;
     var geoOptions = {
         maximumAge: 5 * 60 * 1000,
         timeout: 10 * 1000
@@ -119,7 +119,7 @@ $(function() {
 
     var getWeather = function(lat, lon, q) {
         var city = $city.text();
-        $city.text(city + ' (Loading...)');
+        $city.text(city + ' (Ladevorgang...)');
         var weatherData = {
             appid: weatherApiKey,
             units: unit
